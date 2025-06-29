@@ -43,7 +43,7 @@ class TestConversationRepository(unittest.TestCase):
         os.environ["CONVERSATION_TABLE_NAME"] = "test-table"
         os.environ["CONVERSATION_BUCKET_NAME"] = "test-bucket"
         os.environ["LARGE_MESSAGE_BUCKET"] = "test-large-message-bucket"
-        os.environ["BEDROCK_REGION"] = "us-east-1"
+        os.environ["BEDROCK_REGION"] = "ap-southeast-2"
 
         self.title_updated = False
         self.feedback_updated = False

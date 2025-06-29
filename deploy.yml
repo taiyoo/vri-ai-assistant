@@ -22,7 +22,7 @@ Parameters:
     Default: "[]"
   BedrockRegion:
     Type: String
-    Default: "us-east-1"
+    Default: "ap-southeast-2" # Default to Sydney region
   CdkJsonOverride:
     Type: String
     Default: "{}"
