@@ -70,7 +70,7 @@ By using the [Agent functionality](./docs/AGENT.md), your chatbot can automatica
 
 ## 🚀 Super-easy Deployment
 
-- In the us-east-1 region, open [Bedrock Model access](https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/modelaccess) > `Manage model access` > Check all of models you wish to use and then `Save changes`.
+- In the ap-southeast-2 region, open [Bedrock Model access](https://ap-southeast-2.console.aws.amazon.com/bedrock/home?region=ap-southeast-2#/modelaccess) > `Manage model access` > Check all of models you wish to use and then `Save changes`.
 
 <details>
 <summary>Screenshot</summary>
@@ -101,7 +101,7 @@ You can specify the following parameters during deployment to enhance security a
 - **--ipv6-ranges**: Comma-separated list of allowed IPv6 ranges. (default: allow all ipv6 addresses)
 - **--disable-ipv6**: Disable connections over IPv6. (default: enabled)
 - **--allowed-signup-email-domains**: Comma-separated list of allowed email domains for sign-up. (default: no domain restriction)
-- **--bedrock-region**: Define the region where bedrock is available. (default: us-east-1)
+- **--bedrock-region**: Define the region where bedrock is available. (default: ap-southeast-2)
 - **--repo-url**: The custom repo of Bedrock Chat to deploy, if forked or custom source control. (default: https://github.com/aws-samples/bedrock-chat.git)
 - **--version**: The version of Bedrock Chat to deploy. (default: latest version in development)
 - **--cdk-json-override**: You can override any CDK context values during deployment using the override JSON block. This allows you to modify the configuration without editing the cdk.json file directly.
@@ -241,7 +241,7 @@ The traditional way to configure parameters is by editing the `cdk.json` file. T
 {
   "app": "npx ts-node --prefer-ts-exts bin/bedrock-chat.ts",
   "context": {
-    "bedrockRegion": "us-east-1",
+    "bedrockRegion": "ap-southeast-2",
     "allowedIpV4AddressRanges": ["0.0.0.0/1", "128.0.0.0/1"],
     "selfSignUpEnabled": true
   }
@@ -255,7 +255,7 @@ For better type safety and developer experience, you can use the `parameter.ts` 
 ```typescript
 // Define parameters for the default environment
 BedrockAIAssistantParams.set("default", {
-  bedrockRegion: "us-east-1",
+  bedrockRegion: "ap-southeast-2",
   allowedIpV4AddressRanges: ["192.168.0.0/16"],
   selfSignUpEnabled: true,
 });
@@ -269,7 +269,7 @@ BedrockAIAssistantParams.set("dev", {
 });
 
 BedrockAIAssistantParams.set("prod", {
-  bedrockRegion: "us-east-1",
+  bedrockRegion: "ap-southeast-2",
   allowedIpV4AddressRanges: ["172.16.0.0/12"],
   enableLambdaSnapStart: true,
   enableRagReplicas: true, // Enhanced availability for production
@@ -344,7 +344,7 @@ The traditional way to configure parameters is by editing the `cdk.json` file. T
 {
   "app": "npx ts-node --prefer-ts-exts bin/bedrock-chat.ts",
   "context": {
-    "bedrockRegion": "us-east-1",
+    "bedrockRegion": "ap-southeast-2",
     "allowedIpV4AddressRanges": ["0.0.0.0/1", "128.0.0.0/1"],
     "selfSignUpEnabled": true
   }
@@ -358,7 +358,7 @@ For better type safety and developer experience, you can use the `parameter.ts` 
 ```typescript
 // Define parameters for the default environment
 BedrockAIAssistantParams.set("default", {
-  bedrockRegion: "us-east-1",
+  bedrockRegion: "ap-southeast-2",
   allowedIpV4AddressRanges: ["192.168.0.0/16"],
   selfSignUpEnabled: true,
 });
@@ -371,7 +371,7 @@ BedrockAIAssistantParams.set("dev", {
 });
 
 BedrockAIAssistantParams.set("prod", {
-  bedrockRegion: "us-east-1",
+  bedrockRegion: "ap-southeast-2",
   allowedIpV4AddressRanges: ["172.16.0.0/12"],
   enableLambdaSnapStart: true,
   enableRagReplicas: true, // Enhanced availability for production
@@ -437,7 +437,7 @@ npx cdk deploy --all
 
 ### Remove resources
 
-If using cli and CDK, please `npx cdk destroy`. If not, access [CloudFormation](https://console.aws.amazon.com/cloudformation/home) and then delete `BedrockAIAssistantStack` and `FrontendWafStack` manually. Please note that `FrontendWafStack` is in `us-east-1` region.
+If using cli and CDK, please `npx cdk destroy`. If not, access [CloudFormation](https://console.aws.amazon.com/cloudformation/home) and then delete `BedrockAIAssistantStack` and `FrontendWafStack` manually. Please note that `FrontendWafStack` is in `ap-southeast-2` region.
 
 ### Language Settings
 
@@ -541,7 +541,7 @@ You can configure a custom domain for the CloudFront distribution by setting the
 
 When these parameters are provided, the deployment will automatically:
 
-- Create an ACM certificate with DNS validation in us-east-1 region
+- Create an ACM certificate with DNS validation in ap-southeast-2 region
 - Create the necessary DNS records in your Route 53 hosted zone
 - Configure CloudFront to use your custom domain
 

@@ -30,7 +30,7 @@ class StackOutput(TypedDict):
             {
                 'KnowledgeBaseId': 'MNOPQRSTUVWX',
                 'DataSourceId': 'YZABCDEFGHI',
-                'GuardrailArn': 'arn:aws:bedrock:us-east-1:123456789012:guardrail/abcdefghijkl',
+                'GuardrailArn': 'arn:aws:bedrock:ap-southeast-2:123456789012:guardrail/abcdefghijkl',
                 'GuardrailVersion': 'DRAFT',
                 'PK': '7801e3f0-40b1-70da-2e13-652d4adce1c3',
                 'SK': '7801e3f0-40b1-70da-2e13-652d4adce1c3#BOT#01JKWE8RP6YWNX9SKFSCCNS73Z'

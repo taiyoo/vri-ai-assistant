@@ -152,7 +152,7 @@ describe("resolveBedrockAIAssistantParameters", () => {
       const result = resolveBedrockAIAssistantParameters(app);
 
       // Then
-      expect(result.bedrockRegion).toBe("us-east-1"); // default value
+      expect(result.bedrockRegion).toBe("ap-southeast-2"); // default value
       expect(result.allowedIpV4AddressRanges).toEqual([
         "0.0.0.0/1",
         "128.0.0.0/1",
@@ -300,7 +300,7 @@ describe("resolveBedrockAIAssistantParameters", () => {
   test("should correctly parse parameters mimicking cdk.json context properties", () => {
     // Given
     const app = createTestApp({
-      bedrockRegion: "us-east-1",
+      bedrockRegion: "ap-southeast-2",
       allowedIpV4AddressRanges: ["0.0.0.0/1", "128.0.0.0/1"],
       allowedIpV6AddressRanges: [
         "0000:0000:0000:0000:0000:0000:0000:0000/1",
@@ -328,7 +328,7 @@ describe("resolveBedrockAIAssistantParameters", () => {
     const result = resolveBedrockAIAssistantParameters(app);
 
     // Then
-    expect(result.bedrockRegion).toBe("us-east-1");
+    expect(result.bedrockRegion).toBe("ap-southeast-2");
     expect(result.allowedIpV4AddressRanges).toEqual([
       "0.0.0.0/1",
       "128.0.0.0/1",
@@ -447,7 +447,7 @@ describe("getBedrockAIAssistantParameters", () => {
     test("should apply default values for optional parameters", () => {
       // Given
       const minimalParams: BedrockAIAssistantParametersInput = {
-        bedrockRegion: "us-east-1",
+        bedrockRegion: "ap-southeast-2",
       };
       paramsMap.set("minimal", minimalParams);
 
@@ -455,7 +455,7 @@ describe("getBedrockAIAssistantParameters", () => {
       const result = getBedrockAIAssistantParameters(app, "minimal", paramsMap);
 
       // Then
-      expect(result.bedrockRegion).toBe("us-east-1");
+      expect(result.bedrockRegion).toBe("ap-southeast-2");
       expect(result.enableBedrockCrossRegionInference).toBe(true);
       expect(result.enableRagReplicas).toBe(true);
       expect(result.enableLambdaSnapStart).toBe(true);
@@ -499,7 +499,7 @@ describe("getBedrockAIAssistantParameters", () => {
       const result = getBedrockAIAssistantParameters(app, undefined, emptyParamsMap);
 
       // Then
-      expect(result.bedrockRegion).toBe("us-east-1");
+      expect(result.bedrockRegion).toBe("ap-southeast-2");
       expect(result.enableBedrockCrossRegionInference).toBe(true);
       expect(result.enableRagReplicas).toBe(true);
       expect(result.enableLambdaSnapStart).toBe(true);
@@ -515,7 +515,7 @@ describe("resolveApiPublishParameters", () => {
       const originalEnv = process.env;
       process.env = {
         ...originalEnv,
-        BEDROCK_REGION: "us-east-1",
+        BEDROCK_REGION: "ap-southeast-2",
         PUBLISHED_API_THROTTLE_RATE_LIMIT: "200",
         PUBLISHED_API_ALLOWED_ORIGINS: '["https://test.com"]',
       };
@@ -525,7 +525,7 @@ describe("resolveApiPublishParameters", () => {
         const result = resolveApiPublishParameters();
 
         // Then
-        expect(result.bedrockRegion).toBe("us-east-1");
+        expect(result.bedrockRegion).toBe("ap-southeast-2");
         expect(result.publishedApiThrottleRateLimit).toBe(200);
         expect(result.publishedApiAllowedOrigins).toBe('["https://test.com"]');
       } finally {
@@ -542,7 +542,7 @@ describe("resolveApiPublishParameters", () => {
       const result = resolveApiPublishParameters();
 
       // Then
-      expect(result.bedrockRegion).toBe("us-east-1"); // default value
+      expect(result.bedrockRegion).toBe("ap-southeast-2"); // default value
       expect(result.publishedApiAllowedOrigins).toBe('["*"]'); // default value
       expect(result.publishedApiThrottleRateLimit).toBeUndefined(); // optional
     });
@@ -690,7 +690,7 @@ describe("resolveBedrockCustomBotParameters", () => {
         ...originalEnv,
         ENV_NAME: "testEnv",
         ENV_PREFIX: "test-prefix",
-        BEDROCK_REGION: "us-east-1",
+        BEDROCK_REGION: "ap-southeast-2",
         PK: "env-pk",
         SK: "env-sk",
         BEDROCK_CLAUDE_CHAT_DOCUMENT_BUCKET_NAME: "env-bucket",
@@ -705,7 +705,7 @@ describe("resolveBedrockCustomBotParameters", () => {
         const result = resolveBedrockCustomBotParameters();
 
         // Then
-        expect(result.bedrockRegion).toBe("us-east-1");
+        expect(result.bedrockRegion).toBe("ap-southeast-2");
         expect(result.envName).toBe("testEnv");
         expect(result.envPrefix).toBe("test-prefix");
         expect(result.pk).toBe("env-pk");

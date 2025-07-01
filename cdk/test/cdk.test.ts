@@ -23,7 +23,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -38,7 +38,7 @@ describe("Bedrock Chat Stack Test", () => {
         },
         envName: "test",
         envPrefix: "test-",
-        bedrockRegion: "us-east-1",
+        bedrockRegion: "ap-southeast-2",
         crossRegionReferences: true,
         webAclId: "",
         identityProviders: [
@@ -98,7 +98,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -113,7 +113,7 @@ describe("Bedrock Chat Stack Test", () => {
         },
         envName: "test",
         envPrefix: "test-",
-        bedrockRegion: "us-east-1",
+        bedrockRegion: "ap-southeast-2",
         crossRegionReferences: true,
         webAclId: "",
         identityProviders: [
@@ -173,7 +173,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -185,7 +185,7 @@ describe("Bedrock Chat Stack Test", () => {
       },
       envName: "test",
       envPrefix: "test-",
-      bedrockRegion: "us-east-1",
+      bedrockRegion: "ap-southeast-2",
       crossRegionReferences: true,
       webAclId: "",
       identityProviders: [],
@@ -218,7 +218,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -226,11 +226,11 @@ describe("Bedrock Chat Stack Test", () => {
 
     const customDomainStack = new BedrockAIAssistantStack(app, "CustomDomainStack", {
       env: {
-        region: "us-east-1",
+        region: "ap-southeast-2",
       },
       envName: "test",
       envPrefix: "test-",
-      bedrockRegion: "us-east-1",
+      bedrockRegion: "ap-southeast-2",
       crossRegionReferences: true,
       webAclId: "",
       identityProviders: [],
@@ -297,7 +297,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -305,11 +305,11 @@ describe("Bedrock Chat Stack Test", () => {
 
     const noDomainStack = new BedrockAIAssistantStack(app, "NoDomainStack", {
       env: {
-        region: "us-east-1",
+        region: "ap-southeast-2",
       },
       envName: "test",
       envPrefix: "test-",
-      bedrockRegion: "us-east-1",
+      bedrockRegion: "ap-southeast-2",
       crossRegionReferences: true,
       webAclId: "",
       identityProviders: [],
@@ -356,7 +356,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -364,11 +364,11 @@ describe("Bedrock Chat Stack Test", () => {
 
     const customDomainStack = new BedrockAIAssistantStack(app, "CustomDomainStack", {
       env: {
-        region: "us-east-1",
+        region: "ap-southeast-2",
       },
       envName: "test",
       envPrefix: "test-",
-      bedrockRegion: "us-east-1",
+      bedrockRegion: "ap-southeast-2",
       crossRegionReferences: true,
       webAclId: "",
       identityProviders: [],
@@ -435,7 +435,7 @@ describe("Bedrock Chat Stack Test", () => {
       "BedrockRegionResourcesStack",
       {
         env: {
-          region: "us-east-1",
+          region: "ap-southeast-2",
         },
         crossRegionReferences: true,
       }
@@ -443,11 +443,11 @@ describe("Bedrock Chat Stack Test", () => {
 
     const noDomainStack = new BedrockAIAssistantStack(app, "NoDomainStack", {
       env: {
-        region: "us-east-1",
+        region: "ap-southeast-2",
       },
       envName: "test",
       envPrefix: "test-",
-      bedrockRegion: "us-east-1",
+      bedrockRegion: "ap-southeast-2",
       crossRegionReferences: true,
       webAclId: "",
       identityProviders: [],

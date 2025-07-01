@@ -29,7 +29,7 @@ class TestGetModelId(unittest.TestCase):
         # Prefix with "us." to enable cross-region
         expected_model_id = "us.anthropic.claude-3-5-sonnet-20240620-v1:0"
         self.assertEqual(
-            get_model_id(model, enable_cross_region=True, bedrock_region="us-east-1"),
+            get_model_id(model, enable_cross_region=True, bedrock_region="ap-southeast-2"),
             expected_model_id,
         )
 
@@ -38,7 +38,7 @@ class TestGetModelId(unittest.TestCase):
         # No prefix to disable cross-region
         expected_model_id = "anthropic.claude-3-5-sonnet-20240620-v1:0"
         self.assertEqual(
-            get_model_id(model, enable_cross_region=False, bedrock_region="us-east-1"),
+            get_model_id(model, enable_cross_region=False, bedrock_region="ap-southeast-2"),
             expected_model_id,
         )
 
@@ -79,7 +79,7 @@ class TestCallConverseApiWithGuardrails(unittest.TestCase):
     def setUp(self):
         # Note that the region must be the same as the one used in the bedrock client
         # https://github.com/aws/aws-sdk-js-v3/issues/6482
-        self.bedrock_client = boto3.client("bedrock", region_name="us-east-1")
+        self.bedrock_client = boto3.client("bedrock", region_name="ap-southeast-2")
         self.guardrail_name = f"test-guardrail-{ULID()}"
 
         # Create dummy guardrail

@@ -900,7 +900,7 @@ class TestGuardrailChat(unittest.TestCase):
     def setUp(self) -> None:
         # Note that the region must be the same as the one used in the bedrock client
         # https://github.com/aws/aws-sdk-js-v3/issues/6482
-        self.bedrock_client = boto3.client("bedrock", region_name="us-east-1")
+        self.bedrock_client = boto3.client("bedrock", region_name="ap-southeast-2")
         self.guardrail_name = f"test-guardrail-{ULID()}"
 
         # Create dummy guardrail

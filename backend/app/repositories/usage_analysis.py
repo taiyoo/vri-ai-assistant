@@ -24,7 +24,7 @@ USAGE_ANALYSIS_WORKGROUP = os.environ.get(
 USAGE_ANALYSIS_OUTPUT_LOCATION = os.environ.get(
     "USAGE_ANALYSIS_OUTPUT_LOCATION", "s3://BedrockAIAssistantstack-athena-results"
 )
-USER_POOL_ID = os.environ.get("USER_POOL_ID", "us-east-1_XXXXXXXXX")
+USER_POOL_ID = os.environ.get("USER_POOL_ID", "ap-southeast-2_XXXXXXXXX")
 QUERY_LIMIT = 1000
 
 
