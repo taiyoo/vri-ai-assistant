@@ -1,5 +1,5 @@
 import * as cdk from "aws-cdk-lib";
-import { CfnOutput, Stack, StackProps } from "aws-cdk-lib";
+import { CfnOutput, Stack, StackProps, Tags} from "aws-cdk-lib";
 import * as wafv2 from "aws-cdk-lib/aws-wafv2";
 import { Construct } from "constructs";
 
@@ -25,6 +25,9 @@ export class FrontendWafStack extends Stack {
 
   constructor(scope: Construct, id: string, props: FrontendWafStackProps) {
     super(scope, id, props);
+
+    // Add cost tracking tags
+    Tags.of(this).add('AppManagerCFNStackKey', 'BedrockFrontendWaf');
 
     const sepHyphen = props.envPrefix ? "-" : "";
     const rules: wafv2.CfnWebACL.RuleProperty[] = [];

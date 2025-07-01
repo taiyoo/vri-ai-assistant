@@ -60,6 +60,9 @@ export class BedrockChatStack extends cdk.Stack {
       ...props,
     });
 
+    // Add AppManagerCFNStackKey tag for cost tracking
+    cdk.Tags.of(this).add('AppManagerCFNStackKey', 'BedrockChat')
+
     const sepHyphen = props.envPrefix ? "-" : "";
     const idp = identityProvider(props.identityProviders);
 

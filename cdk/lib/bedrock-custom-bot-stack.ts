@@ -1,4 +1,4 @@
-import { CfnOutput, RemovalPolicy, Stack, StackProps } from "aws-cdk-lib";
+import { CfnOutput, RemovalPolicy, Stack, StackProps, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { VectorCollection } from "@cdklabs/generative-ai-cdk-constructs/lib/cdk-lib/opensearchserverless";
 import {
@@ -78,6 +78,9 @@ interface BedrockCustomBotStackProps extends StackProps {
 export class BedrockCustomBotStack extends Stack {
   constructor(scope: Construct, id: string, props: BedrockCustomBotStackProps) {
     super(scope, id, props);
+
+    // Add cost tracking tags
+    Tags.of(this).add('AppManagerCFNStackKey', 'BedrockCustomBot');
 
     const { docBucketsAndPrefixes } = this.setupBucketsAndPrefixes(props);
 
