@@ -318,6 +318,26 @@ export class Api extends Construct {
         userPoolClients: [props.auth.client],
       }
     );
+
+    // Add documentation routes without authorization
+    api.addRoutes({
+      path: "/docs",
+      methods: [HttpMethod.GET],
+      integration
+    });
+
+    api.addRoutes({
+      path: "/redoc",
+      methods: [HttpMethod.GET],
+      integration
+    });
+
+    api.addRoutes({
+      path: "/openapi.json",
+      methods: [HttpMethod.GET],
+      integration
+    });
+    
     let routeProps: any = {
       path: "/{proxy+}",
       integration,

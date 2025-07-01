@@ -154,7 +154,9 @@ export class ApiPublishmentStack extends Stack {
       deployOptions: {
         stageName: deploymentStage,
       },
-      defaultMethodOptions: { apiKeyRequired: true },
+      defaultMethodOptions: { 
+        apiKeyRequired: true
+      },
       defaultCorsPreflightOptions: props.corsOptions,
     });
 
