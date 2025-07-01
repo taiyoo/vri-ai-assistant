@@ -303,7 +303,17 @@ export class BedrockCustomBotStack extends Stack {
           parameters: {
             knowledgeBaseId: props.existKnowledgeBaseId,
           },
-          physicalResourceId: PhysicalResourceId.of(props.existKnowledgeBaseId),
+          // Use a stable ID that doesn't depend on the knowledge base ID
+          physicalResourceId: PhysicalResourceId.of(`${props.botId}-get-knowledge-base`)          
+        },
+        // Add update handler to prevent replacement
+        onUpdate: {
+          service: "bedrock-agent",
+          action: "GetKnowledgeBase",
+          parameters: {
+            knowledgeBaseId: props.existKnowledgeBaseId,
+          },
+          physicalResourceId: PhysicalResourceId.of(`${props.botId}-get-knowledge-base`),
         },
         policy: AwsCustomResourcePolicy.fromStatements([
           new iam.PolicyStatement({
