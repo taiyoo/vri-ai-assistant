@@ -45,7 +45,7 @@ Langkah-langkah berbeza bergantung kepada sama ada anda menggunakan v1.2 atau le
 
 ### Langkah untuk pengguna v1.2 atau lebih awal
 
-1. **Backup bucket dokumen sedia ada (pilihan tetapi disyorkan).** Jika sistem anda sudah beroperasi, kami sangat mengesyorkan langkah ini. Backup bucket bernama `bedrockchatstack-documentbucketxxxx-yyyy`. Contohnya, kita boleh menggunakan [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Backup bucket dokumen sedia ada (pilihan tetapi disyorkan).** Jika sistem anda sudah beroperasi, kami sangat mengesyorkan langkah ini. Backup bucket bernama `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Contohnya, kita boleh menggunakan [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Kemas kini ke v1.4**: Dapatkan tag terkini v1.4, ubah `cdk.json`, dan deploy. Ikuti langkah-langkah ini:
 
@@ -86,7 +86,7 @@ Langkah-langkah berbeza bergantung kepada sama ada anda menggunakan v1.2 atau le
 > Selepas deploy v2, **SEMUA BOT DENGAN AWALAN [Tidak Disokong, Baca sahaja] AKAN DISEMBUNYIKAN.** Pastikan anda mencipta semula bot yang diperlukan sebelum naik taraf untuk mengelakkan kehilangan akses.
 
 > [!Petua]
-> Semasa kemas kini tindanan, anda mungkin menghadapi mesej berulang seperti: Pengendali sumber memulangkan mesej: "Subnet 'subnet-xxx' mempunyai pergantungan dan tidak dapat dipadam." Dalam kes sedemikian, navigasi ke Konsol Pengurusan > EC2 > Antara Jaringan dan cari BedrockChatStack. Padam antara jaringan yang dipamerkan yang dikaitkan dengan nama ini untuk membantu memastikan proses deployment yang lebih lancar.
+> Semasa kemas kini tindanan, anda mungkin menghadapi mesej berulang seperti: Pengendali sumber memulangkan mesej: "Subnet 'subnet-xxx' mempunyai pergantungan dan tidak dapat dipadam." Dalam kes sedemikian, navigasi ke Konsol Pengurusan > EC2 > Antara Jaringan dan cari BedrockAIAssistantStack. Padam antara jaringan yang dipamerkan yang dikaitkan dengan nama ini untuk membantu memastikan proses deployment yang lebih lancar.
 
 ### Langkah untuk pengguna v1.3
 

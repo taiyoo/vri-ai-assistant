@@ -1,28 +1,28 @@
 #!/usr/bin/env node
 import "source-map-support/register";
 import * as cdk from "aws-cdk-lib";
-import { BedrockChatStack } from "../lib/bedrock-chat-stack";
+import { BedrockAIAssistantStack } from "../lib/bedrock-ai-assistant-stack";
 import { BedrockRegionResourcesStack } from "../lib/bedrock-region-resources";
 import { FrontendWafStack } from "../lib/frontend-waf-stack";
 import { LogRetentionChecker } from "../rules/log-retention-checker";
 import { Language } from "../lib/constructs/bot-store";
-import { getBedrockChatParameters } from "../lib/utils/parameter-models";
-import { bedrockChatParams } from "../parameter";
+import { getBedrockAIAssistantParameters } from "../lib/utils/parameter-models";
+import { BedrockAIAssistantParams } from "../parameter";
 
 const app = new cdk.App();
 
 // Specify env name by "envName" context variable
 // ex) cdk synth -c envName=foo
 // If you don't specify the envName context variable, "default" is used.
-const params = getBedrockChatParameters(
+const params = getBedrockAIAssistantParameters(
   app,
   app.node.tryGetContext("envName"),
-  bedrockChatParams
+  BedrockAIAssistantParams
 );
 
 // // Another way, you can iterate over params map to declare multiple environments in single App.
-// for (const [k] of bedrockChatParams) {
-//   const params = getBedrockChatParameters(app, k, bedrockChatParams);
+// for (const [k] of BedrockAIAssistantParams) {
+//   const params = getBedrockAIAssistantParameters(app, k, BedrockAIAssistantParams);
 //   // Include stack declaration this scope...
 // }
 
@@ -61,9 +61,9 @@ const bedrockRegionResources = new BedrockRegionResourcesStack(
   }
 );
 
-const chat = new BedrockChatStack(
+const chat = new BedrockAIAssistantStack(
   app,
-  `${params.envPrefix}${sepHyphen}BedrockChatStack`,
+  `${params.envPrefix}${sepHyphen}BedrockAIAssistantStack`,
   {
     env: {
       // account: process.env.CDK_DEFAULT_ACCOUNT,

@@ -11,21 +11,21 @@
 
 ## 移行手順
 
-- [npx cdk deploy](../README.md#deploy-using-cdk) で Aurora 置換後、[migrate_v0_v1.py](./migrate_v0_v1.py) スクリプトを開き、以下の変数を適切な値に更新します。値は `CloudFormation` > `BedrockChatStack` > `出力` タブで参照できます。
+- [npx cdk deploy](../README.md#deploy-using-cdk) で Aurora 置換後、[migrate_v0_v1.py](./migrate_v0_v1.py) スクリプトを開き、以下の変数を適切な値に更新します。値は `CloudFormation` > `BedrockAIAssistantStack` > `出力` タブで参照できます。
 
 ```py
 # AWS 管理コンソールでクラウドフォーメーションスタックを開き、出力タブから値をコピーします。
 # キー: DatabaseConversationTableNameXXXX
-TABLE_NAME = "BedrockChatStack-DatabaseConversationTableXXXXX"
+TABLE_NAME = "BedrockAIAssistantStack-DatabaseConversationTableXXXXX"
 # キー: EmbeddingClusterNameXXX
-CLUSTER_NAME = "BedrockChatStack-EmbeddingClusterXXXXX"
+CLUSTER_NAME = "BedrockAIAssistantStack-EmbeddingClusterXXXXX"
 # キー: EmbeddingTaskDefinitionNameXXX
-TASK_DEFINITION_NAME = "BedrockChatStackEmbeddingTaskDefinitionXXXXX"
+TASK_DEFINITION_NAME = "BedrockAIAssistantStackEmbeddingTaskDefinitionXXXXX"
 CONTAINER_NAME = "Container"  # 変更不要
 # キー: PrivateSubnetId0
 SUBNET_ID = "subnet-xxxxx"
 # キー: EmbeddingTaskSecurityGroupIdXXX
-SECURITY_GROUP_ID = "sg-xxxx"  # BedrockChatStack-EmbeddingTaskSecurityGroupXXXXX
+SECURITY_GROUP_ID = "sg-xxxx"  # BedrockAIAssistantStack-EmbeddingTaskSecurityGroupXXXXX
 ```
 
 - 移行プロセスを開始するには、`migrate_v0_v1.py` スクリプトを実行します。このスクリプトは、すべてのボットをスキャンし、埋め込み ECS タスクを起動し、新しい Aurora クラスターにデータを作成します。以下の点に注意してください：

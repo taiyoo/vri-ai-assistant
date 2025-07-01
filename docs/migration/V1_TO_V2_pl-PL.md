@@ -45,7 +45,7 @@ Kroki różnią się w zależności od tego, czy używasz wersji v1.2 lub wcześ
 
 ### Kroki dla użytkowników wersji v1.2 lub wcześniejszej
 
-1. **Wykonaj kopię zapasową istniejącego zasobnika dokumentów (opcjonalne, ale zalecane).** Jeśli Twój system jest już w użyciu, zdecydowanie zalecamy wykonanie tej czynności. Utwórz kopię zapasową zasobnika o nazwie `bedrockchatstack-documentbucketxxxx-yyyy`. Na przykład możemy użyć [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Wykonaj kopię zapasową istniejącego zasobnika dokumentów (opcjonalne, ale zalecane).** Jeśli Twój system jest już w użyciu, zdecydowanie zalecamy wykonanie tej czynności. Utwórz kopię zapasową zasobnika o nazwie `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Na przykład możemy użyć [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Aktualizacja do v1.4**: Pobierz najnowszy tag v1.4, zmodyfikuj `cdk.json` i wdróż. Postępuj zgodnie z poniższymi krokami:
 
@@ -86,7 +86,7 @@ Kroki różnią się w zależności od tego, czy używasz wersji v1.2 lub wcześ
 > Po wdrożeniu v2 **WSZYSTKIE BOTY Z PREFIKSEM [Nieobsługiwane, tylko do odczytu] ZOSTANĄ UKRYTE.** Upewnij się, że odtworzysz niezbędne boty przed aktualizacją, aby uniknąć utraty dostępu.
 
 > [!Wskazówka]
-> Podczas aktualizacji stosu możesz napotkać powtarzające się komunikaty w stylu: "Procedura obsługi zasobu zwróciła komunikat: «Podsieć 'subnet-xxx' ma zależności i nie może zostać usunięta»." W takich przypadkach przejdź do Konsoli Zarządzania > EC2 > Interfejsy sieciowe i wyszukaj BedrockChatStack. Usuń wyświetlone interfejsy sieciowe powiązane z tą nazwą, aby ułatwić proces wdrażania.
+> Podczas aktualizacji stosu możesz napotkać powtarzające się komunikaty w stylu: "Procedura obsługi zasobu zwróciła komunikat: «Podsieć 'subnet-xxx' ma zależności i nie może zostać usunięta»." W takich przypadkach przejdź do Konsoli Zarządzania > EC2 > Interfejsy sieciowe i wyszukaj BedrockAIAssistantStack. Usuń wyświetlone interfejsy sieciowe powiązane z tą nazwą, aby ułatwić proces wdrażania.
 
 ### Kroki dla użytkowników wersji v1.3
 

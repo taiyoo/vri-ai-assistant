@@ -47,7 +47,7 @@ As etapas diferem dependendo se você está usando v1.2 ou anterior, ou v1.3.
 
 ### Etapas para usuários da v1.2 ou anterior
 
-1. **Faça backup do seu bucket de documentos existente (opcional, mas recomendado).** Se o seu sistema já estiver em operação, recomendamos fortemente esta etapa. Faça backup do bucket chamado `bedrockchatstack-documentbucketxxxx-yyyy`. Por exemplo, podemos usar o [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Faça backup do seu bucket de documentos existente (opcional, mas recomendado).** Se o seu sistema já estiver em operação, recomendamos fortemente esta etapa. Faça backup do bucket chamado `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Por exemplo, podemos usar o [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Atualizar para v1.4**: Busque a tag v1.4 mais recente, modifique `cdk.json` e faça o deploy. Siga estas etapas:
 
@@ -88,7 +88,7 @@ As etapas diferem dependendo se você está usando v1.2 ou anterior, ou v1.3.
 > Após fazer o deploy da v2, **TODOS OS BOTS COM O PREFIXO [Não Suportado, Somente Leitura] SERÃO OCULTADOS.** Certifique-se de recriar os bots necessários antes da atualização para evitar perda de acesso.
 
 > [!Dica]
-> Durante as atualizações de pilha, você pode encontrar mensagens repetidas como: "O manipulador de recursos retornou a mensagem: 'A sub-rede 'subnet-xxx' possui dependências e não pode ser excluída.'" Nesses casos, navegue até o Console de Gerenciamento > EC2 > Interfaces de Rede e pesquise por BedrockChatStack. Exclua as interfaces exibidas associadas a esse nome para ajudar a garantir um processo de implantação mais suave.
+> Durante as atualizações de pilha, você pode encontrar mensagens repetidas como: "O manipulador de recursos retornou a mensagem: 'A sub-rede 'subnet-xxx' possui dependências e não pode ser excluída.'" Nesses casos, navegue até o Console de Gerenciamento > EC2 > Interfaces de Rede e pesquise por BedrockAIAssistantStack. Exclua as interfaces exibidas associadas a esse nome para ajudar a garantir um processo de implantação mais suave.
 
 ### Etapas para usuários da v1.3
 

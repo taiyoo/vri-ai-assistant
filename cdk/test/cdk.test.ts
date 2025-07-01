@@ -1,5 +1,5 @@
 import * as cdk from "aws-cdk-lib";
-import { BedrockChatStack } from "../lib/bedrock-chat-stack";
+import { BedrockAIAssistantStack } from "../lib/bedrock-ai-assistant-stack";
 import { Template } from "aws-cdk-lib/assertions";
 import { AwsPrototypingChecks } from "@aws-prototyping-sdk/pdk-nag";
 import {
@@ -29,7 +29,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const hasGoogleProviderStack = new BedrockChatStack(
+    const hasGoogleProviderStack = new BedrockAIAssistantStack(
       app,
       "IdentityProviderGenerateStack",
       {
@@ -104,7 +104,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const hasOidcProviderStack = new BedrockChatStack(
+    const hasOidcProviderStack = new BedrockAIAssistantStack(
       app,
       "OidcProviderGenerateStack",
       {
@@ -179,7 +179,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const stack = new BedrockChatStack(app, "MyTestStack", {
+    const stack = new BedrockAIAssistantStack(app, "MyTestStack", {
       env: {
         region: "us-west-2",
       },
@@ -224,7 +224,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const customDomainStack = new BedrockChatStack(app, "CustomDomainStack", {
+    const customDomainStack = new BedrockAIAssistantStack(app, "CustomDomainStack", {
       env: {
         region: "us-east-1",
       },
@@ -303,7 +303,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const noDomainStack = new BedrockChatStack(app, "NoDomainStack", {
+    const noDomainStack = new BedrockAIAssistantStack(app, "NoDomainStack", {
       env: {
         region: "us-east-1",
       },
@@ -362,7 +362,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const customDomainStack = new BedrockChatStack(app, "CustomDomainStack", {
+    const customDomainStack = new BedrockAIAssistantStack(app, "CustomDomainStack", {
       env: {
         region: "us-east-1",
       },
@@ -441,7 +441,7 @@ describe("Bedrock Chat Stack Test", () => {
       }
     );
 
-    const noDomainStack = new BedrockChatStack(app, "NoDomainStack", {
+    const noDomainStack = new BedrockAIAssistantStack(app, "NoDomainStack", {
       env: {
         region: "us-east-1",
       },

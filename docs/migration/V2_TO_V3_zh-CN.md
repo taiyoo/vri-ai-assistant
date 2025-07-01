@@ -87,7 +87,7 @@ npx cdk deploy --all
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 确保将此表名安全地保存，因为您稍后将在迁移脚本中需要它。
@@ -100,7 +100,7 @@ aws cloudformation describe-stacks \
 # 创建 V2 表的备份
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name YOUR_V2_CONVERSATION_TABLE_NAME
 
 # 检查备份状态是否可用
@@ -146,13 +146,13 @@ npx cdk deploy --all
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 
 # 获取 V3 BotTable 名称
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 > [!Important]
@@ -166,9 +166,9 @@ aws cloudformation describe-stacks \
 # DynamoDB 所在的区域
 REGION = "ap-northeast-1" # 替换为您的区域
 
-V2_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableXXXX" # 替换为您在步骤 4 中记录的值
-V3_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableV3XXXX" # 替换为您在步骤 8 中记录的值
-V3_BOT_TABLE = "BedrockChatStack-DatabaseBotTableV3XXXXX" # 替换为您在步骤 8 中记录的值
+V2_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableXXXX" # 替换为您在步骤 4 中记录的值
+V3_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableV3XXXX" # 替换为您在步骤 8 中记录的值
+V3_BOT_TABLE = "BedrockAIAssistantStack-DatabaseBotTableV3XXXXX" # 替换为您在步骤 8 中记录的值
 ```
 
 然后从后端目录使用 Poetry 运行脚本：

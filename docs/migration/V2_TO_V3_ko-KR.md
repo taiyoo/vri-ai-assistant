@@ -87,7 +87,7 @@ CloudFormation 출력에서 V2 ConversationTable 이름 가져오기:
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 나중에 마이그레이션 스크립트에 필요하므로 이 테이블 이름을 안전한 곳에 저장해 두세요.
@@ -100,7 +100,7 @@ aws cloudformation describe-stacks \
 # V2 테이블 백업 생성
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name YOUR_V2_CONVERSATION_TABLE_NAME
 
 # 백업 상태가 사용 가능한지 확인
@@ -146,13 +146,13 @@ V3를 배포한 후 새로운 ConversationTable 및 BotTable 이름을 가져와
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 
 # V3 BotTable 이름 가져오기
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 > [!Important]
@@ -166,9 +166,9 @@ aws cloudformation describe-stacks \
 # DynamoDB가 위치한 리전
 REGION = "ap-northeast-1" # 귀하의 리전으로 대체
 
-V2_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableXXXX" # 4단계에서 기록한 값으로 대체
-V3_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableV3XXXX" # 8단계에서 기록한 값으로 대체
-V3_BOT_TABLE = "BedrockChatStack-DatabaseBotTableV3XXXXX" # 8단계에서 기록한 값으로 대체
+V2_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableXXXX" # 4단계에서 기록한 값으로 대체
+V3_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableV3XXXX" # 8단계에서 기록한 값으로 대체
+V3_BOT_TABLE = "BedrockAIAssistantStack-DatabaseBotTableV3XXXXX" # 8단계에서 기록한 값으로 대체
 ```
 
 그런 다음 백엔드 디렉터리에서 Poetry를 사용하여 스크립트를 실행하세요:

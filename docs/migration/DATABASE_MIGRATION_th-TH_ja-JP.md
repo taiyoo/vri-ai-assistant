@@ -8,21 +8,21 @@
 
 ## データ移行手順
 
-- [npx cdk deploy](../README.md#deploy-using-cdk) の実行後、Auroraの置き換えが完了したら、[migrate_v0_v1.py](./migrate_v0_v1.py) スクリプトを開き、以下の変数を適切な値に更新します。これらの値は `CloudFormation` > `BedrockChatStack` > `Outputs` タブから参照できます。
+- [npx cdk deploy](../README.md#deploy-using-cdk) の実行後、Auroraの置き換えが完了したら、[migrate_v0_v1.py](./migrate_v0_v1.py) スクリプトを開き、以下の変数を適切な値に更新します。これらの値は `CloudFormation` > `BedrockAIAssistantStack` > `Outputs` タブから参照できます。
 
 ```py
 # AWS Management Consoleで CloudFormation スタックを開き、Outputsタブから値をコピーします
 # Key: DatabaseConversationTableNameXXXX
-TABLE_NAME = "BedrockChatStack-DatabaseConversationTableXXXXX"
+TABLE_NAME = "BedrockAIAssistantStack-DatabaseConversationTableXXXXX"
 # Key: EmbeddingClusterNameXXX
-CLUSTER_NAME = "BedrockChatStack-EmbeddingClusterXXXXX"
+CLUSTER_NAME = "BedrockAIAssistantStack-EmbeddingClusterXXXXX"
 # Key: EmbeddingTaskDefinitionNameXXX
-TASK_DEFINITION_NAME = "BedrockChatStackEmbeddingTaskDefinitionXXXXX"
+TASK_DEFINITION_NAME = "BedrockAIAssistantStackEmbeddingTaskDefinitionXXXXX"
 CONTAINER_NAME = "Container"  # 変更不要
 # Key: PrivateSubnetId0
 SUBNET_ID = "subnet-xxxxx"
 # Key: EmbeddingTaskSecurityGroupIdXXX
-SECURITY_GROUP_ID = "sg-xxxx"  # BedrockChatStack-EmbeddingTaskSecurityGroupXXXXX
+SECURITY_GROUP_ID = "sg-xxxx"  # BedrockAIAssistantStack-EmbeddingTaskSecurityGroupXXXXX
 ```
 
 - データ移行プロセスを開始するには、`migrate_v0_v1.py` スクリプトを実行します。このスクリプトは、すべてのボットをスキャンし、埋め込み ECS タスクを起動し、新しいAuroraクラスターにデータを作成します。以下の点に注意してください：

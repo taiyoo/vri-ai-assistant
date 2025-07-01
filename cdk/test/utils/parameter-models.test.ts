@@ -1,10 +1,10 @@
 import { App } from "aws-cdk-lib";
 import {
-  resolveBedrockChatParameters,
+  resolveBedrockAIAssistantParameters,
   resolveApiPublishParameters,
   resolveBedrockCustomBotParameters,
-  BedrockChatParametersInput,
-  getBedrockChatParameters,
+  BedrockAIAssistantParametersInput,
+  getBedrockAIAssistantParameters,
 } from "../../lib/utils/parameter-models";
 import { ZodError } from "zod";
 
@@ -36,7 +36,7 @@ describe("BaseParametersSchema", () => {
 
         // When/Then
         expect(() => {
-          resolveBedrockChatParameters(app, inputParams);
+          resolveBedrockAIAssistantParameters(app, inputParams);
         }).not.toThrow();
       });
 
@@ -50,7 +50,7 @@ describe("BaseParametersSchema", () => {
 
         // When/Then
         expect(() => {
-          resolveBedrockChatParameters(app, inputParams);
+          resolveBedrockAIAssistantParameters(app, inputParams);
         }).not.toThrow();
       });
 
@@ -64,7 +64,7 @@ describe("BaseParametersSchema", () => {
 
         // When/Then
         expect(() => {
-          resolveBedrockChatParameters(app, inputParams);
+          resolveBedrockAIAssistantParameters(app, inputParams);
         }).not.toThrow();
       });
 
@@ -78,7 +78,7 @@ describe("BaseParametersSchema", () => {
 
         // When/Then
         expect(() => {
-          resolveBedrockChatParameters(app, inputParams);
+          resolveBedrockAIAssistantParameters(app, inputParams);
         }).toThrow();
       });
 
@@ -92,7 +92,7 @@ describe("BaseParametersSchema", () => {
 
         // When/Then
         expect(() => {
-          resolveBedrockChatParameters(app, inputParams);
+          resolveBedrockAIAssistantParameters(app, inputParams);
         }).toThrow();
       });
 
@@ -106,14 +106,14 @@ describe("BaseParametersSchema", () => {
 
         // When/Then
         expect(() => {
-          resolveBedrockChatParameters(app, inputParams);
+          resolveBedrockAIAssistantParameters(app, inputParams);
         }).toThrow();
       });
     });
   });
 });
 
-describe("resolveBedrockChatParameters", () => {
+describe("resolveBedrockAIAssistantParameters", () => {
   describe("Parameter Source Selection", () => {
     test("should use parametersInput when provided", () => {
       // Given
@@ -123,7 +123,7 @@ describe("resolveBedrockChatParameters", () => {
       };
 
       // When
-      const result = resolveBedrockChatParameters(app, inputParams);
+      const result = resolveBedrockAIAssistantParameters(app, inputParams);
 
       // Then
       expect(result.bedrockRegion).toBe("eu-west-1");
@@ -136,7 +136,7 @@ describe("resolveBedrockChatParameters", () => {
       });
 
       // When
-      const result = resolveBedrockChatParameters(app);
+      const result = resolveBedrockAIAssistantParameters(app);
 
       // Then
       expect(result.bedrockRegion).toBe("ap-northeast-1");
@@ -149,7 +149,7 @@ describe("resolveBedrockChatParameters", () => {
       const app = createTestApp();
 
       // When
-      const result = resolveBedrockChatParameters(app);
+      const result = resolveBedrockAIAssistantParameters(app);
 
       // Then
       expect(result.bedrockRegion).toBe("us-east-1"); // default value
@@ -182,7 +182,7 @@ describe("resolveBedrockChatParameters", () => {
       };
 
       // When
-      const result = resolveBedrockChatParameters(app, inputParams);
+      const result = resolveBedrockAIAssistantParameters(app, inputParams);
 
       // Then
       expect(result.bedrockRegion).toBe("us-west-2");
@@ -218,7 +218,7 @@ describe("resolveBedrockChatParameters", () => {
 
       // When/Then
       expect(() => {
-        resolveBedrockChatParameters(app, invalidParams as any);
+        resolveBedrockAIAssistantParameters(app, invalidParams as any);
       }).toThrow(ZodError);
     });
   });
@@ -233,7 +233,7 @@ describe("resolveBedrockChatParameters", () => {
       };
 
       // When
-      const result = resolveBedrockChatParameters(app, inputParams);
+      const result = resolveBedrockAIAssistantParameters(app, inputParams);
 
       // Then
       expect(result.allowedIpV4AddressRanges).toEqual([
@@ -257,7 +257,7 @@ describe("resolveBedrockChatParameters", () => {
       };
 
       // When
-      const result = resolveBedrockChatParameters(app, inputParams);
+      const result = resolveBedrockAIAssistantParameters(app, inputParams);
 
       // Then
       expect(result.selfSignUpEnabled).toBe(false);
@@ -273,7 +273,7 @@ describe("resolveBedrockChatParameters", () => {
       });
 
       // When
-      const result = resolveBedrockChatParameters(app);
+      const result = resolveBedrockAIAssistantParameters(app);
 
       // Then
       expect(result.identityProviders).toEqual([]);
@@ -287,7 +287,7 @@ describe("resolveBedrockChatParameters", () => {
       };
 
       // When
-      const result = resolveBedrockChatParameters(app, inputParams);
+      const result = resolveBedrockAIAssistantParameters(app, inputParams);
 
       // Then
       expect(result.identityProviders).toEqual([
@@ -325,7 +325,7 @@ describe("resolveBedrockChatParameters", () => {
     });
 
     // When
-    const result = resolveBedrockChatParameters(app);
+    const result = resolveBedrockAIAssistantParameters(app);
 
     // Then
     expect(result.bedrockRegion).toBe("us-east-1");
@@ -359,25 +359,25 @@ describe("resolveBedrockChatParameters", () => {
   });
 });
 
-describe("getBedrockChatParameters", () => {
+describe("getBedrockAIAssistantParameters", () => {
   let app: App;
-  let paramsMap: Map<string, BedrockChatParametersInput>;
+  let paramsMap: Map<string, BedrockAIAssistantParametersInput>;
 
   beforeEach(() => {
     app = createTestApp();
-    paramsMap = new Map<string, BedrockChatParametersInput>();
+    paramsMap = new Map<string, BedrockAIAssistantParametersInput>();
   });
 
   describe("Environment Name Handling", () => {
     test("should use params from paramsMap when default exists and envName is undefined", () => {
       // Given
-      const defaultParams: BedrockChatParametersInput = {
+      const defaultParams: BedrockAIAssistantParametersInput = {
         bedrockRegion: "us-west-2",
       };
       paramsMap.set("default", defaultParams);
 
       // When
-      const result = getBedrockChatParameters(app, undefined, paramsMap);
+      const result = getBedrockAIAssistantParameters(app, undefined, paramsMap);
 
       // Then
       expect(result.envName).toBe("default");
@@ -392,7 +392,7 @@ describe("getBedrockChatParameters", () => {
       });
 
       // When
-      const result = getBedrockChatParameters(app, undefined, paramsMap);
+      const result = getBedrockAIAssistantParameters(app, undefined, paramsMap);
 
       // Then
       expect(result.envName).toBe("default");
@@ -406,19 +406,19 @@ describe("getBedrockChatParameters", () => {
 
       // When/Then
       expect(() => {
-        getBedrockChatParameters(app, nonExistentEnvName, paramsMap);
+        getBedrockAIAssistantParameters(app, nonExistentEnvName, paramsMap);
       }).toThrow(`Environment ${nonExistentEnvName} not found in parameter.ts`);
     });
 
     test("should use params with empty envPrefix when envName is default", () => {
       // Given
-      const defaultParams: BedrockChatParametersInput = {
+      const defaultParams: BedrockAIAssistantParametersInput = {
         bedrockRegion: "ap-northeast-1",
       };
       paramsMap.set("default", defaultParams);
 
       // When
-      const result = getBedrockChatParameters(app, "default", paramsMap);
+      const result = getBedrockAIAssistantParameters(app, "default", paramsMap);
 
       // Then
       expect(result.envName).toBe("default");
@@ -428,13 +428,13 @@ describe("getBedrockChatParameters", () => {
 
     test("should use params with envName as envPrefix for non-default env", () => {
       // Given
-      const devParams: BedrockChatParametersInput = {
+      const devParams: BedrockAIAssistantParametersInput = {
         bedrockRegion: "ap-southeast-1",
       };
       paramsMap.set("dev", devParams);
 
       // When
-      const result = getBedrockChatParameters(app, "dev", paramsMap);
+      const result = getBedrockAIAssistantParameters(app, "dev", paramsMap);
 
       // Then
       expect(result.envName).toBe("dev");
@@ -446,13 +446,13 @@ describe("getBedrockChatParameters", () => {
   describe("Parameter Validation", () => {
     test("should apply default values for optional parameters", () => {
       // Given
-      const minimalParams: BedrockChatParametersInput = {
+      const minimalParams: BedrockAIAssistantParametersInput = {
         bedrockRegion: "us-east-1",
       };
       paramsMap.set("minimal", minimalParams);
 
       // When
-      const result = getBedrockChatParameters(app, "minimal", paramsMap);
+      const result = getBedrockAIAssistantParameters(app, "minimal", paramsMap);
 
       // Then
       expect(result.bedrockRegion).toBe("us-east-1");
@@ -467,7 +467,7 @@ describe("getBedrockChatParameters", () => {
 
     test("should override default values with provided values", () => {
       // Given
-      const customParams: BedrockChatParametersInput = {
+      const customParams: BedrockAIAssistantParametersInput = {
         bedrockRegion: "us-east-2",
         enableBedrockCrossRegionInference: false,
         enableRagReplicas: false,
@@ -479,7 +479,7 @@ describe("getBedrockChatParameters", () => {
       paramsMap.set("custom", customParams);
 
       // When
-      const result = getBedrockChatParameters(app, "custom", paramsMap);
+      const result = getBedrockAIAssistantParameters(app, "custom", paramsMap);
 
       // Then
       expect(result.bedrockRegion).toBe("us-east-2");
@@ -496,7 +496,7 @@ describe("getBedrockChatParameters", () => {
       const emptyParamsMap = new Map();
 
       // When
-      const result = getBedrockChatParameters(app, undefined, emptyParamsMap);
+      const result = getBedrockAIAssistantParameters(app, undefined, emptyParamsMap);
 
       // Then
       expect(result.bedrockRegion).toBe("us-east-1");

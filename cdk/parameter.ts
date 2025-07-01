@@ -1,8 +1,8 @@
-import { BedrockChatParametersInput } from "./lib/utils/parameter-models";
+import { BedrockAIAssistantParametersInput } from "./lib/utils/parameter-models";
 
-export const bedrockChatParams = new Map<string, BedrockChatParametersInput>();
+export const BedrockAIAssistantParams = new Map<string, BedrockAIAssistantParametersInput>();
 // You can define multiple environments and their parameters here
-// bedrockChatParams.set("dev", {});
+// BedrockAIAssistantParams.set("dev", {});
 
 // If you define "default" environment here, parameters in cdk.json are ignored
-// bedrockChatParams.set("default", {});
+// BedrockAIAssistantParams.set("default", {});

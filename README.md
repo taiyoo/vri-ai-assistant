@@ -40,7 +40,7 @@ You can also import existing [Amazon Bedrock's KnowledgeBase](https://aws.amazon
 </details>
 
 > [!Important]
-> For governance reasons, only allowed users are able to create customized bots. To allow the creation of customized bots, the user must be a member of group called `CreatingBotAllowed`, which can be set up via the management console > Amazon Cognito User pools or aws cli. Note that the user pool id can be referred by accessing CloudFormation > BedrockChatStack > Outputs > `AuthUserPoolIdxxxx`.
+> For governance reasons, only allowed users are able to create customized bots. To allow the creation of customized bots, the user must be a member of group called `CreatingBotAllowed`, which can be set up via the management console > Amazon Cognito User pools or aws cli. Note that the user pool id can be referred by accessing CloudFormation > BedrockAIAssistantStack > Outputs > `AuthUserPoolIdxxxx`.
 
 ### Administrative features
 
@@ -215,18 +215,18 @@ npx cdk bootstrap
 npx cdk deploy --require-approval never --all
 ```
 
-- You will get output similar to the following. The URL of the web app will be output in `BedrockChatStack.FrontendURL`, so please access it from your browser.
+- You will get output similar to the following. The URL of the web app will be output in `BedrockAIAssistantStack.FrontendURL`, so please access it from your browser.
 
 ```sh
- ✅  BedrockChatStack
+ ✅  BedrockAIAssistantStack
 
 ✨  Deployment time: 78.57s
 
 Outputs:
-BedrockChatStack.AuthUserPoolClientIdXXXXX = xxxxxxx
-BedrockChatStack.AuthUserPoolIdXXXXXX = ap-northeast-1_XXXX
-BedrockChatStack.BackendApiBackendApiUrlXXXXX = https://xxxxx.execute-api.ap-northeast-1.amazonaws.com
-BedrockChatStack.FrontendURL = https://xxxxx.cloudfront.net
+BedrockAIAssistantStack.AuthUserPoolClientIdXXXXX = xxxxxxx
+BedrockAIAssistantStack.AuthUserPoolIdXXXXXX = ap-northeast-1_XXXX
+BedrockAIAssistantStack.BackendApiBackendApiUrlXXXXX = https://xxxxx.execute-api.ap-northeast-1.amazonaws.com
+BedrockAIAssistantStack.FrontendURL = https://xxxxx.cloudfront.net
 ```
 
 ### Defining Parameters
@@ -254,21 +254,21 @@ For better type safety and developer experience, you can use the `parameter.ts` 
 
 ```typescript
 // Define parameters for the default environment
-bedrockChatParams.set("default", {
+BedrockAIAssistantParams.set("default", {
   bedrockRegion: "us-east-1",
   allowedIpV4AddressRanges: ["192.168.0.0/16"],
   selfSignUpEnabled: true,
 });
 
 // Define parameters for additional environments
-bedrockChatParams.set("dev", {
+BedrockAIAssistantParams.set("dev", {
   bedrockRegion: "us-west-2",
   allowedIpV4AddressRanges: ["10.0.0.0/8"],
   enableRagReplicas: false, // Cost-saving for dev environment
   enableBotStoreReplicas: false, // Cost-saving for dev environment
 });
 
-bedrockChatParams.set("prod", {
+BedrockAIAssistantParams.set("prod", {
   bedrockRegion: "us-east-1",
   allowedIpV4AddressRanges: ["172.16.0.0/12"],
   enableLambdaSnapStart: true,
@@ -312,7 +312,7 @@ npx cdk deploy --all
 
 1. **Stack Naming**:
 
-   - The main stacks for each environment will be prefixed with the environment name (e.g., `dev-BedrockChatStack`, `prod-BedrockChatStack`)
+   - The main stacks for each environment will be prefixed with the environment name (e.g., `dev-BedrockAIAssistantStack`, `prod-BedrockAIAssistantStack`)
    - However, custom bot stacks (`BrChatKbStack*`) and API publishing stacks (`ApiPublishmentStack*`) do not receive environment prefixes as they are created dynamically at runtime
 
 2. **Resource Naming**:
@@ -357,20 +357,20 @@ For better type safety and developer experience, you can use the `parameter.ts` 
 
 ```typescript
 // Define parameters for the default environment
-bedrockChatParams.set("default", {
+BedrockAIAssistantParams.set("default", {
   bedrockRegion: "us-east-1",
   allowedIpV4AddressRanges: ["192.168.0.0/16"],
   selfSignUpEnabled: true,
 });
 
 // Define parameters for additional environments
-bedrockChatParams.set("dev", {
+BedrockAIAssistantParams.set("dev", {
   bedrockRegion: "us-west-2",
   allowedIpV4AddressRanges: ["10.0.0.0/8"],
   enableRagReplicas: false, // Cost-saving for dev environment
 });
 
-bedrockChatParams.set("prod", {
+BedrockAIAssistantParams.set("prod", {
   bedrockRegion: "us-east-1",
   allowedIpV4AddressRanges: ["172.16.0.0/12"],
   enableLambdaSnapStart: true,
@@ -413,7 +413,7 @@ npx cdk deploy --all
 
 1. **Stack Naming**:
 
-   - The main stacks for each environment will be prefixed with the environment name (e.g., `dev-BedrockChatStack`, `prod-BedrockChatStack`)
+   - The main stacks for each environment will be prefixed with the environment name (e.g., `dev-BedrockAIAssistantStack`, `prod-BedrockAIAssistantStack`)
    - However, custom bot stacks (`BrChatKbStack*`) and API publishing stacks (`ApiPublishmentStack*`) do not receive environment prefixes as they are created dynamically at runtime
 
 2. **Resource Naming**:
@@ -437,7 +437,7 @@ npx cdk deploy --all
 
 ### Remove resources
 
-If using cli and CDK, please `npx cdk destroy`. If not, access [CloudFormation](https://console.aws.amazon.com/cloudformation/home) and then delete `BedrockChatStack` and `FrontendWafStack` manually. Please note that `FrontendWafStack` is in `us-east-1` region.
+If using cli and CDK, please `npx cdk destroy`. If not, access [CloudFormation](https://console.aws.amazon.com/cloudformation/home) and then delete `BedrockAIAssistantStack` and `FrontendWafStack` manually. Please note that `FrontendWafStack` is in `us-east-1` region.
 
 ### Language Settings
 

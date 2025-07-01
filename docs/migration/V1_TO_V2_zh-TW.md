@@ -45,7 +45,7 @@ v2 更新通過將 Aurora Serverless 上的 pgvector 和基於 ECS 的嵌入替�
 
 ### 對於 v1.2 或更早版本的使用者
 
-1. **備份現有的文件儲存貯體（可選但建議）。** 如果您的系統已經在運作中，我們強烈建議執行此步驟。備份名為 `bedrockchatstack-documentbucketxxxx-yyyy` 的儲存貯體。例如，我們可以使用 [AWS 備份](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html)。
+1. **備份現有的文件儲存貯體（可選但建議）。** 如果您的系統已經在運作中，我們強烈建議執行此步驟。備份名為 `BedrockAIAssistantstack-documentbucketxxxx-yyyy` 的儲存貯體。例如，我們可以使用 [AWS 備份](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html)。
 
 2. **更新至 v1.4**：獲取最新的 v1.4 標籤，修改 `cdk.json`，並部署。按照以下步驟進行：
 
@@ -86,7 +86,7 @@ v2 更新通過將 Aurora Serverless 上的 pgvector 和基於 ECS 的嵌入替�
 > 部署 v2 後，**所有前綴為 [不支持，唯讀] 的機器人將被隱藏。** 請確保在升級前重新建立必要的機器人，以避免失去存取權。
 
 > [!提示]
-> 在堆疊更新期間，您可能會遇到重複的訊息，如："資源處理程式返回訊息：'子網路 'subnet-xxx' 有依賴項，無法刪除。'" 在這種情況下，請導航至管理控制台 > EC2 > 網路介面，並搜尋 BedrockChatStack。刪除與此名稱相關的顯示介面，以幫助確保更順暢的部署過程。
+> 在堆疊更新期間，您可能會遇到重複的訊息，如："資源處理程式返回訊息：'子網路 'subnet-xxx' 有依賴項，無法刪除。'" 在這種情況下，請導航至管理控制台 > EC2 > 網路介面，並搜尋 BedrockAIAssistantStack。刪除與此名稱相關的顯示介面，以幫助確保更順暢的部署過程。
 
 ### 對於 v1.3 的使用者
 

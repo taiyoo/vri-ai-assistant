@@ -11,21 +11,21 @@ Le processus de migration implique de scanner tous les bots et de lancer des tâ
 
 ## Étapes de migration
 
-- Après [npx cdk deploy](../README.md#deploy-using-cdk) avec le remplacement Aurora, ouvrez le script [migrate_v0_v1.py](./migrate_v0_v1.py) et mettez à jour les variables suivantes avec les valeurs appropriées. Les valeurs peuvent être référencées dans l'onglet `CloudFormation` > `BedrockChatStack` > `Sorties`.
+- Après [npx cdk deploy](../README.md#deploy-using-cdk) avec le remplacement Aurora, ouvrez le script [migrate_v0_v1.py](./migrate_v0_v1.py) et mettez à jour les variables suivantes avec les valeurs appropriées. Les valeurs peuvent être référencées dans l'onglet `CloudFormation` > `BedrockAIAssistantStack` > `Sorties`.
 
 ```py
 # Ouvrez la pile CloudFormation dans la console de gestion AWS et copiez les valeurs à partir de l'onglet Sorties.
 # Clé : DatabaseConversationTableNameXXXX
-TABLE_NAME = "BedrockChatStack-DatabaseConversationTableXXXXX"
+TABLE_NAME = "BedrockAIAssistantStack-DatabaseConversationTableXXXXX"
 # Clé : EmbeddingClusterNameXXX
-CLUSTER_NAME = "BedrockChatStack-EmbeddingClusterXXXXX"
+CLUSTER_NAME = "BedrockAIAssistantStack-EmbeddingClusterXXXXX"
 # Clé : EmbeddingTaskDefinitionNameXXX
-TASK_DEFINITION_NAME = "BedrockChatStackEmbeddingTaskDefinitionXXXXX"
+TASK_DEFINITION_NAME = "BedrockAIAssistantStackEmbeddingTaskDefinitionXXXXX"
 CONTAINER_NAME = "Container"  # Pas besoin de changer
 # Clé : PrivateSubnetId0
 SUBNET_ID = "subnet-xxxxx"
 # Clé : EmbeddingTaskSecurityGroupIdXXX
-SECURITY_GROUP_ID = "sg-xxxx"  # BedrockChatStack-EmbeddingTaskSecurityGroupXXXXX
+SECURITY_GROUP_ID = "sg-xxxx"  # BedrockAIAssistantStack-EmbeddingTaskSecurityGroupXXXXX
 ```
 
 - Exécutez le script `migrate_v0_v1.py` pour lancer le processus de migration. Ce script va analyser tous les bots, lancer des tâches ECS d'intégration et créer les données dans le nouveau cluster Aurora. Notez que :

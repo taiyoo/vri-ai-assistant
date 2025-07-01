@@ -29,7 +29,7 @@ export class Database extends Construct {
       // SK: ConversationId
       sortKey: { name: "SK", type: AttributeType.STRING },
       billingMode: BillingMode.PAY_PER_REQUEST,
-      removalPolicy: RemovalPolicy.DESTROY,
+      removalPolicy: RemovalPolicy.RETAIN,
       stream: StreamViewType.NEW_IMAGE,
       pointInTimeRecovery: props?.pointInTimeRecovery,
       encryption: TableEncryption.AWS_MANAGED,
@@ -47,7 +47,7 @@ export class Database extends Construct {
       // SK: ItemType
       sortKey: { name: "SK", type: AttributeType.STRING },
       billingMode: BillingMode.PAY_PER_REQUEST,
-      removalPolicy: RemovalPolicy.DESTROY,
+      removalPolicy: RemovalPolicy.RETAIN,
       stream: StreamViewType.NEW_IMAGE,
       // Need to enable PITR for bot table for Zero-ETL pipeline
       pointInTimeRecovery: true,

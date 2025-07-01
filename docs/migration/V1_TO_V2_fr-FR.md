@@ -47,7 +47,7 @@ Les étapes diffèrent selon que vous utilisez v1.2 ou une version antérieure, 
 
 ### Étapes pour les utilisateurs de v1.2 ou version antérieure
 
-1. **Sauvegardez votre compartiment de documents existant (facultatif mais recommandé).** Si votre système est déjà en fonctionnement, nous recommandons fortement cette étape. Sauvegardez le compartiment nommé `bedrockchatstack-documentbucketxxxx-yyyy`. Par exemple, nous pouvons utiliser [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Sauvegardez votre compartiment de documents existant (facultatif mais recommandé).** Si votre système est déjà en fonctionnement, nous recommandons fortement cette étape. Sauvegardez le compartiment nommé `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Par exemple, nous pouvons utiliser [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Mise à jour vers v1.4** : Récupérez le dernier tag v1.4, modifiez `cdk.json` et déployez. Suivez ces étapes :
 
@@ -88,7 +88,7 @@ Les étapes diffèrent selon que vous utilisez v1.2 ou une version antérieure, 
 > Après avoir déployé v2, **TOUS LES BOTS AVEC LE PRÉFIXE [Non supporté, Lecture seule] SERONT MASQUÉS.** Assurez-vous de recréer les bots nécessaires avant la mise à niveau pour éviter toute perte d'accès.
 
 > [!Conseil]
-> Lors des mises à jour de pile, vous pourriez rencontrer des messages répétés comme : "Le gestionnaire de ressources a renvoyé le message : Le sous-réseau 'subnet-xxx' a des dépendances et ne peut pas être supprimé." Dans ce cas, accédez à la Console de gestion > EC2 > Interfaces réseau et recherchez BedrockChatStack. Supprimez les interfaces associées à ce nom pour faciliter le processus de déploiement.
+> Lors des mises à jour de pile, vous pourriez rencontrer des messages répétés comme : "Le gestionnaire de ressources a renvoyé le message : Le sous-réseau 'subnet-xxx' a des dépendances et ne peut pas être supprimé." Dans ce cas, accédez à la Console de gestion > EC2 > Interfaces réseau et recherchez BedrockAIAssistantStack. Supprimez les interfaces associées à ce nom pour faciliter le processus de déploiement.
 
 ### Étapes pour les utilisateurs de v1.3
 

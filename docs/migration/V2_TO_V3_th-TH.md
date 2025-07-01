@@ -87,7 +87,7 @@ npx cdk deploy --all
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 ตรวจสอบให้แน่ใจว่าบันทึกชื่อตารางนี้ในตำแหน่งที่ปลอดภัย เนื่องจากคุณจะต้องใช้ในสคริปต์ย้ายข้อมูลในภายหลัง
@@ -100,7 +100,7 @@ aws cloudformation describe-stacks \
 # สร้างสำเนาสำรองของตาราง V2
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name YOUR_V2_CONVERSATION_TABLE_NAME
 
 # ตรวจสอบสถานะสำรองเป็นพร้อมใช้งาน
@@ -146,13 +146,13 @@ npx cdk deploy --all
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 
 # รับชื่อตาราง BotTable ของ V3
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 > [!สำคัญ]

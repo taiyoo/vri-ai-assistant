@@ -89,7 +89,7 @@ Hent V2 ConversationTable-navnet fra CloudFormation-output:
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 Sørg for å lagre dette tabellnavnet på et sikkert sted, da du vil trenge det for migreringsscriptet senere.
@@ -102,7 +102,7 @@ Før du fortsetter, opprett en sikkerhetskopi av DynamoDB ConversationTable ved 
 # Opprett en sikkerhetskopi av V2-tabellen
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name YOUR_V2_CONVERSATION_TABLE_NAME
 
 # Sjekk at sikkerhetskopien er tilgjengelig
@@ -148,13 +148,13 @@ Etter at du har distribuert V3, må du hente både de nye ConversationTable- og 
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 
 # Hent V3 BotTable-navnet
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 > [!Viktig]
@@ -168,9 +168,9 @@ Migreringsscriptet vil konvertere dine V2-data til V3-skjemaet. Rediger først m
 # Region hvor dynamodb er plassert
 REGION = "ap-northeast-1" # Erstatt med din region
 
-V2_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableXXXX" # Erstatt med din verdi registrert i Trinn 4
-V3_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableV3XXXX" # Erstatt med din verdi registrert i Trinn 8
-V3_BOT_TABLE = "BedrockChatStack-DatabaseBotTableV3XXXXX" # Erstatt med din verdi registrert i Trinn 8
+V2_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableXXXX" # Erstatt med din verdi registrert i Trinn 4
+V3_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableV3XXXX" # Erstatt med din verdi registrert i Trinn 8
+V3_BOT_TABLE = "BedrockAIAssistantStack-DatabaseBotTableV3XXXXX" # Erstatt med din verdi registrert i Trinn 8
 ```
 
 Kjør så scriptet ved hjelp av Poetry fra backend-katalogen:

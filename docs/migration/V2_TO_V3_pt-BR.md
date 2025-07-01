@@ -87,7 +87,7 @@ Obtenha o nome da ConversationTable V2 a partir das saídas do CloudFormation:
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {SEU_PREFIXO_DE_ENV}BedrockChatStack
+  --stack-name {SEU_PREFIXO_DE_ENV}BedrockAIAssistantStack
 ```
 
 Certifique-se de salvar este nome de tabela em um local seguro, pois você precisará dele para o script de migração posteriormente.
@@ -100,7 +100,7 @@ Antes de prosseguir, crie um backup da sua ConversationTable DynamoDB usando o n
 # Criar um backup da tabela V2
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name SEU_NOME_DE_TABELA_DE_CONVERSAÇÃO_V2
 
 # Verificar se o status do backup está disponível
@@ -146,13 +146,13 @@ Após implantar a V3, você precisa obter os nomes da nova ConversationTable e B
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {SEU_PREFIXO_DE_ENV}BedrockChatStack
+  --stack-name {SEU_PREFIXO_DE_ENV}BedrockAIAssistantStack
 
 # Obter o nome da BotTable V3
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {SEU_PREFIXO_DE_ENV}BedrockChatStack
+  --stack-name {SEU_PREFIXO_DE_ENV}BedrockAIAssistantStack
 ```
 
 > [!Important]
@@ -166,9 +166,9 @@ O script de migração converterá seus dados V2 para o esquema V3. Primeiro, ed
 # Região onde o dynamodb está localizado
 REGION = "ap-northeast-1" # Substitua pela sua região
 
-V2_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableXXXX" # Substitua pelo valor registrado no Passo 4
-V3_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableV3XXXX" # Substitua pelo valor registrado no Passo 8
-V3_BOT_TABLE = "BedrockChatStack-DatabaseBotTableV3XXXXX" # Substitua pelo valor registrado no Passo 8
+V2_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableXXXX" # Substitua pelo valor registrado no Passo 4
+V3_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableV3XXXX" # Substitua pelo valor registrado no Passo 8
+V3_BOT_TABLE = "BedrockAIAssistantStack-DatabaseBotTableV3XXXXX" # Substitua pelo valor registrado no Passo 8
 ```
 
 Em seguida, execute o script usando Poetry a partir do diretório backend:

@@ -49,7 +49,7 @@ function getEnvVar(name: string, defaultValue?: string): string | undefined {
 /**
  * Parameters schema for the main Bedrock Chat application
  */
-const BedrockChatParametersSchema = BaseParametersSchema.extend({
+const BedrockAIAssistantParametersSchema = BaseParametersSchema.extend({
 
   // IP address restrictions
   allowedIpV4AddressRanges: z
@@ -150,8 +150,8 @@ const BedrockCustomBotParametersSchema = BaseParametersSchema.extend({
  */
 // Input types (for user input, default values are optional)
 export type BaseParametersInput = z.input<typeof BaseParametersSchema>;
-export type BedrockChatParametersInput = z.input<
-  typeof BedrockChatParametersSchema
+export type BedrockAIAssistantParametersInput = z.input<
+  typeof BedrockAIAssistantParametersSchema
 >;
 export type ApiPublishParametersInput = z.input<
   typeof ApiPublishParametersSchema
@@ -162,7 +162,7 @@ export type BedrockCustomBotParametersInput = z.input<
 
 // Output types (for function returns, all properties are required)
 export type BaseParameters = z.infer<typeof BaseParametersSchema>;
-export type BedrockChatParameters = z.infer<typeof BedrockChatParametersSchema>;
+export type BedrockAIAssistantParameters = z.infer<typeof BedrockAIAssistantParametersSchema>;
 export type ApiPublishParameters = z.infer<typeof ApiPublishParametersSchema>;
 export type BedrockCustomBotParameters = z.infer<
   typeof BedrockCustomBotParametersSchema
@@ -175,13 +175,13 @@ export type BedrockCustomBotParameters = z.infer<
  * @param parametersInput (optional) Input parameters that should be used instead of context parameters
  * @returns Validated parameters object
  */
-export function resolveBedrockChatParameters(
+export function resolveBedrockAIAssistantParameters(
   app: App,
-  parametersInput?: BedrockChatParametersInput
-): BedrockChatParameters {
+  parametersInput?: BedrockAIAssistantParametersInput
+): BedrockAIAssistantParameters {
   // If parametersInput is provided, use it directly
   if (parametersInput) {
-    return BedrockChatParametersSchema.parse(parametersInput);
+    return BedrockAIAssistantParametersSchema.parse(parametersInput);
   }
 
   // Get environment variables
@@ -227,7 +227,7 @@ export function resolveBedrockChatParameters(
     devAccessIamRoleArn: app.node.tryGetContext("devAccessIamRoleArn"),
   };
 
-  return BedrockChatParametersSchema.parse(contextParams);
+  return BedrockAIAssistantParametersSchema.parse(contextParams);
 }
 
 /**
@@ -239,23 +239,23 @@ export function resolveBedrockChatParameters(
  * @param paramsMap (optional) Map of parameters. If not provided, use context parameters
  * @returns Validated parameters object
  */
-export function getBedrockChatParameters(
+export function getBedrockAIAssistantParameters(
   app: App,
   envName: string | undefined,
-  paramsMap: Map<string, BedrockChatParametersInput>
-): BedrockChatParameters {
+  paramsMap: Map<string, BedrockAIAssistantParametersInput>
+): BedrockAIAssistantParameters {
   if (envName == undefined) {
     if (paramsMap.has("default")) {
       // Use parameter.ts instead of context parameters
       const params = paramsMap.get("default") || {};
-      return resolveBedrockChatParameters(app, {
+      return resolveBedrockAIAssistantParameters(app, {
         envName: "default",
         envPrefix: "",
         ...params,
       });
     } else {
       // Use CDK context parameters (cdk.json or -c options)
-      return resolveBedrockChatParameters(app);
+      return resolveBedrockAIAssistantParameters(app);
     }
   } else {
     // Lookup envName in parameter.ts
@@ -266,7 +266,7 @@ export function getBedrockChatParameters(
     const params = paramsMap.get(envName) || {};
     const envPrefix = envName === "default" ? "" : envName;
 
-    return resolveBedrockChatParameters(app, {
+    return resolveBedrockAIAssistantParameters(app, {
       envName,
       envPrefix,
       ...params,

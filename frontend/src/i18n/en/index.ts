@@ -6,8 +6,8 @@ const translation = {
       },
     },
     app: {
-      name: 'Bedrock Chat',
-      inputMessage: 'How can I Help You?',
+      name: 'VRI AI Assistant',
+      inputMessage: 'Ready to log an update?',
       starredBots: 'Starred Bots',
       recentlyUsedBots: 'Recently Used Bots',
       conversationHistory: 'Recent Chats',

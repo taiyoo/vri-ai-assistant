@@ -31,8 +31,8 @@ If applicable, add screenshots to help explain your problem.
 
 If the issue occurs during a chat interaction, please check the following logs on Amazon Cloudwatch Logs and include the relevant entries in your issue:
 
-- `/aws/lambda/BedrockChatStack-BackendApiHandlerXXXX`
-- `/aws/lambda/BedrockChatStack-WebSocketHandlerXXXX`
+- `/aws/lambda/BedrockAIAssistantStack-BackendApiHandlerXXXX`
+- `/aws/lambda/BedrockAIAssistantStack-WebSocketHandlerXXXX`
 
 ## 🔎 Logs for Bot Creation/Update Issues
 

@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-The admin user must be a member of group called `Admin`, which can be set up via the management console > Amazon Cognito User pools or aws cli. Note that the user pool id can be referred by accessing CloudFormation > BedrockChatStack > Outputs > `AuthUserPoolIdxxxx`.
+The admin user must be a member of group called `Admin`, which can be set up via the management console > Amazon Cognito User pools or aws cli. Note that the user pool id can be referred by accessing CloudFormation > BedrockAIAssistantStack > Outputs > `AuthUserPoolIdxxxx`.
 
 ![](./imgs/group_membership_admin.png)
 
@@ -46,10 +46,10 @@ Currently provides a basic overview of chatbot and user usage, focusing on aggre
 - In user usages, users who have not used the system at all during the specified period will not be listed.
 
 > [!Important]
-> If you're using multiple environments (dev, prod, etc.), the Athena database name will include the environment prefix. Instead of `bedrockchatstack_usage_analysis`, the database name will be:
+> If you're using multiple environments (dev, prod, etc.), the Athena database name will include the environment prefix. Instead of `BedrockAIAssistantstack_usage_analysis`, the database name will be:
 >
-> - For default environment: `bedrockchatstack_usage_analysis`
-> - For named environments: `<env-prefix>_bedrockchatstack_usage_analysis` (e.g., `dev_bedrockchatstack_usage_analysis`)
+> - For default environment: `BedrockAIAssistantstack_usage_analysis`
+> - For named environments: `<env-prefix>_BedrockAIAssistantstack_usage_analysis` (e.g., `dev_BedrockAIAssistantstack_usage_analysis`)
 >
 > Additionally, the table name will include the environment prefix:
 >
@@ -77,7 +77,7 @@ SELECT
     d.newimage.BotId.S AS BotId,
     d.datehour AS DateHour
 FROM
-    bedrockchatstack_usage_analysis.ddb_export d
+    BedrockAIAssistantstack_usage_analysis.ddb_export d
 WHERE
     d.newimage.BotId.S = '<bot-id>'
     AND d.datehour BETWEEN '<yyyy/mm/dd/hh>' AND '<yyyy/mm/dd/hh>'
@@ -87,7 +87,7 @@ ORDER BY
 ```
 
 > [!Note]
-> If using a named environment (e.g., "dev"), replace `bedrockchatstack_usage_analysis.ddb_export` with `dev_bedrockchatstack_usage_analysis.dev_ddb_export` in the query above.
+> If using a named environment (e.g., "dev"), replace `BedrockAIAssistantstack_usage_analysis.ddb_export` with `dev_BedrockAIAssistantstack_usage_analysis.dev_ddb_export` in the query above.
 
 ### Query per User ID
 
@@ -107,7 +107,7 @@ SELECT
     d.newimage.BotId.S AS BotId,
     d.datehour AS DateHour
 FROM
-    bedrockchatstack_usage_analysis.ddb_export d
+    BedrockAIAssistantstack_usage_analysis.ddb_export d
 WHERE
     d.newimage.PK.S = '<user-id>'
     AND d.datehour BETWEEN '<yyyy/mm/dd/hh>' AND '<yyyy/mm/dd/hh>'
@@ -117,4 +117,4 @@ ORDER BY
 ```
 
 > [!Note]
-> If using a named environment (e.g., "dev"), replace `bedrockchatstack_usage_analysis.ddb_export` with `dev_bedrockchatstack_usage_analysis.dev_ddb_export` in the query above.
+> If using a named environment (e.g., "dev"), replace `BedrockAIAssistantstack_usage_analysis.ddb_export` with `dev_BedrockAIAssistantstack_usage_analysis.dev_ddb_export` in the query above.

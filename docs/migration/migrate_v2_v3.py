@@ -25,9 +25,9 @@ logger = logging.getLogger("migration")
 # Region where dynamodb is located
 REGION = "ap-northeast-1"
 
-V2_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableXXXX"
-V3_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableV3XXXX"
-V3_BOT_TABLE = "BedrockChatStack-DatabaseBotTableV3XXXXX"
+V2_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableXXXX"
+V3_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableV3XXXX"
+V3_BOT_TABLE = "BedrockAIAssistantStack-DatabaseBotTableV3XXXXX"
 
 ################################
 # End Configuration

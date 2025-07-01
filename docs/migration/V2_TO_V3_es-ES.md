@@ -87,7 +87,7 @@ Obtenga el nombre de la tabla ConversationTable de V2 desde las salidas de Cloud
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {SU_PREFIJO_ENV}BedrockChatStack
+  --stack-name {SU_PREFIJO_ENV}BedrockAIAssistantStack
 ```
 
 Asegúrese de guardar este nombre de tabla en un lugar seguro, ya que lo necesitará para el script de migración más adelante.
@@ -100,7 +100,7 @@ Antes de continuar, cree una copia de seguridad de su ConversationTable de Dynam
 # Crear una copia de seguridad de su tabla V2
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name NOMBRE_TABLA_CONVERSACION_V2
 
 # Verificar que el estado de la copia de seguridad esté disponible
@@ -146,13 +146,13 @@ Después de implementar V3, necesita obtener los nombres de las tablas Conversat
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {SU_PREFIJO_ENV}BedrockChatStack
+  --stack-name {SU_PREFIJO_ENV}BedrockAIAssistantStack
 
 # Obtener el nombre de la tabla BotTable V3
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {SU_PREFIJO_ENV}BedrockChatStack
+  --stack-name {SU_PREFIJO_ENV}BedrockAIAssistantStack
 ```
 
 > [!Importante]

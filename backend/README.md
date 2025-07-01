@@ -18,13 +18,13 @@ poetry install
 - Configure environment variables
 
 ```sh
-export CONVERSATION_TABLE_NAME=BedrockChatStack-DatabaseConversationTablexxxx
-export BOT_TABLE_NAME=BedrockChatStack-DatabaseBotTablexxxx
+export CONVERSATION_TABLE_NAME=BedrockAIAssistantStack-DatabaseConversationTablexxxx
+export BOT_TABLE_NAME=BedrockAIAssistantStack-DatabaseBotTablexxxx
 export ACCOUNT=yyyy
 export REGION=ap-northeast-1
 export BEDROCK_REGION=us-east-1
-export DOCUMENT_BUCKET=bedrockchatstack-documentbucketxxxxxxx
-export LARGE_MESSAGE_BUCKET=bedrockchatstack-largemessagebucketxxx
+export DOCUMENT_BUCKET=BedrockAIAssistantstack-documentbucketxxxxxxx
+export LARGE_MESSAGE_BUCKET=BedrockAIAssistantstack-largemessagebucketxxx
 export USER_POOL_ID=xxxxxxxxx
 export CLIENT_ID=xxxxxxxxx
 export OPENSEARCH_DOMAIN_ENDPOINT=https://abcdefghijklmnopqrst.aa-region-1.aoss.amazonaws.com

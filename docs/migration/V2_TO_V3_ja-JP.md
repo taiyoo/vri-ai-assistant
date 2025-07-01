@@ -87,7 +87,7 @@ CloudFormationの出力からV2 ConversationTableの名前を取得：
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableName'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 後で移行スクリプトで使用するため、このテーブル名を安全な場所に保存してください。
@@ -100,7 +100,7 @@ aws cloudformation describe-stacks \
 # V2テーブルのバックアップを作成
 aws dynamodb create-backup \
   --no-cli-pager \
-  --backup-name "BedrockChatV2Backup-$(date +%Y%m%d)" \
+  --backup-name "BedrockAIAssistantV2Backup-$(date +%Y%m%d)" \
   --table-name YOUR_V2_CONVERSATION_TABLE_NAME
 
 # バックアップステータスが利用可能であることを確認
@@ -146,13 +146,13 @@ V3をデプロイした後、新しいConversationTableとBotTableの名前を�
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='ConversationTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 
 # V3 BotTableの名前を取得
 aws cloudformation describe-stacks \
   --output text \
   --query "Stacks[0].Outputs[?OutputKey=='BotTableNameV3'].OutputValue" \
-  --stack-name {YOUR_ENV_PREFIX}BedrockChatStack
+  --stack-name {YOUR_ENV_PREFIX}BedrockAIAssistantStack
 ```
 
 > [!Important]
@@ -166,9 +166,9 @@ aws cloudformation describe-stacks \
 # DynamoDBが配置されているリージョン
 REGION = "ap-northeast-1" # お使いのリージョンに置き換えてください
 
-V2_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableXXXX" # ステップ4で記録した値に置き換えてください
-V3_CONVERSATION_TABLE = "BedrockChatStack-DatabaseConversationTableV3XXXX" # ステップ8で記録した値に置き換えてください
-V3_BOT_TABLE = "BedrockChatStack-DatabaseBotTableV3XXXXX" # ステップ8で記録した値に置き換えてください
+V2_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableXXXX" # ステップ4で記録した値に置き換えてください
+V3_CONVERSATION_TABLE = "BedrockAIAssistantStack-DatabaseConversationTableV3XXXX" # ステップ8で記録した値に置き換えてください
+V3_BOT_TABLE = "BedrockAIAssistantStack-DatabaseBotTableV3XXXXX" # ステップ8で記録した値に置き換えてください
 ```
 
 次に、バックエンドディレクトリからPoetryを使用してスクリプトを実行します：

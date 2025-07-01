@@ -45,7 +45,7 @@ v1.4에서는 [Amazon Bedrock용 가드레일](https://aws.amazon.com/jp/bedrock
 
 ### v1.2 이하 사용자를 위한 단계
 
-1. **기존 문서 버킷 백업 (선택 사항이지만 권장됨).** 시스템이 이미 운영 중인 경우 이 단계를 강력히 권장합니다. `bedrockchatstack-documentbucketxxxx-yyyy` 이름의 버킷을 백업하세요. 예를 들어 [AWS 백업](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html)을 사용할 수 있습니다.
+1. **기존 문서 버킷 백업 (선택 사항이지만 권장됨).** 시스템이 이미 운영 중인 경우 이 단계를 강력히 권장합니다. `BedrockAIAssistantstack-documentbucketxxxx-yyyy` 이름의 버킷을 백업하세요. 예를 들어 [AWS 백업](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html)을 사용할 수 있습니다.
 
 2. **v1.4로 업데이트**: 최신 v1.4 태그를 가져오고, `cdk.json`을 수정한 후 배포합니다. 다음 단계를 따르세요:
 
@@ -86,7 +86,7 @@ v1.4에서는 [Amazon Bedrock용 가드레일](https://aws.amazon.com/jp/bedrock
 > v2 배포 후 **[지원되지 않음, 읽기 전용] 접두사가 있는 모든 봇은 숨겨집니다.** 업그레이드 전에 필요한 봇을 다시 생성하여 액세스 손실을 방지하세요.
 
 > [!팁]
-> 스택 업데이트 중 "서브넷 'subnet-xxx'에 종속성이 있어 삭제할 수 없습니다."와 같은 반복 메시지가 표시될 수 있습니다. 이 경우 관리 콘솔 > EC2 > 네트워크 인터페이스로 이동하여 BedrockChatStack을 검색하세요. 이 이름과 연관된 표시된 인터페이스를 삭제하여 배포 프로세스를 더 원활하게 진행할 수 있습니다.
+> 스택 업데이트 중 "서브넷 'subnet-xxx'에 종속성이 있어 삭제할 수 없습니다."와 같은 반복 메시지가 표시될 수 있습니다. 이 경우 관리 콘솔 > EC2 > 네트워크 인터페이스로 이동하여 BedrockAIAssistantStack을 검색하세요. 이 이름과 연관된 표시된 인터페이스를 삭제하여 배포 프로세스를 더 원활하게 진행할 수 있습니다.
 
 ### v1.3 사용자를 위한 단계
 

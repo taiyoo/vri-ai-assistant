@@ -47,7 +47,7 @@ Die Schritte unterscheiden sich je nachdem, ob Sie v1.2 oder früher oder v1.3 v
 
 ### Schritte für Benutzer von v1.2 oder früher
 
-1. **Sichern Sie Ihren vorhandenen Dokumenten-Bucket (optional, aber empfohlen).** Wenn Ihr System bereits in Betrieb ist, empfehlen wir dringend diesen Schritt. Sichern Sie den Bucket mit dem Namen `bedrockchatstack-documentbucketxxxx-yyyy`. Beispielsweise können wir [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html) verwenden.
+1. **Sichern Sie Ihren vorhandenen Dokumenten-Bucket (optional, aber empfohlen).** Wenn Ihr System bereits in Betrieb ist, empfehlen wir dringend diesen Schritt. Sichern Sie den Bucket mit dem Namen `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Beispielsweise können wir [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html) verwenden.
 
 2. **Aktualisieren auf v1.4**: Holen Sie das neueste v1.4-Tag, ändern Sie `cdk.json` und deployen Sie. Folgen Sie diesen Schritten:
 
@@ -88,7 +88,7 @@ Die Schritte unterscheiden sich je nachdem, ob Sie v1.2 oder früher oder v1.3 v
 > Nach dem Deployen von v2 werden **ALLE BOTS MIT DEM PRÄFIX [Nicht unterstützt, Nur Lesezugriff] AUSGEBLENDET.** Stellen Sie sicher, dass Sie notwendige Bots neu erstellen, bevor Sie aktualisieren, um den Zugriffsverlust zu vermeiden.
 
 > [!Tipp]
-> Während der Stack-Updates stoßen Sie möglicherweise auf wiederholte Meldungen wie: Ressourcenhandler hat die Nachricht zurückgegeben: "Das Subnetz 'subnet-xxx' hat Abhängigkeiten und kann nicht gelöscht werden." Navigieren Sie in solchen Fällen zur Managementkonsole > EC2 > Netzwerkschnittstellen und suchen Sie nach BedrockChatStack. Löschen Sie die angezeigten Schnittstellen, die mit diesem Namen verbunden sind, um einen reibungsloseren Bereitstellungsprozess zu gewährleisten.
+> Während der Stack-Updates stoßen Sie möglicherweise auf wiederholte Meldungen wie: Ressourcenhandler hat die Nachricht zurückgegeben: "Das Subnetz 'subnet-xxx' hat Abhängigkeiten und kann nicht gelöscht werden." Navigieren Sie in solchen Fällen zur Managementkonsole > EC2 > Netzwerkschnittstellen und suchen Sie nach BedrockAIAssistantStack. Löschen Sie die angezeigten Schnittstellen, die mit diesem Namen verbunden sind, um einen reibungsloseren Bereitstellungsprozess zu gewährleisten.
 
 ### Schritte für Benutzer von v1.3
 

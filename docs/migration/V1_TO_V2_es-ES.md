@@ -45,7 +45,7 @@ Los pasos difieren dependiendo de si está utilizando v1.2 o anterior, o v1.3.
 
 ### Pasos para usuarios de v1.2 o anterior
 
-1. **Realice una copia de seguridad de su bucket de documentos existente (opcional pero recomendado).** Si su sistema ya está en funcionamiento, recomendamos encarecidamente este paso. Haga una copia de seguridad del bucket denominado `bedrockchatstack-documentbucketxxxx-yyyy`. Por ejemplo, podemos usar [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Realice una copia de seguridad de su bucket de documentos existente (opcional pero recomendado).** Si su sistema ya está en funcionamiento, recomendamos encarecidamente este paso. Haga una copia de seguridad del bucket denominado `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Por ejemplo, podemos usar [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Actualizar a v1.4**: Obtenga la última etiqueta v1.4, modifique `cdk.json` e implemente. Siga estos pasos:
 
@@ -86,7 +86,7 @@ Los pasos difieren dependiendo de si está utilizando v1.2 o anterior, o v1.3.
 > Después de implementar v2, **TODOS LOS BOTS CON EL PREFIJO [No compatible, Solo lectura] QUEDARÁN OCULTOS.** Asegúrese de recrear los bots necesarios antes de actualizar para evitar cualquier pérdida de acceso.
 
 > [!Consejo]
-> Durante las actualizaciones de pila, es posible que encuentre mensajes repetidos como: "El controlador de recursos devolvió el mensaje: La subred 'subnet-xxx' tiene dependencias y no puede eliminarse". En tales casos, navegue a Consola de administración > EC2 > Interfaces de red y busque BedrockChatStack. Elimine las interfaces asociadas con este nombre para ayudar a garantizar un proceso de implementación más fluido.
+> Durante las actualizaciones de pila, es posible que encuentre mensajes repetidos como: "El controlador de recursos devolvió el mensaje: La subred 'subnet-xxx' tiene dependencias y no puede eliminarse". En tales casos, navegue a Consola de administración > EC2 > Interfaces de red y busque BedrockAIAssistantStack. Elimine las interfaces asociadas con este nombre para ayudar a garantizar un proceso de implementación más fluido.
 
 ### Pasos para usuarios de v1.3
 

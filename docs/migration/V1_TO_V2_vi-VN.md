@@ -45,7 +45,7 @@ Các bước khác nhau tùy thuộc vào việc bạn đang sử dụng phiên 
 
 ### Các Bước Cho Người Dùng v1.2 hoặc Cũ Hơn
 
-1. **Sao lưu bucket tài liệu hiện tại (tùy chọn nhưng được khuyến nghị).** Nếu hệ thống của bạn đã hoạt động, chúng tôi rất khuyến nghị bước này. Sao lưu bucket có tên `bedrockchatstack-documentbucketxxxx-yyyy`. Ví dụ, chúng ta có thể sử dụng [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Sao lưu bucket tài liệu hiện tại (tùy chọn nhưng được khuyến nghị).** Nếu hệ thống của bạn đã hoạt động, chúng tôi rất khuyến nghị bước này. Sao lưu bucket có tên `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Ví dụ, chúng ta có thể sử dụng [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Cập nhật lên v1.4**: Tìm thẻ mới nhất, sửa đổi `cdk.json`, và triển khai. Thực hiện theo các bước sau:
 
@@ -86,7 +86,7 @@ Các bước khác nhau tùy thuộc vào việc bạn đang sử dụng phiên 
 > Sau khi triển khai v2, **TẤT CẢ CÁC BOT CÓ TIỀN TỐ [Không Được Hỗ Trợ, Chỉ Đọc] SẼ BỊ ẨN.** Đảm bảo bạn tạo lại các bot cần thiết trước khi nâng cấp để tránh mất quyền truy cập.
 
 > [!Mẹo]
-> Trong quá trình cập nhật ngăn xếp, bạn có thể gặp các thông báo lặp đi lặp lại như: "Trình xử lý tài nguyên trả về thông báo: 'Subnet 'subnet-xxx' có phụ thuộc và không thể bị xóa.'" Trong những trường hợp như vậy, điều hướng đến Bảng Điều Khiển Quản Lý > EC2 > Giao Diện Mạng và tìm kiếm BedrockChatStack. Xóa các giao diện được hiển thị liên quan đến tên này để giúp quá trình triển khai diễn ra mượt mà hơn.
+> Trong quá trình cập nhật ngăn xếp, bạn có thể gặp các thông báo lặp đi lặp lại như: "Trình xử lý tài nguyên trả về thông báo: 'Subnet 'subnet-xxx' có phụ thuộc và không thể bị xóa.'" Trong những trường hợp như vậy, điều hướng đến Bảng Điều Khiển Quản Lý > EC2 > Giao Diện Mạng và tìm kiếm BedrockAIAssistantStack. Xóa các giao diện được hiển thị liên quan đến tên này để giúp quá trình triển khai diễn ra mượt mà hơn.
 
 ### Các Bước Cho Người Dùng v1.3
 

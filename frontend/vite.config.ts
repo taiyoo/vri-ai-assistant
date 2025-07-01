@@ -17,9 +17,9 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
       },
       manifest: {
-        name: 'Bedrock Chat',
-        short_name: 'Bedrock Chat',
-        description: 'AWS-native chatbot using Bedrock',
+        name: 'VRI AI Assistant for Elderly Care',
+        short_name: 'VRI AI Assistant',
+        description: 'VRI AI Assistant for Elderly Care using AWS-native chatbot using Bedrock',
         start_url: '/index.html',
         display: 'standalone',
         theme_color: '#232F3E',

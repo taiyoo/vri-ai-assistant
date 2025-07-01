@@ -47,7 +47,7 @@ Trinnene varierer avhengig av om du bruker v1.2 eller tidligere, eller v1.3.
 
 ### Trinn for brukere av v1.2 eller tidligere
 
-1. **Sikkerhetskopier din eksisterende dokumentbøtte (valgfritt, men anbefalt).** Hvis systemet ditt allerede er i drift, anbefaler vi sterkt dette trinnet. Sikkerhetskopier bøtten ved navn `bedrockchatstack-documentbucketxxxx-yyyy`. For eksempel kan vi bruke [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Sikkerhetskopier din eksisterende dokumentbøtte (valgfritt, men anbefalt).** Hvis systemet ditt allerede er i drift, anbefaler vi sterkt dette trinnet. Sikkerhetskopier bøtten ved navn `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. For eksempel kan vi bruke [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Oppdater til v1.4**: Hent den nyeste v1.4-taggen, endre `cdk.json`, og distribuer. Følg disse trinnene:
 
@@ -88,7 +88,7 @@ Trinnene varierer avhengig av om du bruker v1.2 eller tidligere, eller v1.3.
 > Etter distribusjon av v2 vil **ALLE ROBOTER MED PREFIKSET [Ikke støttet, Kun lesing] BLI SKJULT.** Sørg for å gjenskape nødvendige roboter før oppgradering for å unngå tap av tilgang.
 
 > [!Tips]
-> Under stakk-oppdateringer kan du støte på gjentatte meldinger som: Ressursbehandler returnerte melding: "Undernettet 'subnet-xxx' har avhengigheter og kan ikke slettes." I slike tilfeller kan du navigere til Management Console > EC2 > Nettverksgrensesnitt og søke etter BedrockChatStack. Slett de viste grensesnittene som er tilknyttet dette navnet for å bidra til en jevnere distribusjonsprosess.
+> Under stakk-oppdateringer kan du støte på gjentatte meldinger som: Ressursbehandler returnerte melding: "Undernettet 'subnet-xxx' har avhengigheter og kan ikke slettes." I slike tilfeller kan du navigere til Management Console > EC2 > Nettverksgrensesnitt og søke etter BedrockAIAssistantStack. Slett de viste grensesnittene som er tilknyttet dette navnet for å bidra til en jevnere distribusjonsprosess.
 
 ### Trinn for brukere av v1.3
 

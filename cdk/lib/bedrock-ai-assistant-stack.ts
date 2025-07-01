@@ -27,7 +27,7 @@ import { BedrockCustomBotCodebuild } from "./constructs/bedrock-custom-bot-codeb
 import { BotStore, Language } from "./constructs/bot-store";
 import { Duration } from "aws-cdk-lib";
 
-export interface BedrockChatStackProps extends StackProps {
+export interface BedrockAIAssistantStackProps extends StackProps {
   readonly envName: string;
   readonly envPrefix: string;
   readonly bedrockRegion: string;
@@ -53,15 +53,15 @@ export interface BedrockChatStackProps extends StackProps {
   readonly devAccessIamRoleArn?: string;
 }
 
-export class BedrockChatStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props: BedrockChatStackProps) {
+export class BedrockAIAssistantStack extends cdk.Stack {
+  constructor(scope: Construct, id: string, props: BedrockAIAssistantStackProps) {
     super(scope, id, {
-      description: "Bedrock Chat Stack (uksb-1tupboc46)",
+      description: "Bedrock AI Assistant Stack",
       ...props,
     });
 
     // Add AppManagerCFNStackKey tag for cost tracking
-    cdk.Tags.of(this).add('AppManagerCFNStackKey', 'BedrockChat')
+    cdk.Tags.of(this).add('AppManagerCFNStackKey', 'BedrockAIAssistant')
 
     const sepHyphen = props.envPrefix ? "-" : "";
     const idp = identityProvider(props.identityProviders);

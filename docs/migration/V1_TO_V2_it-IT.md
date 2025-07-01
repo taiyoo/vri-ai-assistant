@@ -45,7 +45,7 @@ I passaggi variano a seconda che si stia utilizzando v1.2 o precedente, oppure v
 
 ### Passaggi per gli utenti di v1.2 o precedente
 
-1. **Eseguire il backup del bucket dei documenti esistente (facoltativo ma consigliato).** Se il sistema è già in funzione, si consiglia vivamente questo passaggio. Eseguire il backup del bucket denominato `bedrockchatstack-documentbucketxxxx-yyyy`. Ad esempio, è possibile utilizzare [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Eseguire il backup del bucket dei documenti esistente (facoltativo ma consigliato).** Se il sistema è già in funzione, si consiglia vivamente questo passaggio. Eseguire il backup del bucket denominato `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. Ad esempio, è possibile utilizzare [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Aggiornare a v1.4**: Recuperare il tag v1.4 più recente, modificare `cdk.json` e distribuire. Seguire questi passaggi:
 
@@ -86,7 +86,7 @@ I passaggi variano a seconda che si stia utilizzando v1.2 o precedente, oppure v
 > Dopo aver distribuito v2, **TUTTI I BOT CON IL PREFISSO [Non supportato, Solo lettura] SARANNO NASCOSTI.** Assicurarsi di ricreare i bot necessari prima dell'aggiornamento per evitare perdite di accesso.
 
 > [!Suggerimento]
-> Durante gli aggiornamenti dello stack, è possibile incontrare messaggi ripetuti come: "Il gestore delle risorse ha restituito il messaggio: La subnet 'subnet-xxx' ha dipendenze e non può essere eliminata." In questi casi, accedere alla Console di gestione > EC2 > Interfacce di rete e cercare BedrockChatStack. Eliminare le interfacce associate a questo nome per facilitare un processo di distribuzione più fluido.
+> Durante gli aggiornamenti dello stack, è possibile incontrare messaggi ripetuti come: "Il gestore delle risorse ha restituito il messaggio: La subnet 'subnet-xxx' ha dipendenze e non può essere eliminata." In questi casi, accedere alla Console di gestione > EC2 > Interfacce di rete e cercare BedrockAIAssistantStack. Eliminare le interfacce associate a questo nome per facilitare un processo di distribuzione più fluido.
 
 ### Passaggi per gli utenti di v1.3
 

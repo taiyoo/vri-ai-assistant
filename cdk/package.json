@@ -5,6 +5,7 @@
     "cdk": "bin/cdk.js"
   },
   "scripts": {
+    "clean": "find . -type f \\( -name '*.js' -o -name '*.d.ts' -o -name '*.js.map' \\) -not -path './node_modules/*' -not -path './.git/*' -not -name 'jest.config.js' -delete && rm -rf cdk.out/",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",

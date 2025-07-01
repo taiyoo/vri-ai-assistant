@@ -15,14 +15,14 @@ from boto3.dynamodb.conditions import Attr, Key
 
 REGION = os.environ.get("REGION", "ap-southeast-2")
 USAGE_ANALYSIS_DATABASE = os.environ.get(
-    "USAGE_ANALYSIS_DATABASE", "bedrockchatstack_usage_analysis"
+    "USAGE_ANALYSIS_DATABASE", "BedrockAIAssistantstack_usage_analysis"
 )
 USAGE_ANALYSIS_TABLE = os.environ.get("USAGE_ANALYSIS_TABLE", "ddb_export")
 USAGE_ANALYSIS_WORKGROUP = os.environ.get(
-    "USAGE_ANALYSIS_WORKGROUP", "bedrockchatstack_wg"
+    "USAGE_ANALYSIS_WORKGROUP", "BedrockAIAssistantstack_wg"
 )
 USAGE_ANALYSIS_OUTPUT_LOCATION = os.environ.get(
-    "USAGE_ANALYSIS_OUTPUT_LOCATION", "s3://bedrockchatstack-athena-results"
+    "USAGE_ANALYSIS_OUTPUT_LOCATION", "s3://BedrockAIAssistantstack-athena-results"
 )
 USER_POOL_ID = os.environ.get("USER_POOL_ID", "us-east-1_XXXXXXXXX")
 QUERY_LIMIT = 1000

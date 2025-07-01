@@ -45,7 +45,7 @@ v2 更新通过将 Aurora Serverless 和基于 ECS 的嵌入替换为 [Amazon Be
 
 ### 针对 v1.2 或更早版本的用户
 
-1. **备份现有文档存储桶（可选但推荐）。** 如果您的系统已经在运行，我们强烈建议执行此步骤。备份名为 `bedrockchatstack-documentbucketxxxx-yyyy` 的存储桶。例如，我们可以使用 [AWS 备份](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html)。
+1. **备份现有文档存储桶（可选但推荐）。** 如果您的系统已经在运行，我们强烈建议执行此步骤。备份名为 `BedrockAIAssistantstack-documentbucketxxxx-yyyy` 的存储桶。例如，我们可以使用 [AWS 备份](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html)。
 
 2. **更新到 v1.4**：获取最新的 v1.4 标签，修改 `cdk.json`，并部署。按照以下步骤操作：
 
@@ -86,7 +86,7 @@ v2 更新通过将 Aurora Serverless 和基于 ECS 的嵌入替换为 [Amazon Be
 > 部署 v2 后，**所有带有前缀 [不支持，只读] 的机器人将被隐藏。** 请确保在升级前重新创建必要的机器人，以避免丢失访问权限。
 
 > [!提示]
-> 在堆栈更新期间，您可能会遇到重复的消息，如："资源处理程序返回消息：'子网 'subnet-xxx' 有依赖项，无法删除。'"在这种情况下，请导航到管理控制台 > EC2 > 网络接口，并搜索 BedrockChatStack。删除与此名称关联的显示接口，以帮助确保更顺利的部署过程。
+> 在堆栈更新期间，您可能会遇到重复的消息，如："资源处理程序返回消息：'子网 'subnet-xxx' 有依赖项，无法删除。'"在这种情况下，请导航到管理控制台 > EC2 > 网络接口，并搜索 BedrockAIAssistantStack。删除与此名称关联的显示接口，以帮助确保更顺利的部署过程。
 
 ### 针对 v1.3 用户的步骤
 

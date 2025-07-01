@@ -45,7 +45,7 @@ The steps differ depending on whether you are using v1.2 or earlier, or v1.3.
 
 ### Steps for users of v1.2 or earlier
 
-1. **Backup your existing document bucket (optional but recommended).** If your system is already in operation, we strongly recommend this step. Back up the bucket named `bedrockchatstack-documentbucketxxxx-yyyy`. For example, we can use [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
+1. **Backup your existing document bucket (optional but recommended).** If your system is already in operation, we strongly recommend this step. Back up the bucket named `BedrockAIAssistantstack-documentbucketxxxx-yyyy`. For example, we can use [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html).
 
 2. **Update to v1.4**: Fetch the latest v1.4 tag, modify `cdk.json`, and deploy. Follow these steps:
 
@@ -86,7 +86,7 @@ The steps differ depending on whether you are using v1.2 or earlier, or v1.3.
 > After deploying v2, **ALL BOTS WITH THE PREFIX [Unsupported, Read-only] WILL BE HIDDEN.** Ensure you recreate necessary bots before upgrading to avoid any loss of access.
 
 > [!Tip]
-> During stack updates, you might encounter repeated messages like: Resource handler returned message: "The subnet 'subnet-xxx' has dependencies and cannot be deleted." In such cases, navigate to the Management Console > EC2 > Network Interfaces and search for BedrockChatStack. Delete the displayed interfaces associated with this name to help ensure a smoother deployment process.
+> During stack updates, you might encounter repeated messages like: Resource handler returned message: "The subnet 'subnet-xxx' has dependencies and cannot be deleted." In such cases, navigate to the Management Console > EC2 > Network Interfaces and search for BedrockAIAssistantStack. Delete the displayed interfaces associated with this name to help ensure a smoother deployment process.
 
 ### Steps for users of v1.3
 
