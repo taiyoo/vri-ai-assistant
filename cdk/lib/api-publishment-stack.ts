@@ -1,5 +1,5 @@
 import * as cdk from "aws-cdk-lib";
-import { CfnOutput, Stack, StackProps } from "aws-cdk-lib";
+import { CfnOutput, Stack, StackProps, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import * as apigateway from "aws-cdk-lib/aws-apigateway";
 import { DockerImageCode, DockerImageFunction } from "aws-cdk-lib/aws-lambda";
@@ -30,6 +30,9 @@ export class ApiPublishmentStack extends Stack {
   public readonly chatQueue: sqs.Queue;
   constructor(scope: Construct, id: string, props: ApiPublishmentStackProps) {
     super(scope, id, props);
+
+    // Add AppManagerCFNStackKey tag for cost tracking
+    Tags.of(this).add('AppManagerCFNStackKey', 'BedrockAPIPublishment');
 
     console.log(`usagePlan: ${JSON.stringify(props.usagePlan)}`); // DEBUG
 
