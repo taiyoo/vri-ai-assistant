@@ -67,7 +67,7 @@
       "0000:0000:0000:0000:0000:0000:0000:0000/1",
       "8000:0000:0000:0000:0000:0000:0000:0000/1"
     ],
-    "enableRagReplicas": true,
+    "enableRagReplicas": false,
     "enableBedrockCrossRegionInference": true,
     "enableLambdaSnapStart": true,
     "enableBotStore": true,
