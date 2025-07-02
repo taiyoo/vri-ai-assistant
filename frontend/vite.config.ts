@@ -1,12 +1,24 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import { createHtmlPlugin } from 'vite-plugin-html';
+
+// Get title from manifest for consistency
+const appTitle = 'VRI AI Assistant for Elderly Care';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: { alias: { './runtimeConfig': './runtimeConfig.browser' } },
   plugins: [
     react(),
+    createHtmlPlugin({
+      minify: true,
+      inject: {
+        data: {
+          title: appTitle,
+        },
+      },
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
@@ -17,7 +29,7 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
       },
       manifest: {
-        name: 'VRI AI Assistant for Elderly Care',
+        name: appTitle,
         short_name: 'VRI AI Assistant',
         description: 'VRI AI Assistant for Elderly Care using AWS-native chatbot using Bedrock',
         start_url: '/index.html',
