@@ -207,6 +207,13 @@ const translation = {
         },
       },
     },
+    voice: {
+      chat: {
+        label: {
+          pageTitle: 'Voice Chat',
+        },
+      }
+    },
     bot: {
       label: {
         myBots: 'My Bots',

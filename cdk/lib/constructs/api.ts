@@ -234,7 +234,7 @@ export class Api extends Construct {
     props.largeMessageBucket.grantReadWrite(handlerRole);
 
     // Get parameters from SSM if LiveKit is enabled
-    let livekitApiKey, livekitApiSecret, livekitUrl;
+    let livekitApiKey, livekitApiSecret, livekitUrl, liveKitPluginOpenAIAPIKey, liveKitPluginDeepgramAPIKey;
     if (props.enableLivekit) {
       try {
         livekitApiKey = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'LiveKitApiKey', {
@@ -248,6 +248,15 @@ export class Api extends Construct {
         livekitUrl = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitUrl', {
           parameterName: '/bedrock-ai-assistant/livekit/url',
         }).stringValue;
+
+        liveKitPluginOpenAIAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitPluginOpenAIAPIKey', {
+          parameterName: '/bedrock-ai-assistant/livekit/plugin/openai-api-key',
+        }).stringValue;
+
+        liveKitPluginDeepgramAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitPluginDeepgramAPIKey', {
+          parameterName: '/bedrock-ai-assistant/livekit/plugin/deepgram-api-key',
+        }).stringValue;
+
       } catch (error) {
         console.warn('Could not load LiveKit parameters from SSM, LiveKit will be disabled');
       }
@@ -302,6 +311,12 @@ export class Api extends Construct {
         }),
         ...(props.enableLivekit && livekitUrl && {
           LIVEKIT_URL: livekitUrl,
+        }),
+        ...(props.enableLivekit && liveKitPluginOpenAIAPIKey && {
+          OPENAI_API_KEY: liveKitPluginOpenAIAPIKey,
+        }),
+        ...(props.enableLivekit && liveKitPluginDeepgramAPIKey && {
+          DEEPGRAM_API_KEY: liveKitPluginDeepgramAPIKey,
         }),
       },
       role: handlerRole,

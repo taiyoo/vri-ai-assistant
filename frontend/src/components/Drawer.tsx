@@ -20,6 +20,7 @@ import {
   PiListBullets,
   PiNotePencil,
   PiPencilLine,
+  PiPhone,
   PiPlugs,
   PiPresentationChart,
   PiRobot,
@@ -238,6 +239,12 @@ const Drawer: React.FC<Props> = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const onClickNewVoiceChat = useCallback(() => {
+    newChat();
+    closeSmallDrawer();
+  }, []);
+
+
   const onClickNewBotChat = useCallback(
     () => {
       newChat();
@@ -295,6 +302,14 @@ const Drawer: React.FC<Props> = (props) => {
                 onClick={onClickNewChat}
                 labelComponent={t('button.newChat')}
               />
+              <DrawerItem
+                isActive={false}
+                icon={<PiPhone />}
+                to="/voice-chat"
+                onClick={onClickNewVoiceChat}
+                labelComponent={t('voice.chat.label.pageTitle')}
+              />
+
               <DrawerItem
                 isActive={false}
                 icon={<PiListBullets />}

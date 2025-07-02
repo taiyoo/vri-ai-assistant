@@ -7,6 +7,7 @@ from app.user import User
 
 router = APIRouter(prefix="/livekit", tags=["livekit"])
 livekit_service = LiveKitService()
+livekit_service.start_agent_worker("app/livekit_agent.py")
 
 class TokenRequest(BaseModel):
     room_name: Optional[str] = None

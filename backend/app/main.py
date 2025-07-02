@@ -16,7 +16,7 @@ from app.routes.bot_store import router as bot_store_router
 from app.routes.conversation import router as conversation_router
 from app.routes.published_api import router as published_api_router
 from app.routes.user import router as user_router
-from app.routes.livekit import router as livekit_router
+from app.routes.livekit import router as livekit_router, livekit_service
 from app.user import User
 from app.utils import is_running_on_lambda
 from fastapi import Depends, FastAPI, Request
@@ -27,6 +27,7 @@ from pydantic import ValidationError
 from starlette.requests import Request
 from starlette.responses import Response
 from starlette.types import ASGIApp, Message
+from contextlib import asynccontextmanager  # Add this import
 
 CORS_ALLOW_ORIGINS = os.environ.get("CORS_ALLOW_ORIGINS", "*")
 PUBLISHED_API_ID = os.environ.get("PUBLISHED_API_ID", None)
@@ -35,6 +36,19 @@ is_published_api = PUBLISHED_API_ID is not None
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s - %(message)s")
 logger = logging.getLogger(__name__)
+
+
+# Define lifespan context manager
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup code here (if any)
+    logger.info("Application startup")
+    
+    yield  # This is where FastAPI runs
+    
+    # Shutdown code here
+    logger.info("Application shutdown: cleaning up resources")
+    livekit_service.stop_agent_worker()
 
 if not is_published_api:
     openapi_tags = [
@@ -54,6 +68,7 @@ else:
 app = FastAPI(
     openapi_tags=openapi_tags,
     title=title,
+    lifespan=lifespan,
 )
 
 

@@ -19,6 +19,7 @@ import BotDiscoverPage from './features/discover/pages/BotDiscoverPage.tsx';
 import BotRecentlyUsedPage from './pages/BotRecentlyUsedPage.tsx';
 import BotStarredPage from './pages/BotStarredPage.tsx';
 import ConversationHistoryPage from './pages/ConversationHistoryPage.tsx';
+import VoiceChatPage from './pages/VoiceChatPage.tsx';
 
 const rootChildren = [
   {
@@ -78,6 +79,10 @@ const rootChildren = [
     element: <ChatPage />,
   },
   {
+    path: '/voice-chat',
+    element: <VoiceChatPage />,
+  },
+  {
     path: '*',
     element: <NotFound />,
   },
@@ -102,6 +107,7 @@ export const usePageLabel = () => {
   const { t } = useTranslation();
   const pageLabel: { path: (typeof allPaths)[number]; label: string }[] = [
     { path: '/bot/my', label: t('bot.my.label.pageTitle') },
+    { path: '/voice-chat', label: t('voice.chat.label.pageTitle')},
     { path: '/bot/discover', label: t('discover.pageTitle') },
     {
       path: '/admin/shared-bot-analytics',

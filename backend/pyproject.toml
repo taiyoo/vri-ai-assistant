@@ -24,6 +24,11 @@ boto3-stubs = {extras = ["bedrock", "bedrock-agent-runtime", "bedrock-runtime", 
 firecrawl-py = "^1.11.1"
 reretry = "^0.11.8"
 livekit-api = "^1.0.3"
+livekit = "^1.0.11"
+livekit-agents = "^1.1.5"
+livekit-plugins-openai = "^1.1.5"
+livekit-plugins-silero = "^1.1.5"
+livekit-plugins-deepgram = "^1.1.5"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.15.0"

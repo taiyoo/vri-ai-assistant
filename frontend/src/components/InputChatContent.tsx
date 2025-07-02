@@ -34,6 +34,8 @@ import {
   SUPPORTED_FILE_EXTENSIONS,
   MAX_ATTACHED_FILES,
 } from '../constants/supportedAttachedFiles';
+import { useVoiceInput } from '../hooks/useVoiceInput';
+import { VoiceControl } from './VoiceControl';
 
 type Props = BaseProps & {
   disabledSend?: boolean;
@@ -57,6 +59,12 @@ type Props = BaseProps & {
   supportReasoning: boolean;
   reasoningEnabled: boolean;
   onChangeReasoning: (enabled: boolean) => void;
+  enableVoiceInput?: boolean;
+  ttsEnabled?: boolean;
+  onToggleTts?: () => void;
+  textToSpeak?: string | null;
+  isSpeaking?: boolean;
+  onSpeakComplete?: () => void;  
 };
 // Image size
 // Ref: https://docs.anthropic.com/en/docs/build-with-claude/vision#evaluate-image-size
@@ -198,6 +206,23 @@ const InputChatContent = forwardRef<HTMLElement, Props>(
     }, [content, props.disabledSend]);
 
     const inputRef = useRef<HTMLDivElement>(null);
+
+    // Use voice input hook
+    const {
+      isRecording,
+      isProcessing,
+      transcribedText,
+      partialTranscript,
+      startRecording,
+      stopRecording
+    } = useVoiceInput();
+    
+    // Add this effect to update input when transcription is received
+    useEffect(() => {
+      if (transcribedText) {
+        setContent(prev => prev + transcribedText);
+      }
+    }, [transcribedText]);
 
     const sendContent = useCallback(() => {
       const attachments = attachedFiles.map((file) => ({
@@ -504,6 +529,22 @@ const InputChatContent = forwardRef<HTMLElement, Props>(
                   showReasoning={reasoningEnabled}
                   forceReasoningEnabled={forceReasoningEnabled}
                   onToggleReasoning={() => onChangeReasoning(!reasoningEnabled)}
+                />
+              )}
+              {/* Add voice control component */}
+              {props.enableVoiceInput && (
+                <VoiceControl
+                  isRecording={isRecording}
+                  isProcessing={isProcessing}
+                  partialTranscript={partialTranscript}
+                  onStartRecording={startRecording}
+                  onStopRecording={stopRecording}
+                  disabled={props.isLoading || props.disabled}
+                  ttsEnabled={props.ttsEnabled}
+                  onToggleTts={props.onToggleTts}
+                  textToSpeak={props.textToSpeak || ''}
+                  isSpeaking={props.isSpeaking}
+                  onSpeakComplete={props.onSpeakComplete}
                 />
               )}
             </div>

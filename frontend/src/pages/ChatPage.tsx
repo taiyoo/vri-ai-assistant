@@ -152,6 +152,44 @@ const ChatPage: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bot, botError]);
 
+  // Inside your component
+  const [ttsEnabled, setTtsEnabled] = useState(false);
+  const [textToSpeak, setTextToSpeak] = useState<string | null>(null);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const lastAssistantMessageRef = useRef<string | null>(null);
+
+  // Add this effect to handle new assistant messages
+  useEffect(() => {
+    // Find the last assistant message
+    const assistantMessages = messages.filter(msg => msg.role === 'assistant');
+    if (assistantMessages.length === 0) return;
+    
+    const lastMessage = assistantMessages[assistantMessages.length - 1];
+    const textContent = lastMessage.content.find(c => c.contentType === 'text');
+    
+    if (!textContent) return;
+    
+    const messageText = textContent.body;
+    
+    // Only speak if this is a new message and TTS is enabled
+    if (ttsEnabled && messageText !== lastAssistantMessageRef.current && !isSpeaking) {
+      lastAssistantMessageRef.current = messageText;
+      setTextToSpeak(messageText);
+      setIsSpeaking(true);
+    }
+  }, [messages, ttsEnabled, isSpeaking]);
+
+  // Handler for speak complete
+  const handleSpeakComplete = useCallback(() => {
+    setIsSpeaking(false);
+    setTextToSpeak(null);
+  }, []);
+
+  // Toggle TTS
+  const toggleTts = useCallback(() => {
+    setTtsEnabled(prev => !prev);
+  }, []);
+
   const description = useMemo<string>(() => {
     if (!bot) {
       return '';
@@ -701,6 +739,12 @@ const ChatPage: React.FC = () => {
           supportReasoning={supportReasoning}
           reasoningEnabled={reasoningEnabled}
           onChangeReasoning={setReasoningEnabled}
+          enableVoiceInput={false} // Disable voice input for now
+          ttsEnabled={ttsEnabled}
+          onToggleTts={toggleTts}
+          textToSpeak={textToSpeak}
+          isSpeaking={isSpeaking}
+          onSpeakComplete={handleSpeakComplete}          
         />
       </div>
       <BottomHelper />
