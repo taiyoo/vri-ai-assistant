@@ -26,6 +26,7 @@ import { UsageAnalysis } from "./usage-analysis";
 import { excludeDockerImage } from "../constants/docker";
 import { PythonFunction } from "@aws-cdk/aws-lambda-python-alpha";
 import { Database } from "./database";
+import * as ssm from 'aws-cdk-lib/aws-ssm';
 
 export interface ApiProps {
   readonly database: Database;
@@ -42,6 +43,11 @@ export interface ApiProps {
   readonly enableBedrockCrossRegionInference: boolean;
   readonly enableLambdaSnapStart: boolean;
   readonly openSearchEndpoint?: string;
+  // Add LiveKit props
+  readonly enableLivekit?: boolean;  
+  readonly livekitApiKey?: string;
+  readonly livekitApiSecret?: string; 
+  readonly livekitUrl?: string;
 }
 
 export class Api extends Construct {
@@ -227,6 +233,26 @@ export class Api extends Construct {
     props.usageAnalysis?.ddbBucket.grantRead(handlerRole);
     props.largeMessageBucket.grantReadWrite(handlerRole);
 
+    // Get parameters from SSM if LiveKit is enabled
+    let livekitApiKey, livekitApiSecret, livekitUrl;
+    if (props.enableLivekit) {
+      try {
+        livekitApiKey = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'LiveKitApiKey', {
+          parameterName: '/bedrock-ai-assistant/livekit/api-key',
+        }).stringValue;
+        
+        livekitApiSecret = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'LiveKitApiSecret', {
+          parameterName: '/bedrock-ai-assistant/livekit/api-secret',
+        }).stringValue;
+        
+        livekitUrl = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitUrl', {
+          parameterName: '/bedrock-ai-assistant/livekit/url',
+        }).stringValue;
+      } catch (error) {
+        console.warn('Could not load LiveKit parameters from SSM, LiveKit will be disabled');
+      }
+    }
+
     const handler = new PythonFunction(this, "HandlerV2", {
       entry: path.join(__dirname, "../../../backend"),
       index: "app/main.py",
@@ -266,6 +292,17 @@ export class Api extends Construct {
         OPENSEARCH_DOMAIN_ENDPOINT: props.openSearchEndpoint || "",
         AWS_LAMBDA_EXEC_WRAPPER: "/opt/bootstrap",
         PORT: "8000",
+        // Add LiveKit environment variables
+        ENABLE_LIVEKIT: (props.enableLivekit && livekitApiKey && livekitApiSecret) ? "true" : "false",
+        ...(props.enableLivekit && livekitApiKey && {
+          LIVEKIT_API_KEY: livekitApiKey,
+        }),
+        ...(props.enableLivekit && livekitApiSecret && {
+          LIVEKIT_API_SECRET: livekitApiSecret,
+        }),
+        ...(props.enableLivekit && livekitUrl && {
+          LIVEKIT_URL: livekitUrl,
+        }),
       },
       role: handlerRole,
       logRetention: logs.RetentionDays.THREE_MONTHS,

@@ -51,6 +51,11 @@ export interface BedrockAIAssistantStackProps extends StackProps {
   readonly alternateDomainName?: string;
   readonly hostedZoneId?: string;
   readonly devAccessIamRoleArn?: string;
+  // Add LiveKit props
+  readonly enableLivekit?: boolean;  
+  readonly livekitApiKey?: string;
+  readonly livekitApiSecret?: string; 
+  readonly livekitUrl?: string;
 }
 
 export class BedrockAIAssistantStack extends cdk.Stack {
@@ -206,6 +211,11 @@ export class BedrockAIAssistantStack extends cdk.Stack {
         props.enableBedrockCrossRegionInference,
       enableLambdaSnapStart: props.enableLambdaSnapStart,
       openSearchEndpoint: botStore?.openSearchEndpoint,
+      // Add LiveKit config
+      enableLivekit: props.enableLivekit || false,
+      livekitApiKey: props.livekitApiKey,
+      livekitApiSecret: props.livekitApiSecret,
+      livekitUrl: props.livekitUrl,      
     });
     props.documentBucket.grantReadWrite(backendApi.handler);
     // Add permissions to API handler for BotStore
