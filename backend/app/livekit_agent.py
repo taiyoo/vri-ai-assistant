@@ -25,7 +25,7 @@ try:
         cli,
         metrics,
     )
-    from livekit.plugins import deepgram, openai, silero
+    from livekit.plugins import deepgram, openai
 
     logger.info("Successfully imported all required modules")
 
@@ -59,7 +59,7 @@ try:
             
             # Create session with configured services
             session = AgentSession(
-                vad=silero.VAD.load(),
+                # vad=silero.VAD.load(),
                 llm=openai.LLM(
                     model="gpt-4o",
                     api_key=os.environ.get("OPENAI_API_KEY")
@@ -69,7 +69,8 @@ try:
                     api_key=os.environ.get("DEEPGRAM_API_KEY")
                 ),
                 tts=deepgram.TTS(
-                    model="aura-asteria-en",
+                    #model="aura-asteria-en", https://developers.deepgram.com/docs/tts-models
+                    model="aura-2-thalia-en",
                     api_key=os.environ.get("DEEPGRAM_API_KEY")
                 ),
                 # tts=openai.TTS(

@@ -21,7 +21,7 @@ class LiveKitService:
 
         # print(f"LiveKit API Key: {self.api_key}")  # Debugging line to check API key
         # print(f"LiveKit API Secret: {self.api_secret}")  # Debugging line to check API secret
-        # print(f"LiveKit URL: {self.livekit_url}")  # Debugging line to check URL
+        print(f"LiveKit URL: {self.livekit_url}")  # Debugging line to check URL
         
         if not all([self.api_key, self.api_secret, self.livekit_url]):
             logger.error("LiveKit credentials not properly configured")

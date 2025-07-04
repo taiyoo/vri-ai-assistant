@@ -5,6 +5,7 @@ import { HttpLambdaIntegration } from "aws-cdk-lib/aws-apigatewayv2-integrations
 import { HttpUserPoolAuthorizer } from "aws-cdk-lib/aws-apigatewayv2-authorizers";
 import {
   Architecture,
+  // Code,
   IFunction,
   LayerVersion,
   Runtime,
