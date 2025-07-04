@@ -238,23 +238,23 @@ export class Api extends Construct {
     let livekitApiKey, livekitApiSecret, livekitUrl, liveKitPluginOpenAIAPIKey, liveKitPluginDeepgramAPIKey;
     if (props.enableLivekit) {
       try {
-        livekitApiKey = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'LiveKitApiKey', {
+        livekitApiKey = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'livekitApiKey', {
           parameterName: '/bedrock-ai-assistant/livekit/api-key',
         }).stringValue;
         
-        livekitApiSecret = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'LiveKitApiSecret', {
+        livekitApiSecret = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'livekitApiSecret', {
           parameterName: '/bedrock-ai-assistant/livekit/api-secret',
         }).stringValue;
         
-        livekitUrl = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitUrl', {
+        livekitUrl = ssm.StringParameter.fromStringParameterAttributes(this, 'livekitUrl', {
           parameterName: '/bedrock-ai-assistant/livekit/url',
         }).stringValue;
 
-        liveKitPluginOpenAIAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitPluginOpenAIAPIKey', {
+        liveKitPluginOpenAIAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'liveKitPluginOpenAIAPIKey', {
           parameterName: '/bedrock-ai-assistant/livekit/plugin/openai-api-key',
         }).stringValue;
 
-        liveKitPluginDeepgramAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'LiveKitPluginDeepgramAPIKey', {
+        liveKitPluginDeepgramAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'liveKitPluginDeepgramAPIKey', {
           parameterName: '/bedrock-ai-assistant/livekit/plugin/deepgram-api-key',
         }).stringValue;
 
