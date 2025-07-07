@@ -13,6 +13,8 @@ import { Api } from "./constructs/api";
 import { Database } from "./constructs/database";
 import { Frontend } from "./constructs/frontend";
 import { WebSocket } from "./constructs/websocket";
+import { LivekitAgentEC2 } from './constructs/livekit-agent-ec2';
+
 import * as cdk from "aws-cdk-lib";
 import { Embedding } from "./constructs/embedding";
 import { UsageAnalysis } from "./constructs/usage-analysis";
@@ -23,6 +25,7 @@ import * as s3deploy from "aws-cdk-lib/aws-s3-deployment";
 import * as iam from "aws-cdk-lib/aws-iam";
 import * as logs from "aws-cdk-lib/aws-logs";
 import * as path from "path";
+import * as ec2 from "aws-cdk-lib/aws-ec2";
 import { BedrockCustomBotCodebuild } from "./constructs/bedrock-custom-bot-codebuild";
 import { BotStore, Language } from "./constructs/bot-store";
 import { Duration } from "aws-cdk-lib";
@@ -218,6 +221,34 @@ export class BedrockAIAssistantStack extends cdk.Stack {
       livekitUrl: props.livekitUrl,      
     });
     props.documentBucket.grantReadWrite(backendApi.handler);
+
+    // Only create the LiveKit agent if LiveKit is enabled
+    if (props.enableLivekit) {
+      const livekitAgent = new LivekitAgentEC2(this, 'LivekitAgent', {
+        envName: props.envName,
+        envPrefix: props.envPrefix,
+        ssmParameterPath: '/bedrock-ai-assistant',
+        sourceBucket: sourceBucket, // Use your existing source bucket
+        instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
+        livekitApiKey: props.livekitApiKey,
+        livekitApiSecret: props.livekitApiSecret,
+        livekitUrl: props.livekitUrl,
+        enableSileroVad: true
+      });
+      
+      // Add outputs for the LiveKit agent
+      new CfnOutput(this, 'LivekitAgentInstanceId', {
+        value: livekitAgent.instance.instanceId,
+        exportName: `${props.envPrefix}${sepHyphen}LivekitAgentInstanceId`,
+      });
+      
+      new CfnOutput(this, 'LivekitAgentPublicIp', {
+        value: livekitAgent.instance.instancePublicIp,
+        exportName: `${props.envPrefix}${sepHyphen}LivekitAgentPublicIp`,
+      });
+    }
+
+
     // Add permissions to API handler for BotStore
     botStore?.addDataAccessPolicy(
       props.envPrefix,

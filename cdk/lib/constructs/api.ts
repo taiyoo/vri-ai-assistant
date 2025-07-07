@@ -207,6 +207,20 @@ export class Api extends Construct {
         ],
       })
     );
+    handlerRole.addToPolicy(
+      new iam.PolicyStatement({
+        actions: [
+          "ssm:GetParameter",
+          "ssm:GetParameters",
+          "ssm:GetParametersByPath",
+          "kms:Decrypt"
+        ],
+        resources: [
+          `arn:aws:ssm:${Stack.of(this).region}:${Stack.of(this).account}:parameter/bedrock-ai-assistant/livekit/*`
+          // Optionally, add your KMS key ARN(s) here for tighter security
+        ],
+      })
+    );
     // For Firecrawl api key
     handlerRole.addToPolicy(
       new iam.PolicyStatement({
@@ -233,35 +247,6 @@ export class Api extends Construct {
     props.usageAnalysis?.resultOutputBucket.grantReadWrite(handlerRole);
     props.usageAnalysis?.ddbBucket.grantRead(handlerRole);
     props.largeMessageBucket.grantReadWrite(handlerRole);
-
-    // Get parameters from SSM if LiveKit is enabled
-    let livekitApiKey, livekitApiSecret, livekitUrl, liveKitPluginOpenAIAPIKey, liveKitPluginDeepgramAPIKey;
-    if (props.enableLivekit) {
-      try {
-        livekitApiKey = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'livekitApiKey', {
-          parameterName: '/bedrock-ai-assistant/livekit/api-key',
-        }).stringValue;
-        
-        livekitApiSecret = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'livekitApiSecret', {
-          parameterName: '/bedrock-ai-assistant/livekit/api-secret',
-        }).stringValue;
-        
-        livekitUrl = ssm.StringParameter.fromStringParameterAttributes(this, 'livekitUrl', {
-          parameterName: '/bedrock-ai-assistant/livekit/url',
-        }).stringValue;
-
-        liveKitPluginOpenAIAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'liveKitPluginOpenAIAPIKey', {
-          parameterName: '/bedrock-ai-assistant/livekit/plugin/openai-api-key',
-        }).stringValue;
-
-        liveKitPluginDeepgramAPIKey = ssm.StringParameter.fromStringParameterAttributes(this, 'liveKitPluginDeepgramAPIKey', {
-          parameterName: '/bedrock-ai-assistant/livekit/plugin/deepgram-api-key',
-        }).stringValue;
-
-      } catch (error) {
-        console.warn('Could not load LiveKit parameters from SSM, LiveKit will be disabled');
-      }
-    }
 
     const handler = new PythonFunction(this, "HandlerV2", {
       entry: path.join(__dirname, "../../../backend"),
@@ -303,22 +288,12 @@ export class Api extends Construct {
         AWS_LAMBDA_EXEC_WRAPPER: "/opt/bootstrap",
         PORT: "8000",
         // Add LiveKit environment variables
-        ENABLE_LIVEKIT: (props.enableLivekit && livekitApiKey && livekitApiSecret) ? "true" : "false",
-        ...(props.enableLivekit && livekitApiKey && {
-          LIVEKIT_API_KEY: livekitApiKey,
-        }),
-        ...(props.enableLivekit && livekitApiSecret && {
-          LIVEKIT_API_SECRET: livekitApiSecret,
-        }),
-        ...(props.enableLivekit && livekitUrl && {
-          LIVEKIT_URL: livekitUrl,
-        }),
-        ...(props.enableLivekit && liveKitPluginOpenAIAPIKey && {
-          OPENAI_API_KEY: liveKitPluginOpenAIAPIKey,
-        }),
-        ...(props.enableLivekit && liveKitPluginDeepgramAPIKey && {
-          DEEPGRAM_API_KEY: liveKitPluginDeepgramAPIKey,
-        }),
+        ENABLE_LIVEKIT: props.enableLivekit ? "true" : "false",
+        LIVEKIT_API_KEY_PARAM: '/bedrock-ai-assistant/livekit/api-key',
+        LIVEKIT_API_SECRET_PARAM: '/bedrock-ai-assistant/livekit/api-secret',
+        LIVEKIT_URL_PARAM: '/bedrock-ai-assistant/livekit/url',
+        OPENAI_API_KEY_PARAM: '/bedrock-ai-assistant/livekit/plugin/openai-api-key',
+        DEEPGRAM_API_KEY_PARAM: '/bedrock-ai-assistant/livekit/plugin/deepgram-api-key',
       },
       role: handlerRole,
       logRetention: logs.RetentionDays.THREE_MONTHS,

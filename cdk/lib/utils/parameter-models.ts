@@ -1,21 +1,10 @@
 import { z } from "zod";
 import { TIdentityProvider } from "./identity-provider";
 import { App } from "aws-cdk-lib";
+import { enable } from "effect/RuntimeFlagsPatch";
 
 export const BotStoreLanguageSchema = z.enum([
   "en",
-  "de",
-  "fr",
-  "es",
-  "ja",
-  "ko",
-  "zhhans",
-  "zhhant",
-  "it",
-  "nb",
-  "th",
-  "id",
-  "ms",
 ]);
 
 /**
@@ -85,8 +74,11 @@ const BedrockAIAssistantParametersSchema = BaseParametersSchema.extend({
   selfSignUpEnabled: z.boolean().default(true),
 
   // Performance and availability
-  enableRagReplicas: z.boolean().default(true),
+  enableRagReplicas: z.boolean().default(false),
   enableLambdaSnapStart: z.boolean().default(true),
+
+  // Livekit configuration
+  enableLivekit: z.boolean().default(false),
 
   // Custom domain configuration
   alternateDomainName: z.string().default(""),
@@ -219,6 +211,7 @@ export function resolveBedrockAIAssistantParameters(
       "enableBedrockCrossRegionInference"
     ),
     enableLambdaSnapStart: app.node.tryGetContext("enableLambdaSnapStart"),
+    enableLivekit: app.node.tryGetContext("enableLivekit"),
     alternateDomainName: app.node.tryGetContext("alternateDomainName"),
     hostedZoneId: app.node.tryGetContext("hostedZoneId"),
     enableBotStore: app.node.tryGetContext("enableBotStore"),
