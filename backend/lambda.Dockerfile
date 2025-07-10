@@ -4,7 +4,7 @@ COPY ./pyproject.toml ./poetry.lock ./
 
 ENV POETRY_REQUESTS_TIMEOUT=10800
 RUN python -m pip install --upgrade pip && \
-    pip install poetry --no-cache-dir && \
+    pip install --retries 3 poetry --no-cache-dir && \
     poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --only main && \
     poetry cache clear --all pypi
