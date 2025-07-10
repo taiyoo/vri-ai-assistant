@@ -37,19 +37,6 @@ is_published_api = PUBLISHED_API_ID is not None
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-
-# Define lifespan context manager
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup code here (if any)
-    logger.info("Application startup")
-    
-    yield  # This is where FastAPI runs
-    
-    # Shutdown code here
-    logger.info("Application shutdown: cleaning up resources")
-    livekit_service.stop_agent_worker()
-
 if not is_published_api:
     openapi_tags = [
         {"name": "conversation", "description": "Conversation API"},

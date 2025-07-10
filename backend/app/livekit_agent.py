@@ -4,6 +4,9 @@ import logging
 import traceback
 import sys
 
+# MCP tool registration for LLM to access DynamoDB
+import app.tools.dynamodb_tool
+
 # Set up logging
 logging.basicConfig(level=logging.INFO, 
                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -24,6 +27,7 @@ try:
         WorkerOptions,
         cli,
         metrics,
+        mcp,
     )
     from livekit.plugins import deepgram, openai
 
@@ -59,7 +63,7 @@ try:
             
             # Create session with configured services
             session = AgentSession(
-                # vad=silero.VAD.load(),
+                vad=silero.VAD.load(),
                 llm=openai.LLM(
                     model="gpt-4o",
                     api_key=os.environ.get("OPENAI_API_KEY")
@@ -101,7 +105,35 @@ try:
                     """Called when the session starts"""
                     logger.info("Session started, sending initial message")
                     await self.send_message("Hello, I'm your aged care assistant. How can I help you today?")            
-            
+
+                async def on_message(self, message: str):
+                    logger.info(f"Received message: {message}")
+
+                    # Use the LLM to detect intent and extract name if present
+                    prompt = (
+                        "Classify the user's intent from the following message. "
+                        "If the user is asking to search for a resident's name, "
+                        "respond with 'search_name:<name>'. Otherwise, respond with 'other'.\n\n"
+                        f"Message: {message}"
+                    )
+                    llm_response = await self.llm.complete(prompt)
+                    response_text = llm_response.text.strip().lower()
+
+                    if response_text.startswith("search_name:"):
+                        name = response_text.split("search_name:")[1].strip()
+                        logger.info(f"Detected search_name intent for: {name}")
+                        # Call the registered tool
+                        results = tools.invoke("search_name_in_dynamodb", name=name)
+                        if results:
+                            await self.send_message(f"Found names: {', '.join(results)}")
+                        else:
+                            await self.send_message("No matching names found.")
+                    else:
+                        # Default LLM response
+                        logger.info("No search intent detected, responding normally.")
+                        reply = await self.llm.complete(message)
+                        await self.send_message(reply.text.strip())                    
+                        
             logger.info("Starting session with explicit transcription")
             
             # Start the session with explicit transcription
