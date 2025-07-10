@@ -35,7 +35,8 @@ export const VoiceControl: React.FC<VoiceControlProps> = ({
   // Handle microphone button click
   const handleMicClick = async () => {
     if (disabled || isProcessing) return;
-    
+    console.log('Mic button clicked');
+
     try {
       if (isRecording) {
         onStopRecording?.();

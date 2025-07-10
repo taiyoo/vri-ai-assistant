@@ -20,7 +20,7 @@ async def get_token(
     try:
         # Extract user ID from Cognito claims
         current_user: User = request.state.current_user
-        user_id = current_user.id
+        user_id = current_user.email if current_user.email else user_id  # Use email if available
 
         return livekit_service.create_token(user_id, token_request.room_name)
     except ValueError as e:
