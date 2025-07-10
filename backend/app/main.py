@@ -55,7 +55,6 @@ else:
 app = FastAPI(
     openapi_tags=openapi_tags,
     title=title,
-    lifespan=lifespan,
 )
 
 
