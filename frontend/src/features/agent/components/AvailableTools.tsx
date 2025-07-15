@@ -76,6 +76,26 @@ export const AvailableTools = ({ availableTools, tools, setTools }: Props) => {
 
           return newTools;
         });
+      } else if (tool.name === 'bedrock_dynamodb_search') {
+        setTools((preTools) => {
+          const isEnabled = preTools
+            ?.map(({ name }) => name)
+            .includes(tool.name);
+
+          const newTools = isEnabled
+            ? [...preTools.filter(({ name }) => name != tool.name)]
+            : [
+                ...preTools,
+                {
+                  ...tool,
+                  toolType: 'bedrock_dynamodb_search' as ToolType,
+                  name: 'bedrock_dynamodb_search',
+                  // Add any config fields here if needed
+                } as AgentTool,
+              ];
+
+          return newTools;
+        });
       } else {
         setTools((preTools) =>
           preTools?.map(({ name }) => name).includes(tool.name)
@@ -292,6 +312,22 @@ export const AvailableTools = ({ availableTools, tools, setTools }: Props) => {
                 </div>
               </div>
             )}
+            {tool.name === 'bedrock_dynamodb_search' &&
+              tools?.map(({ name }) => name).includes('bedrock_dynamodb_search') && (
+                <ExpandableDrawerGroup
+                  className="ml-8 mt-2"
+                  isDefaultShow={false}
+                  label={t('agent.tools.bedrock_dynamodb_search.settings')}
+                >
+                <div className="space-y-4">
+                  <div className="ml-6 text-sm">
+                    {/* Add any custom config UI here if needed */}
+                    {t('agent.tools.bedrock_dynamodb_search.nameField.label')}
+                    {/* Example: <input ... /> for patient name, etc. */}
+                  </div>
+                </div>
+              </ExpandableDrawerGroup>
+            )}            
         </div>
       ))}
     </>

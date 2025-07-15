@@ -23,6 +23,7 @@ from app.routes.schemas.bot import (
     FirecrawlConfig,
     GenerationParams,
     InternetTool,
+    BedrockDynamoDBTool,
     Knowledge,
     PlainTool,
     ReasoningParams,
@@ -223,7 +224,21 @@ class InternetToolModel(BaseModel):
             firecrawl_config=firecrawl_config,
         )
 
+class BedrockDynamoDBToolModel(BaseModel):
+    tool_type: Literal["bedrock_dynamodb_search"] = Field(
+        "bedrock_dynamodb_search",
+        description="Type of tool. It does need additional settings for DynamoDB search.",
+    )
+    name: str
+    description: str
 
+    @classmethod
+    def from_tool_input(cls, tool: AgentToolInput) -> Self:
+        return cls(
+            tool_type="bedrock_dynamodb_search",
+            name=tool.name,
+            description=tool.description,
+        )
 class BedrockAgentConfigModel(BaseModel):
     agent_id: str
     alias_id: str
@@ -256,7 +271,7 @@ class BedrockAgentToolModel(BaseModel):
 
 
 ToolModel = Annotated[
-    PlainToolModel | InternetToolModel | BedrockAgentToolModel,
+    PlainToolModel | InternetToolModel | BedrockAgentToolModel | BedrockDynamoDBToolModel,
     Discriminator("tool_type"),
 ]
 
@@ -296,6 +311,8 @@ class AgentModel(BaseModel):
                 )
             elif tool_input.tool_type == "bedrock_agent":
                 tools.append(BedrockAgentToolModel.from_tool_input(tool_input))
+            elif tool_input.tool_type == "bedrock_dynamodb_search":
+                tools.append(BedrockDynamoDBToolModel.from_tool_input(tool_input))
 
         return cls(tools=tools)
 
@@ -334,6 +351,14 @@ class AgentModel(BaseModel):
                             if tool.bedrockAgentConfig
                             else None
                         ),
+                    )
+                )
+            elif isinstance(tool, BedrockDynamoDBToolModel):
+                tools.append(
+                    BedrockDynamoDBTool(
+                        tool_type="bedrock_dynamodb_search",
+                        name=tool.name,
+                        description=tool.description,
                     )
                 )
             else:

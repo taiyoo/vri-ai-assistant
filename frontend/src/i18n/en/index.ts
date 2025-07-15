@@ -205,6 +205,15 @@ const translation = {
             placeholder: 'Enter Alias ID',
           },
         },
+        bedrock_dynamodb_search: {
+          name: 'DynamoDB Search',
+          description: 'Search for patient records in the DynamoDB table.',
+          settings: 'DynamoDB Search Settings',
+          nameField: {
+            label: 'Patient Name',
+            placeholder: 'Enter patient name to search',
+          },
+        },
       },
     },
     voice: {

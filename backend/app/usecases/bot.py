@@ -62,6 +62,7 @@ from app.routes.schemas.bot import (
     ConversationQuickStarter,
     GenerationParams,
     InternetTool,
+    BedrockDynamoDBTool,
     Knowledge,
     PartialVisibilityInput,
     PlainTool,
@@ -645,6 +646,7 @@ def fetch_available_agent_tools() -> list[Tool]:
     """Fetch available tools for bot."""
     tools: list[AgentTool] = get_available_tools()
     result: list[Tool] = []
+    print(f"Available tools: {[tool.name for tool in tools]}")
     for tool in tools:
         if tool.name == "bedrock_agent":
             result.append(
@@ -661,6 +663,14 @@ def fetch_available_agent_tools() -> list[Tool]:
                     name=tool.name,
                     description=tool.description,
                     search_engine="duckduckgo",
+                )
+            )
+        elif tool.name == "bedrock_dynamodb_search":
+            result.append(
+                BedrockDynamoDBTool(
+                    tool_type="bedrock_dynamodb_search",
+                    name=tool.name,
+                    description=tool.description,
                 )
             )
         else:

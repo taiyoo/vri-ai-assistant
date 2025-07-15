@@ -1,8 +1,15 @@
-from livekit_agent.mcp import tools
+from livekit.agents import (
+    function_tool, 
+    Agent, 
+    RunContext
+)
 import boto3
 
-@tools.register
-def search_name_in_dynamodb(name: str) -> list[dict]:
+@function_tool()
+def search_name_in_dynamodb(
+    context: RunContext,
+    name: str
+) -> list[dict]:
     """
     Search for a name in the DynamoDB table and return matching items.
     """
@@ -16,3 +23,8 @@ def search_name_in_dynamodb(name: str) -> list[dict]:
         ExpressionAttributeValues={":name": name},
     )
     return response.get("Items", [])
+
+if __name__ == "__main__":
+    # You can pass None for context if it's not used in your function
+    results = search_name_in_dynamodb(None, "Smith")
+    print("Results:", results)

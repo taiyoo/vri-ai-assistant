@@ -125,6 +125,10 @@ class InternetTool(BaseSchema):
             )
         return v
 
+class BedrockDynamoDBTool(BaseSchema):
+    tool_type: Literal["bedrock_dynamodb_search"] = "bedrock_dynamodb_search"
+    name: str
+    description: str
 
 class BedrockAgentTool(BaseSchema):
     tool_type: Literal["bedrock_agent"]
@@ -134,7 +138,7 @@ class BedrockAgentTool(BaseSchema):
 
 
 Tool = Annotated[
-    PlainTool | InternetTool | BedrockAgentTool, Discriminator("tool_type")
+    PlainTool | InternetTool | BedrockAgentTool | BedrockDynamoDBTool, Discriminator("tool_type")
 ]
 
 
@@ -158,7 +162,7 @@ class Agent(BaseSchema):
 
 
 class AgentToolInput(BaseSchema):
-    tool_type: Literal["plain", "internet", "bedrock_agent"]
+    tool_type: Literal["plain", "internet", "bedrock_agent", "bedrock_dynamodb_search"]
     name: str
     description: str
     search_engine: Literal["duckduckgo", "firecrawl"] | None = None
