@@ -558,6 +558,7 @@ def get_model_id(
         "amazon-nova-pro": "amazon.nova-pro-v1:0",
         "amazon-nova-lite": "amazon.nova-lite-v1:0",
         "amazon-nova-micro": "amazon.nova-micro-v1:0",
+        "amazon-nova-sonic": "amazon.nova-sonic-v1:0", 
         # DeepSeek models
         "deepseek-r1": "deepseek.r1-v1:0",
         # Meta Llama 3 models

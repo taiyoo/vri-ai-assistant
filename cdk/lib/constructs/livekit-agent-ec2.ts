@@ -12,7 +12,6 @@ export interface LivekitAgentEC2Props {
   readonly instanceType?: ec2.InstanceType;
   readonly ssmParameterPath: string;
   readonly sourceBucket: s3.IBucket;
-  readonly enableSileroVad?: boolean;
   readonly livekitApiKey?: string;
   readonly livekitApiSecret?: string;
   readonly livekitUrl?: string;
@@ -197,10 +196,10 @@ export class LivekitAgentEC2 extends Construct {
       '      "files": {',
       '        "collect_list": [',
       '          {',
-      '            "file_path": "/home/ec2-user/livekit-agent/logs/*.log",',
+      '            "file_path": "/var/lib/docker/containers/*/*.log",',
       '            "log_group_name": "' + logGroup.logGroupName + '",',
       '            "log_stream_name": "{instance_id}-livekit-agent",',
-      '            "timestamp_format": "%Y-%m-%d %H:%M:%S"',
+      '            "timestamp_format": "%Y-%m-%dT%H:%M:%S.%fZ"',
       '          }',
       '        ]',
       '      }',

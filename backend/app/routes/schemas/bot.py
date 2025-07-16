@@ -126,7 +126,7 @@ class InternetTool(BaseSchema):
         return v
 
 class BedrockDynamoDBTool(BaseSchema):
-    tool_type: Literal["bedrock_dynamodb_search"] = "bedrock_dynamodb_search"
+    tool_type: Literal["bedrock_dynamodb_search"]
     name: str
     description: str
 

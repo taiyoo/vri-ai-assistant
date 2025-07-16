@@ -19,6 +19,7 @@ supported_base_models = {
     "amazon.nova-pro-v1:0": "amazon-nova-pro",
     "amazon.nova-lite-v1:0": "amazon-nova-lite",
     "amazon.nova-micro-v1:0": "amazon-nova-micro",
+    "amazon.nova-sonic-v1:0": "amazon-nova-sonic",
     "deepseek.r1-v1:0": "deepseek-r1",
     # Meta Llama 3 models
     "meta.llama3-3-70b-instruct-v1:0": "llama3-3-70b-instruct",

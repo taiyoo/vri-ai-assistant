@@ -233,7 +233,6 @@ export class BedrockAIAssistantStack extends cdk.Stack {
         livekitApiKey: props.livekitApiKey,
         livekitApiSecret: props.livekitApiSecret,
         livekitUrl: props.livekitUrl,
-        enableSileroVad: true
       });
       
       // Add outputs for the LiveKit agent

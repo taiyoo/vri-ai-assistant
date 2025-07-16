@@ -3,9 +3,10 @@ import os
 import logging
 import traceback
 import sys
+import asyncio
 
 # MCP tool registration for LLM to access DynamoDB
-import app.tools.dynamodb_tool
+from app.tools.dynamodb_tool import search_name_in_dynamodb
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, 
@@ -28,8 +29,9 @@ try:
         cli,
         metrics,
         mcp,
+        function_tool,
     )
-    from livekit.plugins import deepgram, openai
+    from livekit.plugins import deepgram, openai, silero
 
     logger.info("Successfully imported all required modules")
 
@@ -73,8 +75,8 @@ try:
                     api_key=os.environ.get("DEEPGRAM_API_KEY")
                 ),
                 tts=deepgram.TTS(
-                    #model="aura-asteria-en", https://developers.deepgram.com/docs/tts-models
-                    model="aura-2-thalia-en",
+                    model="aura-asteria-en"
+                    #model="aura-2-thalia-en",
                     api_key=os.environ.get("DEEPGRAM_API_KEY")
                 ),
                 # tts=openai.TTS(
@@ -109,6 +111,22 @@ try:
                 async def on_message(self, message: str):
                     logger.info(f"Received message: {message}")
 
+                    # If waiting for clarification
+                    if self.last_search_results:
+                        # Try to match user's message to a patient name
+                        for patient in self.last_search_results:
+                            if message.lower() in patient.get("PatientName", "").lower():
+                                summary = (
+                                    f"Patient: {patient.get('PatientName', 'Unknown')}\n"
+                                    f"Age: {patient.get('Age', 'N/A')}\n"
+                                    f"Status: {patient.get('Status', 'N/A')}\n"
+                                )
+                                await self.send_message(f"Here is the summary:\n{summary}")
+                                self.last_search_results = None
+                                return
+                        await self.send_message("Sorry, I couldn't find that patient in the previous results. Please try again.")
+                        return
+
                     # Use the LLM to detect intent and extract name if present
                     prompt = (
                         "Classify the user's intent from the following message. "
@@ -122,12 +140,36 @@ try:
                     if response_text.startswith("search_name:"):
                         name = response_text.split("search_name:")[1].strip()
                         logger.info(f"Detected search_name intent for: {name}")
-                        # Call the registered tool
-                        results = tools.invoke("search_name_in_dynamodb", name=name)
+                        
+                        # Call the DynamoDB tool in a thread pool
+                        loop = asyncio.get_event_loop()
+                        results = await loop.run_in_executor(
+                            None, lambda: search_name_in_dynamodb(None, name)
+                        )
+                        
                         if results:
-                            await self.send_message(f"Found names: {', '.join(results)}")
+                            if len(results) == 1:
+                                patient = results[0]
+                                # Build a summary from the patient record (customize as needed)
+                                summary = (
+                                    f"Patient: {patient.get('PatientName', 'Unknown')}\n"
+                                    f"Age: {patient.get('Age', 'N/A')}\n"
+                                    f"Status: {patient.get('Status', 'N/A')}\n"
+                                    # Add more fields as needed
+                                )
+                                await self.send_message(f"Found one match:\n{summary}")
+                                self.last_search_results = None
+                            else:
+                                # Multiple matches: ask user to clarify
+                                names = [item.get("PatientName", "Unknown") for item in results]
+                                await self.send_message(
+                                    f"Found multiple matches: {', '.join(names)}. "
+                                    "Please specify which patient you want a summary for."
+                                )
+                                self.last_search_results = results
                         else:
                             await self.send_message("No matching names found.")
+                            self.last_search_results = None
                     else:
                         # Default LLM response
                         logger.info("No search intent detected, responding normally.")
