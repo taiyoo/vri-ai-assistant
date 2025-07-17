@@ -44,11 +44,6 @@ export interface ApiProps {
   readonly enableBedrockCrossRegionInference: boolean;
   readonly enableLambdaSnapStart: boolean;
   readonly openSearchEndpoint?: string;
-  // Add LiveKit props
-  readonly enableLivekit?: boolean;  
-  readonly livekitApiKey?: string;
-  readonly livekitApiSecret?: string; 
-  readonly livekitUrl?: string;
 }
 
 export class Api extends Construct {
@@ -304,13 +299,6 @@ export class Api extends Construct {
         OPENSEARCH_DOMAIN_ENDPOINT: props.openSearchEndpoint || "",
         AWS_LAMBDA_EXEC_WRAPPER: "/opt/bootstrap",
         PORT: "8000",
-        // Add LiveKit environment variables
-        ENABLE_LIVEKIT: props.enableLivekit ? "true" : "false",
-        LIVEKIT_API_KEY_PARAM: '/bedrock-ai-assistant/livekit/api-key',
-        LIVEKIT_API_SECRET_PARAM: '/bedrock-ai-assistant/livekit/api-secret',
-        LIVEKIT_URL_PARAM: '/bedrock-ai-assistant/livekit/url',
-        OPENAI_API_KEY_PARAM: '/bedrock-ai-assistant/livekit/plugin/openai-api-key',
-        DEEPGRAM_API_KEY_PARAM: '/bedrock-ai-assistant/livekit/plugin/deepgram-api-key',
       },
       role: handlerRole,
       logRetention: logs.RetentionDays.THREE_MONTHS,

@@ -12,9 +12,6 @@ export interface LivekitAgentEC2Props {
   readonly instanceType?: ec2.InstanceType;
   readonly ssmParameterPath: string;
   readonly sourceBucket: s3.IBucket;
-  readonly livekitApiKey?: string;
-  readonly livekitApiSecret?: string;
-  readonly livekitUrl?: string;
 }
 
 export class LivekitAgentEC2 extends Construct {
@@ -151,6 +148,7 @@ export class LivekitAgentEC2 extends Construct {
       'livekit-plugins-openai>=1.1.5',
       'livekit-plugins-deepgram>=1.1.5',
       'livekit-plugins-silero>=1.1.5',
+      'livekit-agents[mcp]>=1.1.5',
       'EOL',
       
       // Copy agent script

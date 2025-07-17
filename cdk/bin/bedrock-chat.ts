@@ -88,7 +88,6 @@ const chat = new BedrockAIAssistantStack(
     enableRagReplicas: params.enableRagReplicas,
     enableBedrockCrossRegionInference: params.enableBedrockCrossRegionInference,
     enableLambdaSnapStart: params.enableLambdaSnapStart,
-    enableLivekit:params.enableLivekit,
     alternateDomainName: params.alternateDomainName,
     hostedZoneId: params.hostedZoneId,
     enableBotStore: params.enableBotStore,

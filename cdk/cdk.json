@@ -72,7 +72,6 @@
     "enableLambdaSnapStart": true,
     "enableBotStore": false,
     "enableBotStoreReplicas": false,
-    "enableLivekit": true,
     "botStoreLanguage": "en",
     "tokenValidMinutes": 30,
     "alternateDomainName": "",

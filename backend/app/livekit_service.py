@@ -14,10 +14,10 @@ def get_ssm_param(name):
 
 class LiveKitService:
     def __init__(self):
-        # Get secrets from environment variables
-        self.api_key = get_ssm_param(os.environ['LIVEKIT_API_KEY_PARAM'])
-        self.api_secret = get_ssm_param(os.environ['LIVEKIT_API_SECRET_PARAM'])
-        self.livekit_url = get_ssm_param(os.environ['LIVEKIT_URL_PARAM'])
+        # Get secrets from Amazon SSM Parameter Store
+        self.api_key = get_ssm_param('/bedrock-ai-assistant/livekit/api-key')
+        self.api_secret = get_ssm_param('/bedrock-ai-assistant/livekit/api-secret')
+        self.livekit_url = get_ssm_param('/bedrock-ai-assistant/livekit/url')
         self.worker_process = None
 
         # print(f"LiveKit API Key: {self.api_key}")  # Debugging line to check API key

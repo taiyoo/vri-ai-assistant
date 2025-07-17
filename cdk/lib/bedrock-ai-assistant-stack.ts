@@ -54,11 +54,6 @@ export interface BedrockAIAssistantStackProps extends StackProps {
   readonly alternateDomainName?: string;
   readonly hostedZoneId?: string;
   readonly devAccessIamRoleArn?: string;
-  // Add LiveKit props
-  readonly enableLivekit?: boolean;  
-  readonly livekitApiKey?: string;
-  readonly livekitApiSecret?: string; 
-  readonly livekitUrl?: string;
 }
 
 export class BedrockAIAssistantStack extends cdk.Stack {
@@ -214,39 +209,27 @@ export class BedrockAIAssistantStack extends cdk.Stack {
         props.enableBedrockCrossRegionInference,
       enableLambdaSnapStart: props.enableLambdaSnapStart,
       openSearchEndpoint: botStore?.openSearchEndpoint,
-      // Add LiveKit config
-      enableLivekit: props.enableLivekit || false,
-      livekitApiKey: props.livekitApiKey,
-      livekitApiSecret: props.livekitApiSecret,
-      livekitUrl: props.livekitUrl,      
     });
     props.documentBucket.grantReadWrite(backendApi.handler);
 
-    // Only create the LiveKit agent if LiveKit is enabled
-    if (props.enableLivekit) {
-      const livekitAgent = new LivekitAgentEC2(this, 'LivekitAgent', {
-        envName: props.envName,
-        envPrefix: props.envPrefix,
-        ssmParameterPath: '/bedrock-ai-assistant',
-        sourceBucket: sourceBucket, // Use your existing source bucket
-        instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
-        livekitApiKey: props.livekitApiKey,
-        livekitApiSecret: props.livekitApiSecret,
-        livekitUrl: props.livekitUrl,
-      });
+    const livekitAgent = new LivekitAgentEC2(this, 'LivekitAgent', {
+      envName: props.envName,
+      envPrefix: props.envPrefix,
+      ssmParameterPath: '/bedrock-ai-assistant',
+      sourceBucket: sourceBucket, // Use your existing source bucket
+      instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
+    });
       
-      // Add outputs for the LiveKit agent
-      new CfnOutput(this, 'LivekitAgentInstanceId', {
-        value: livekitAgent.instance.instanceId,
-        exportName: `${props.envPrefix}${sepHyphen}LivekitAgentInstanceId`,
-      });
-      
-      new CfnOutput(this, 'LivekitAgentPublicIp', {
-        value: livekitAgent.instance.instancePublicIp,
-        exportName: `${props.envPrefix}${sepHyphen}LivekitAgentPublicIp`,
-      });
-    }
-
+    // Add outputs for the LiveKit agent
+    new CfnOutput(this, 'LivekitAgentInstanceId', {
+      value: livekitAgent.instance.instanceId,
+      exportName: `${props.envPrefix}${sepHyphen}LivekitAgentInstanceId`,
+    });
+    
+    new CfnOutput(this, 'LivekitAgentPublicIp', {
+      value: livekitAgent.instance.instancePublicIp,
+      exportName: `${props.envPrefix}${sepHyphen}LivekitAgentPublicIp`,
+    });
 
     // Add permissions to API handler for BotStore
     botStore?.addDataAccessPolicy(

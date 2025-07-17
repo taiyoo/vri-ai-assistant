@@ -77,9 +77,6 @@ const BedrockAIAssistantParametersSchema = BaseParametersSchema.extend({
   enableRagReplicas: z.boolean().default(false),
   enableLambdaSnapStart: z.boolean().default(true),
 
-  // Livekit configuration
-  enableLivekit: z.boolean().default(false),
-
   // Custom domain configuration
   alternateDomainName: z.string().default(""),
   hostedZoneId: z.string().default(""),
@@ -211,7 +208,6 @@ export function resolveBedrockAIAssistantParameters(
       "enableBedrockCrossRegionInference"
     ),
     enableLambdaSnapStart: app.node.tryGetContext("enableLambdaSnapStart"),
-    enableLivekit: app.node.tryGetContext("enableLivekit"),
     alternateDomainName: app.node.tryGetContext("alternateDomainName"),
     hostedZoneId: app.node.tryGetContext("hostedZoneId"),
     enableBotStore: app.node.tryGetContext("enableBotStore"),
