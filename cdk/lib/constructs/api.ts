@@ -174,6 +174,23 @@ export class Api extends Construct {
       new iam.PolicyStatement({
         effect: iam.Effect.ALLOW,
         actions: [
+          "dynamodb:Scan",
+          "dynamodb:Query",
+          "dynamodb:GetItem",
+          "dynamodb:DescribeTable",
+          "dynamodb:PutItem",
+          "dynamodb:UpdateItem",
+          "dynamodb:DeleteItem"            
+        ],
+        resources: [
+          database.alzheimerDatasetTable.tableArn
+        ],
+      })
+    );
+    handlerRole.addToPolicy(
+      new iam.PolicyStatement({
+        effect: iam.Effect.ALLOW,
+        actions: [
           "cognito-idp:AdminGetUser",
           "cognito-idp:AdminListGroupsForUser",
           "cognito-idp:ListUsers",

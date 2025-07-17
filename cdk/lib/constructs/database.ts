@@ -2,6 +2,7 @@ import { CfnOutput, RemovalPolicy, Stack } from "aws-cdk-lib";
 import {
   AttributeType,
   BillingMode,
+  ITable,
   Table,
   TableEncryption,
   StreamViewType,
@@ -18,6 +19,7 @@ export class Database extends Construct {
   readonly botTable: Table;
   readonly tableAccessRole: Role;
   readonly websocketSessionTable: Table;
+  readonly alzheimerDatasetTable: ITable; 
 
   constructor(scope: Construct, id: string, props?: DatabaseProps) {
     super(scope, id);
@@ -95,6 +97,14 @@ export class Database extends Construct {
       removalPolicy: RemovalPolicy.DESTROY,
       timeToLiveAttribute: "expire",
     });
+
+    // Import existing Alzheimer Dataset Table by name
+    const alzheimerDatasetTable = Table.fromTableName(
+      this,
+      "AlzheimerDatasetTable",
+      "alzheimer_dataset"
+    );
+    this.alzheimerDatasetTable = alzheimerDatasetTable;
 
     this.conversationTable = conversationTable;
     this.botTable = botTable;

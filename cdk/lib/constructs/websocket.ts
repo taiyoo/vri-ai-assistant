@@ -72,6 +72,23 @@ export class WebSocket extends Construct {
     );
     handlerRole.addToPolicy(
       new iam.PolicyStatement({
+        effect: iam.Effect.ALLOW,
+        actions: [
+          "dynamodb:Scan",
+          "dynamodb:Query",
+          "dynamodb:GetItem",
+          "dynamodb:DescribeTable",
+          "dynamodb:PutItem",
+          "dynamodb:UpdateItem",
+          "dynamodb:DeleteItem"            
+        ],
+        resources: [
+          database.alzheimerDatasetTable.tableArn
+        ],
+      })
+    );
+    handlerRole.addToPolicy(
+      new iam.PolicyStatement({
         actions: ["bedrock:*"],
         resources: ["*"],
       })

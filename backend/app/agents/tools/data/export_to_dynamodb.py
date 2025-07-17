@@ -18,6 +18,7 @@ with open('alzheimer_dataset_with_names.json') as f:
     for i, line in enumerate(f):
         if i >= 1000:
             break
-        item = json.loads(line, parse_float=Decimal)
-        item = convert_floats(item)
-        table.put_item(Item=item)
+        item = json.loads(line)
+        filtered = {k: v for k, v in item.items() if not isinstance(v, float)}
+        filtered = convert_floats(filtered)
+        table.put_item(Item=filtered)

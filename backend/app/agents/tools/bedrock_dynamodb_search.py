@@ -1,5 +1,6 @@
 import logging
 import boto3
+import decimal
 from pydantic import BaseModel, Field
 from app.agents.tools.agent_tool import AgentTool
 from app.repositories.models.custom_bot import BotModel
@@ -10,6 +11,17 @@ logger.setLevel(logging.INFO)
 
 class DynamoDBSearchInput(BaseModel):
     name: str = Field(description="The patient name to search for in the DynamoDB table.")
+
+def convert_decimals(obj):
+    if isinstance(obj, list):
+        return [convert_decimals(i) for i in obj]
+    elif isinstance(obj, dict):
+        return {k: convert_decimals(v) for k, v in obj.items()}
+    elif isinstance(obj, decimal.Decimal):
+        # Convert to int if no fractional part, else float
+        return int(obj) if obj % 1 == 0 else float(obj)
+    else:
+        return obj
 
 def _search_name_in_dynamodb(
     tool_input: DynamoDBSearchInput, bot: BotModel | None, model: type_model_name | None
@@ -26,19 +38,9 @@ def _search_name_in_dynamodb(
         ExpressionAttributeValues={":name": name},
     )
     items = response.get("Items", [])
+    items = convert_decimals(items)
     logger.info(f"Found {len(items)} matching items in DynamoDB")
-    # Optionally format the results for downstream use
-    return [
-        {
-            "content": (
-                f"Patient: {item.get('PatientName', 'Unknown')}, "
-                f"Age: {item.get('Age', 'N/A')}, "
-                f"Status: {item.get('Status', 'N/A')}"
-            ),
-            "source_name": item.get("PatientName", "Unknown"),
-        }
-        for item in items
-    ]
+    return items
 
 bedrock_dynamodb_search_tool = AgentTool(
     name="bedrock_dynamodb_search",
