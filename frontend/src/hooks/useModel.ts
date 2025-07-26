@@ -7,12 +7,12 @@ import useLocalStorage from './useLocalStorage';
 import { ActiveModels } from '../@types/bot';
 import { toCamelCase } from '../utils/StringUtils';
 
-// const CLAUDE_SUPPORTED_MEDIA_TYPES = [
-//   'image/jpeg',
-//   'image/png',
-//   'image/gif',
-//   'image/webp',
-// ];
+const CLAUDE_SUPPORTED_MEDIA_TYPES = [
+  'image/jpeg',
+  'image/png',
+  'image/gif',
+  'image/webp',
+];
 
 const NOVA_SUPPORTED_MEDIA_TYPES = [
   'image/jpeg',
@@ -83,20 +83,20 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
     }[]
   >(() => {
     return [
-      // {
-      //   modelId: 'claude-v4-opus',
-      //   label: t('model.claude-v4-opus.label'),
-      //   description: t('model.claude-v4-opus.description'),
-      //   supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
-      //   supportReasoning: true,
-      // },
-      // {
-      //   modelId: 'claude-v4-sonnet',
-      //   label: t('model.claude-v4-sonnet.label'),
-      //   description: t('model.claude-v4-sonnet.description'),
-      //   supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
-      //   supportReasoning: true,
-      // },
+      {
+        modelId: 'claude-v4-opus',
+        label: t('model.claude-v4-opus.label'),
+        description: t('model.claude-v4-opus.description'),
+        supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
+        supportReasoning: true,
+      },
+      {
+        modelId: 'claude-v4-sonnet',
+        label: t('model.claude-v4-sonnet.label'),
+        description: t('model.claude-v4-sonnet.description'),
+        supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
+        supportReasoning: true,
+      },
       // {
       //   modelId: 'claude-v3-haiku',
       //   label: t('model.claude-v3-haiku.label'),
@@ -125,13 +125,13 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
       //   supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
       //   supportReasoning: false,
       // },
-      // {
-      //   modelId: 'claude-v3.7-sonnet',
-      //   label: t('model.claude-v3.7-sonnet.label'),
-      //   description: t('model.claude-v3.7-sonnet.description'),
-      //   supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
-      //   supportReasoning: true,
-      // },
+      {
+        modelId: 'claude-v3.7-sonnet',
+        label: t('model.claude-v3.7-sonnet.label'),
+        description: t('model.claude-v3.7-sonnet.description'),
+        supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
+        supportReasoning: true,
+      },
       // {
       //   modelId: 'claude-v3-opus',
       //   label: t('model.claude-v3-opus.label'),
