@@ -3,7 +3,7 @@
 A multilingual generative AI platform for AgedCare powered by [Amazon Bedrock](https://aws.amazon.com/bedrock/).
 Supports chat, custom bots with knowledge (RAG), bot sharing via a bot store, and task automation using agents.
 
-![](./docs/demo/demo.mp4)
+![](./docs/demo/demo.gif)
 
 
 ### Bot Personalization / Bot store
