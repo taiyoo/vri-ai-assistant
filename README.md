@@ -1,24 +1,10 @@
-<h1 align="center">Bedrock Chat (BrChat)</h1>
+<h1 align="center">AI4AgedCare</h1>
 
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/aws-samples/bedrock-chat?style=flat-square" />
-  <img src="https://img.shields.io/github/license/aws-samples/bedrock-chat?style=flat-square" />
-  <img src="https://img.shields.io/github/actions/workflow/status/aws-samples/bedrock-chat/cdk.yml?style=flat-square" />
-  <a href="https://github.com/aws-samples/bedrock-chat/issues?q=is%3Aissue%20state%3Aopen%20label%3Aroadmap">
-    <img src="https://img.shields.io/badge/roadmap-view-blue?style=flat-square" />
-  </a>
-</p>
-
-[English](https://github.com/aws-samples/bedrock-chat/blob/v3/README.md)
-
-A multilingual generative AI platform powered by [Amazon Bedrock](https://aws.amazon.com/bedrock/).
+A multilingual generative AI platform for AgedCare powered by [Amazon Bedrock](https://aws.amazon.com/bedrock/).
 Supports chat, custom bots with knowledge (RAG), bot sharing via a bot store, and task automation using agents.
 
-![](./docs/imgs/demo.gif)
+![](./docs/demo/demo.mp4)
 
-> [!Warning]
->
-> **V3 released. To update, please carefully review the [migration guide](./docs/migration/V2_TO_V3.md).** Without any care, **BOTS FROM V2 WILL BECOME UNUSABLE.**
 
 ### Bot Personalization / Bot store
 
@@ -82,8 +68,8 @@ By using the [Agent functionality](./docs/AGENT.md), your chatbot can automatica
 - Run deployment via following commands. If you want to specify the version to deploy or need to apply security policies, please specify the appropriate parameters from [Optional Parameters](#optional-parameters).
 
 ```sh
-git clone https://github.com/aws-samples/bedrock-chat.git
-cd bedrock-chat
+git clone https://github.com/taiyoo/vri-ai-assistant
+cd vri-ai-assistant
 chmod +x bin.sh
 ./bin.sh
 ```
