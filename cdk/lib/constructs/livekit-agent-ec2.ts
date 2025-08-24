@@ -25,14 +25,14 @@ export class LivekitAgentEC2 extends Construct {
     // Use existing VPC or create a new one
     const vpc = props.vpc || new ec2.Vpc(this, 'LivekitAgentVpc', {
       maxAzs: 2,
-      natGateways: 1,
+      natGateways: 0, // No NAT gateways for cost savings; instance will be in a public subnet
     });
     
     // Create security group
     const securityGroup = new ec2.SecurityGroup(this, 'LivekitAgentSG', {
       vpc,
       description: 'Security group for LiveKit agent EC2 instance',
-      allowAllOutbound: true,
+      allowAllOutbound: true, // Required for: package downloads, Docker pulls, SSM communication, and LiveKit server connections
     });
     
     // Allow SSH (for administration)

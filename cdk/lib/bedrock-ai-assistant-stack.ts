@@ -211,13 +211,17 @@ export class BedrockAIAssistantStack extends cdk.Stack {
       openSearchEndpoint: botStore?.openSearchEndpoint,
     });
     props.documentBucket.grantReadWrite(backendApi.handler);
-
+    
+    const defaultVpc = ec2.Vpc.fromLookup(this, 'DefaultVPC', {
+      isDefault: true
+    });
     const livekitAgent = new LivekitAgentEC2(this, 'LivekitAgent', {
       envName: props.envName,
       envPrefix: props.envPrefix,
       ssmParameterPath: '/bedrock-ai-assistant',
       sourceBucket: sourceBucket, // Use your existing source bucket
       instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
+      vpc: defaultVpc,
     });
       
     // Add outputs for the LiveKit agent

@@ -36,9 +36,10 @@ const waf = new FrontendWafStack(
   `${params.envPrefix}${sepHyphen}FrontendWafStack`,
   {
     env: {
-      // account: process.env.CDK_DEFAULT_ACCOUNT,
+      account: process.env.CDK_DEFAULT_ACCOUNT,
       region: "us-east-1",
     },
+    crossRegionReferences: true,
     envPrefix: params.envPrefix,
     allowedIpV4AddressRanges: params.allowedIpV4AddressRanges,
     allowedIpV6AddressRanges: params.allowedIpV6AddressRanges,
@@ -54,7 +55,7 @@ const bedrockRegionResources = new BedrockRegionResourcesStack(
   `${params.envPrefix}${sepHyphen}BedrockRegionResourcesStack`,
   {
     env: {
-      // account: process.env.CDK_DEFAULT_ACCOUNT,
+      account: process.env.CDK_DEFAULT_ACCOUNT,
       region: params.bedrockRegion,
     },
     crossRegionReferences: true,
@@ -66,7 +67,7 @@ const chat = new BedrockAIAssistantStack(
   `${params.envPrefix}${sepHyphen}BedrockAIAssistantStack`,
   {
     env: {
-      // account: process.env.CDK_DEFAULT_ACCOUNT,
+      account: process.env.CDK_DEFAULT_ACCOUNT,
       region: process.env.CDK_DEFAULT_REGION,
     },
     envName: params.envName,
