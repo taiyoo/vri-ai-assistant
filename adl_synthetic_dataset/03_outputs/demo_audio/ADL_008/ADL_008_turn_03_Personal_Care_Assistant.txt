@@ -1,0 +1,17 @@
+Voice Generation Demo File
+=========================
+Scenario ID: ADL_008
+Turn ID: 3
+Speaker: Personal Care Assistant
+Voice ID: aura-asteria-en
+Timestamp: 2025-09-17T12:32:09.773569
+
+Original Text:
+Great. We'll brush your teeth, wash your face, and then change into some fresh clothes. Does that sound good?
+
+Voice Parameters:
+- Model: aura-asteria-en
+- Format: Audio would be generated as MP3
+- Processing: Would use Deepgram TTS API for synthesis
+
+Note: This is a demo file. In production, this would be an audio file.

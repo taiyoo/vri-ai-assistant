@@ -1,0 +1,17 @@
+Voice Generation Demo File
+=========================
+Scenario ID: ADL_002
+Turn ID: 6
+Speaker: Resident
+Voice ID: aura-luna-en
+Timestamp: 2025-09-17T12:32:09.771406
+
+Original Text:
+Oh yes, I do remember... it had the most beautiful roses.
+
+Voice Parameters:
+- Model: aura-luna-en
+- Format: Audio would be generated as MP3
+- Processing: Would use Deepgram TTS API for synthesis
+
+Note: This is a demo file. In production, this would be an audio file.

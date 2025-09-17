@@ -1,0 +1,97 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_023",
+    "care_goal": "Maintain resident's hydration, encourage regular fluid intake",
+    "adl_category": "Hydration",
+    "environment": "Dining Area",
+    "time_of_day": "Afternoon",
+    "caregiver_role": "Registered Nurse"
+  },
+  "audio_files": [
+    {
+      "turn_id": 1,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_023/ADL_023_turn_01_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 56
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_023/ADL_023_turn_02_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 47
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_023/ADL_023_turn_03_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 157
+    },
+    {
+      "turn_id": 4,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_023/ADL_023_turn_04_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 51
+    },
+    {
+      "turn_id": 5,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_023/ADL_023_turn_05_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 118
+    }
+  ],
+  "processing_results": {
+    "scenario_id": "ADL_023",
+    "total_turns": 5,
+    "generated_files": [
+      {
+        "turn_id": 1,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_023/ADL_023_turn_01_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 56
+      },
+      {
+        "turn_id": 2,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_023/ADL_023_turn_02_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 47
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_023/ADL_023_turn_03_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 157
+      },
+      {
+        "turn_id": 4,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_023/ADL_023_turn_04_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 51
+      },
+      {
+        "turn_id": 5,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_023/ADL_023_turn_05_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 118
+      }
+    ],
+    "failed_turns": [],
+    "processing_time": 15.019495
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:10:08.011698"
+}

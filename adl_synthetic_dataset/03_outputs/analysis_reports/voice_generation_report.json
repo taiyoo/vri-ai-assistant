@@ -1,0 +1,4187 @@
+{
+  "processing_summary": {
+    "total_scenarios_available": 120,
+    "scenarios_processed": 120,
+    "total_utterances_processed": 440,
+    "audio_files_generated": 440,
+    "failed_generations": 0,
+    "processing_time_seconds": 1167.237262,
+    "average_time_per_scenario": 9.726977183333334
+  },
+  "output_location": "generated_audio",
+  "voice_configuration": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000,
+    "provider": "Deepgram TTS"
+  },
+  "detailed_results": [
+    {
+      "scenario_id": "ADL_000",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_000/ADL_000_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 118
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_000/ADL_000_turn_02_Resident.wav",
+          "voice_model": "aura-2-luna-en",
+          "utterance_length": 48
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_000/ADL_000_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 105
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_000/ADL_000_turn_04_Resident.wav",
+          "voice_model": "aura-2-luna-en",
+          "utterance_length": 22
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_000/ADL_000_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 129
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_000/ADL_000_turn_06_Resident.wav",
+          "voice_model": "aura-2-luna-en",
+          "utterance_length": 28
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.969928,
+      "combined_conversation_file": "ADL_000_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_001",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_001/ADL_001_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_001/ADL_001_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 115
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_001/ADL_001_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 37
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_001/ADL_001_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 141
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_001/ADL_001_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 31
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_001/ADL_001_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 78
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 18.195249,
+      "combined_conversation_file": "ADL_001_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_002",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_002/ADL_002_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 87
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_002/ADL_002_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 38
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_002/ADL_002_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 80
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_002/ADL_002_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 34
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_002/ADL_002_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 123
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_002/ADL_002_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 57
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.742211,
+      "combined_conversation_file": "ADL_002_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_003",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_004",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_004/ADL_004_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 98
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_004/ADL_004_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_004/ADL_004_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 118
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_004/ADL_004_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 27
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_004/ADL_004_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 133
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_004/ADL_004_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 34
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.00503,
+      "combined_conversation_file": "ADL_004_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_005",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_005/ADL_005_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 79
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_005/ADL_005_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 35
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_005/ADL_005_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_005/ADL_005_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 31
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 9.010333,
+      "combined_conversation_file": "ADL_005_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_006",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_006/ADL_006_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 69
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_006/ADL_006_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 32
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_006/ADL_006_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 96
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_006/ADL_006_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 28
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_006/ADL_006_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 97
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_006/ADL_006_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 31
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.202795,
+      "combined_conversation_file": "ADL_006_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_007",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_008",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_008/ADL_008_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 112
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_008/ADL_008_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 32
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_008/ADL_008_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 109
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_008/ADL_008_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 17
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_008/ADL_008_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 136
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.500754,
+      "combined_conversation_file": "ADL_008_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_009",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 6e-06
+    },
+    {
+      "scenario_id": "ADL_010",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_010/ADL_010_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 146
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_010/ADL_010_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 71
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_010/ADL_010_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 137
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_010/ADL_010_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 35
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_010/ADL_010_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 96
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_010/ADL_010_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 43
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 18.181741,
+      "combined_conversation_file": "ADL_010_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_011",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_011/ADL_011_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 125
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_011/ADL_011_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 41
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_011/ADL_011_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 168
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_011/ADL_011_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 57
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_011/ADL_011_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 152
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.529466,
+      "combined_conversation_file": "ADL_011_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_012",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_012/ADL_012_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 141
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_012/ADL_012_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 19
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_012/ADL_012_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_012/ADL_012_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 15
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_012/ADL_012_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 99
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_012/ADL_012_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 17
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.648071,
+      "combined_conversation_file": "ADL_012_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_013",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_013/ADL_013_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 109
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_013/ADL_013_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 23
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_013/ADL_013_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 159
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_013/ADL_013_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 61
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_013/ADL_013_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 84
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.382004,
+      "combined_conversation_file": "ADL_013_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_014",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_014/ADL_014_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_014/ADL_014_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 61
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_014/ADL_014_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 176
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_014/ADL_014_turn_04_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.561748,
+      "combined_conversation_file": "ADL_014_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_015",
+      "total_turns": 7,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 49
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 23
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 74
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 14
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 96
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_015/ADL_015_turn_07_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 24
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.108015,
+      "combined_conversation_file": "ADL_015_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_016",
+      "total_turns": 7,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_016/ADL_016_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_016/ADL_016_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 56
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_016/ADL_016_turn_03_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 8
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_016/ADL_016_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 116
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_016/ADL_016_turn_05_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_016/ADL_016_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 63
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 7,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 12.68934,
+      "combined_conversation_file": "ADL_016_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_017",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_018",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_018/ADL_018_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 79
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_018/ADL_018_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 39
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_018/ADL_018_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 141
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_018/ADL_018_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 54
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_018/ADL_018_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 97
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.0643,
+      "combined_conversation_file": "ADL_018_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_019",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 4e-06
+    },
+    {
+      "scenario_id": "ADL_020",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_021",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_021/ADL_021_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 121
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_021/ADL_021_turn_02_Resident.wav",
+          "voice_model": "aura-2-mars-en",
+          "utterance_length": 24
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_021/ADL_021_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 130
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_021/ADL_021_turn_04_Resident.wav",
+          "voice_model": "aura-2-mars-en",
+          "utterance_length": 13
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 10.792208,
+      "combined_conversation_file": "ADL_021_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_022",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_022/ADL_022_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 95
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_022/ADL_022_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 28
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_022/ADL_022_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 150
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_022/ADL_022_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 52
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_022/ADL_022_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 97
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.289517,
+      "combined_conversation_file": "ADL_022_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_023",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_023/ADL_023_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 56
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_023/ADL_023_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 47
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_023/ADL_023_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 157
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_023/ADL_023_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 51
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_023/ADL_023_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 118
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.019495,
+      "combined_conversation_file": "ADL_023_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_024",
+      "total_turns": 7,
+      "generated_files": [
+        {
+          "turn_id": 2,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_024/ADL_024_turn_02_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 81
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_024/ADL_024_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 26
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_024/ADL_024_turn_04_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 137
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_024/ADL_024_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 22
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_024/ADL_024_turn_06_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 74
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_024/ADL_024_turn_07_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 16
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 1,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 13.767014,
+      "combined_conversation_file": "ADL_024_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_025",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_026",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_027",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_027/ADL_027_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 123
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_027/ADL_027_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 82
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_027/ADL_027_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 138
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_027/ADL_027_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 40
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.108614,
+      "combined_conversation_file": "ADL_027_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_028",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_029",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_029/ADL_029_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 161
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_029/ADL_029_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 44
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_029/ADL_029_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 172
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_029/ADL_029_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 19
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_029/ADL_029_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 90
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_029/ADL_029_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 38
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.381469,
+      "combined_conversation_file": "ADL_029_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_030",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_030/ADL_030_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 115
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_030/ADL_030_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 53
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_030/ADL_030_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 128
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_030/ADL_030_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 29
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_030/ADL_030_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 76
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.343239,
+      "combined_conversation_file": "ADL_030_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_031",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_031/ADL_031_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 76
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_031/ADL_031_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 28
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_031/ADL_031_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 91
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_031/ADL_031_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_031/ADL_031_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 60
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 10.166529,
+      "combined_conversation_file": "ADL_031_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_032",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_032/ADL_032_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_032/ADL_032_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_032/ADL_032_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 51
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_032/ADL_032_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 10
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_032/ADL_032_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 6.491234,
+      "combined_conversation_file": "ADL_032_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_033",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_033/ADL_033_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 84
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_033/ADL_033_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 21
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_033/ADL_033_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 101
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_033/ADL_033_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_033/ADL_033_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 105
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_033/ADL_033_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 28
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.370087,
+      "combined_conversation_file": "ADL_033_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_034",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_034/ADL_034_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 89
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_034/ADL_034_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 20
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_034/ADL_034_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 91
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_034/ADL_034_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 17
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_034/ADL_034_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 102
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_034/ADL_034_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 26
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.569165,
+      "combined_conversation_file": "ADL_034_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_035",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_036",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_036/ADL_036_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 74
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_036/ADL_036_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 15
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_036/ADL_036_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 96
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_036/ADL_036_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 47
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_036/ADL_036_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.339729,
+      "combined_conversation_file": "ADL_036_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_037",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_037/ADL_037_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_037/ADL_037_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 91
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_037/ADL_037_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 57
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_037/ADL_037_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 112
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_037/ADL_037_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 39
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_037/ADL_037_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 68
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.324792,
+      "combined_conversation_file": "ADL_037_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_038",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_038/ADL_038_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_038/ADL_038_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_038/ADL_038_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_038/ADL_038_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 8
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 3,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 4,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 5.767763,
+      "combined_conversation_file": "ADL_038_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_039",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_039/ADL_039_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 113
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_039/ADL_039_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 35
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_039/ADL_039_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 117
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_039/ADL_039_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 31
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_039/ADL_039_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 137
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_039/ADL_039_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 37
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.10834,
+      "combined_conversation_file": "ADL_039_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_040",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_040/ADL_040_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 198
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_040/ADL_040_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 31
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_040/ADL_040_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 205
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_040/ADL_040_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 56
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.123946,
+      "combined_conversation_file": "ADL_040_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_041",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_041/ADL_041_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 52
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_041/ADL_041_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_041/ADL_041_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 51
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_041/ADL_041_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 31
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_041/ADL_041_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 84
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_041/ADL_041_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 38
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.94925,
+      "combined_conversation_file": "ADL_041_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_042",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_042/ADL_042_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 117
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_042/ADL_042_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_042/ADL_042_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 95
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_042/ADL_042_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_042/ADL_042_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 117
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_042/ADL_042_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 54
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.884324,
+      "combined_conversation_file": "ADL_042_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_043",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_044",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_044/ADL_044_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 48
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_044/ADL_044_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_044/ADL_044_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 104
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_044/ADL_044_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 65
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_044/ADL_044_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 78
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_044/ADL_044_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 61
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.759378,
+      "combined_conversation_file": "ADL_044_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_045",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_045/ADL_045_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 137
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_045/ADL_045_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 38
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_045/ADL_045_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 117
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_045/ADL_045_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 32
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.091275,
+      "combined_conversation_file": "ADL_045_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_046",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_046/ADL_046_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_046/ADL_046_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_046/ADL_046_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_046/ADL_046_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 37
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_046/ADL_046_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 10
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 4,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 8.075603,
+      "combined_conversation_file": "ADL_046_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_047",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_047/ADL_047_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 123
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_047/ADL_047_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 59
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_047/ADL_047_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 138
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_047/ADL_047_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 49
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_047/ADL_047_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 82
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_047/ADL_047_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 25
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.421741,
+      "combined_conversation_file": "ADL_047_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_048",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_048/ADL_048_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 128
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_048/ADL_048_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 55
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_048/ADL_048_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 166
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_048/ADL_048_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 67
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.726721,
+      "combined_conversation_file": "ADL_048_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_049",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_050",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_050/ADL_050_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_050/ADL_050_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 54
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_050/ADL_050_turn_03_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 27
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_050/ADL_050_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 108
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_050/ADL_050_turn_05_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 43
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_050/ADL_050_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 109
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.86101,
+      "combined_conversation_file": "ADL_050_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_051",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_051/ADL_051_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 164
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_051/ADL_051_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 59
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_051/ADL_051_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 113
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_051/ADL_051_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 40
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.01821,
+      "combined_conversation_file": "ADL_051_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_052",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_052/ADL_052_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 131
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_052/ADL_052_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 72
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_052/ADL_052_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 163
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_052/ADL_052_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 49
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_052/ADL_052_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 95
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.676267,
+      "combined_conversation_file": "ADL_052_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_053",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_053/ADL_053_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 86
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_053/ADL_053_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 59
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_053/ADL_053_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 82
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_053/ADL_053_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 34
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_053/ADL_053_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 77
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_053/ADL_053_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 37
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.950493,
+      "combined_conversation_file": "ADL_053_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_054",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_055",
+      "total_turns": 8,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_055/ADL_055_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_055/ADL_055_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 55
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_055/ADL_055_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_055/ADL_055_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 175
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_055/ADL_055_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 8,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_055/ADL_055_turn_08_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 118
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 4,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 7,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 16.172312,
+      "combined_conversation_file": "ADL_055_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_056",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_056/ADL_056_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_056/ADL_056_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 154
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_056/ADL_056_turn_03_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 31
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_056/ADL_056_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 231
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_056/ADL_056_turn_05_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 23
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_056/ADL_056_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 151
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 20.048203,
+      "combined_conversation_file": "ADL_056_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_057",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_057/ADL_057_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 66
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_057/ADL_057_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 19
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_057/ADL_057_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 77
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_057/ADL_057_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 40
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_057/ADL_057_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 10.178266,
+      "combined_conversation_file": "ADL_057_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_058",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_059",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_059/ADL_059_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 55
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_059/ADL_059_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 23
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_059/ADL_059_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 165
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_059/ADL_059_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 26
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_059/ADL_059_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 175
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_059/ADL_059_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 88
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.920502,
+      "combined_conversation_file": "ADL_059_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_060",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_061",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_062",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_063",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_063/ADL_063_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 164
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_063/ADL_063_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 69
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_063/ADL_063_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 251
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_063/ADL_063_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 76
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.674073,
+      "combined_conversation_file": "ADL_063_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_064",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_065",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1.4e-05
+    },
+    {
+      "scenario_id": "ADL_066",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_066/ADL_066_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 138
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_066/ADL_066_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_066/ADL_066_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 93
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_066/ADL_066_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 55
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_066/ADL_066_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 119
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_066/ADL_066_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 31
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.574274,
+      "combined_conversation_file": "ADL_066_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_067",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_067/ADL_067_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_067/ADL_067_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 8
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_067/ADL_067_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_067/ADL_067_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 8
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_067/ADL_067_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_067/ADL_067_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 10
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 9.375615,
+      "combined_conversation_file": "ADL_067_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_068",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_068/ADL_068_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 50
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_068/ADL_068_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 57
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_068/ADL_068_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 111
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_068/ADL_068_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 101
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_068/ADL_068_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 122
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_068/ADL_068_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 45
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 19.559415,
+      "combined_conversation_file": "ADL_068_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_069",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_070",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 4e-06
+    },
+    {
+      "scenario_id": "ADL_071",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_071/ADL_071_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 106
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_071/ADL_071_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 42
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_071/ADL_071_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 122
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_071/ADL_071_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 35
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_071/ADL_071_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 129
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_071/ADL_071_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 32
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.767279,
+      "combined_conversation_file": "ADL_071_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_072",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_073",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_074",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_075",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_075/ADL_075_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_075/ADL_075_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 8
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_075/ADL_075_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 8
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 3,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 4.491349,
+      "combined_conversation_file": "ADL_075_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_076",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_077",
+      "total_turns": 8,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_077/ADL_077_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_077/ADL_077_turn_03_Resident.wav",
+          "voice_model": "aura-2-luna-en",
+          "utterance_length": 8
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_077/ADL_077_turn_07_Resident.wav",
+          "voice_model": "aura-2-luna-en",
+          "utterance_length": 8
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 2,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 4,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 5,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 6,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 8,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 4.595516,
+      "combined_conversation_file": "ADL_077_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_078",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 7e-06
+    },
+    {
+      "scenario_id": "ADL_079",
+      "total_turns": 9,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_02_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 78
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_04_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 51
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 65
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 10
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_07_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 8,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_08_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 90
+        },
+        {
+          "turn_id": 9,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_079/ADL_079_turn_09_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 34
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 18.913652,
+      "combined_conversation_file": "ADL_079_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_080",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 5e-06
+    },
+    {
+      "scenario_id": "ADL_081",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_082",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_083",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_084",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_084/ADL_084_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_084/ADL_084_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 15
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_084/ADL_084_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 146
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_084/ADL_084_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_084/ADL_084_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 85
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_084/ADL_084_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 23
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.481033,
+      "combined_conversation_file": "ADL_084_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_085",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 2e-06
+    },
+    {
+      "scenario_id": "ADL_086",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_086/ADL_086_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 50
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_086/ADL_086_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 47
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_086/ADL_086_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 103
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_086/ADL_086_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 48
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_086/ADL_086_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 90
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_086/ADL_086_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 32
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.673928,
+      "combined_conversation_file": "ADL_086_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_087",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_087/ADL_087_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 82
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_087/ADL_087_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 72
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_087/ADL_087_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 171
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_087/ADL_087_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 38
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.451608,
+      "combined_conversation_file": "ADL_087_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_088",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_088/ADL_088_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_088/ADL_088_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 164
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_088/ADL_088_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 45
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_088/ADL_088_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 154
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_088/ADL_088_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 18
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.872544,
+      "combined_conversation_file": "ADL_088_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_089",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_089/ADL_089_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 101
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_089/ADL_089_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 44
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_089/ADL_089_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 90
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_089/ADL_089_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 26
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_089/ADL_089_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 119
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_089/ADL_089_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 23
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.511165,
+      "combined_conversation_file": "ADL_089_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_090",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_090/ADL_090_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 88
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_090/ADL_090_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 25
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_090/ADL_090_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 112
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_090/ADL_090_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 49
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_090/ADL_090_turn_05_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 134
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_090/ADL_090_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 28
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.792204,
+      "combined_conversation_file": "ADL_090_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_091",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_091/ADL_091_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 175
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_091/ADL_091_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 25
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_091/ADL_091_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 210
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_091/ADL_091_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 25
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_091/ADL_091_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 107
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.851564,
+      "combined_conversation_file": "ADL_091_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_092",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 1e-06
+    },
+    {
+      "scenario_id": "ADL_093",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_093/ADL_093_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 48
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_093/ADL_093_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 59
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_093/ADL_093_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 96
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_093/ADL_093_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 42
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_093/ADL_093_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.448755,
+      "combined_conversation_file": "ADL_093_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_094",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_094/ADL_094_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_094/ADL_094_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 8
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 3,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 4,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 5,
+          "reason": "Empty utterance"
+        },
+        {
+          "turn_id": 6,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 2.784532,
+      "combined_conversation_file": "ADL_094_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_095",
+      "total_turns": 7,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 39
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 89
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_03_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 17
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 77
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_05_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 52
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 72
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_095/ADL_095_turn_07_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 15
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.595562,
+      "combined_conversation_file": "ADL_095_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_096",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_096/ADL_096_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 84
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_096/ADL_096_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 53
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_096/ADL_096_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 161
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_096/ADL_096_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 42
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_096/ADL_096_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 94
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_096/ADL_096_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 54
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.237764,
+      "combined_conversation_file": "ADL_096_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_097",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_097/ADL_097_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 103
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_097/ADL_097_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 56
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_097/ADL_097_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 135
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_097/ADL_097_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 44
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.186839,
+      "combined_conversation_file": "ADL_097_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_098",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_098/ADL_098_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 82
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_098/ADL_098_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 27
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_098/ADL_098_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 93
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_098/ADL_098_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 36
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_098/ADL_098_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 83
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_098/ADL_098_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 41
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.466498,
+      "combined_conversation_file": "ADL_098_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_099",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_100",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_100/ADL_100_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 114
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_100/ADL_100_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_100/ADL_100_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 131
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_100/ADL_100_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 27
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_100/ADL_100_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 78
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_100/ADL_100_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 18
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.727348,
+      "combined_conversation_file": "ADL_100_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_101",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 2,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_101/ADL_101_turn_02_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 115
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_101/ADL_101_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 13
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_101/ADL_101_turn_04_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 155
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_101/ADL_101_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 35
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_101/ADL_101_turn_06_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 51
+        }
+      ],
+      "failed_turns": [
+        {
+          "turn_id": 1,
+          "reason": "Empty utterance"
+        }
+      ],
+      "processing_time": 13.255454,
+      "combined_conversation_file": "ADL_101_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_102",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_102/ADL_102_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 140
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_102/ADL_102_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 52
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_102/ADL_102_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 105
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_102/ADL_102_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 39
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_102/ADL_102_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 112
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.391863,
+      "combined_conversation_file": "ADL_102_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_103",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_103/ADL_103_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 54
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_103/ADL_103_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 50
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_103/ADL_103_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 120
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_103/ADL_103_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 41
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_103/ADL_103_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 102
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_103/ADL_103_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 40
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.213816,
+      "combined_conversation_file": "ADL_103_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_104",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_104/ADL_104_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 89
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_104/ADL_104_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 72
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_104/ADL_104_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 167
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_104/ADL_104_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 23
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 12.355272,
+      "combined_conversation_file": "ADL_104_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_105",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_105/ADL_105_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 39
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_105/ADL_105_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 55
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_105/ADL_105_turn_03_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 45
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_105/ADL_105_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 138
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_105/ADL_105_turn_05_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 55
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_105/ADL_105_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 111
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.075755,
+      "combined_conversation_file": "ADL_105_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_106",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_106/ADL_106_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 71
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_106/ADL_106_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 21
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_106/ADL_106_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 94
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_106/ADL_106_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 23
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_106/ADL_106_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 71
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_106/ADL_106_turn_06_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 35
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.790133,
+      "combined_conversation_file": "ADL_106_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_107",
+      "total_turns": 7,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_02_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 52
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 28
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_04_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 128
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_05_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_06_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 163
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_107/ADL_107_turn_07_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 23
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.582809,
+      "combined_conversation_file": "ADL_107_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_108",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_109",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_109/ADL_109_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 121
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_109/ADL_109_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 25
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_109/ADL_109_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 143
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_109/ADL_109_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 24
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_109/ADL_109_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 67
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.872115,
+      "combined_conversation_file": "ADL_109_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_110",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_110/ADL_110_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 80
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_110/ADL_110_turn_02_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 31
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_110/ADL_110_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 124
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_110/ADL_110_turn_04_Resident.wav",
+          "voice_model": "aura-2-orpheus-en",
+          "utterance_length": 15
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 9.613384,
+      "combined_conversation_file": "ADL_110_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_111",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_111/ADL_111_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 145
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_111/ADL_111_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 17
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_111/ADL_111_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 117
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_111/ADL_111_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 16
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_111/ADL_111_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 85
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_111/ADL_111_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 57
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 15.896666,
+      "combined_conversation_file": "ADL_111_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_112",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_113",
+      "total_turns": 5,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_113/ADL_113_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 99
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_113/ADL_113_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 46
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_113/ADL_113_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 141
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_113/ADL_113_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 23
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_113/ADL_113_turn_05_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 78
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 14.148188,
+      "combined_conversation_file": "ADL_113_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_114",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 5e-06
+    },
+    {
+      "scenario_id": "ADL_115",
+      "total_turns": 8,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 33
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_02_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 65
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_03_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 35
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_04_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 82
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 37
+        },
+        {
+          "turn_id": 7,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_07_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 30
+        },
+        {
+          "turn_id": 8,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_115/ADL_115_turn_08_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 105
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 17.881666,
+      "combined_conversation_file": "ADL_115_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_116",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 3e-06
+    },
+    {
+      "scenario_id": "ADL_117",
+      "total_turns": 4,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_117/ADL_117_turn_01_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 91
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_117/ADL_117_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 80
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "generated_audio/ADL_117/ADL_117_turn_03_Personal_Care_Assistant.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 152
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_117/ADL_117_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 46
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 13.000604,
+      "combined_conversation_file": "ADL_117_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_118",
+      "total_turns": 6,
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_118/ADL_118_turn_01_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 91
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_118/ADL_118_turn_02_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 27
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_118/ADL_118_turn_03_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 131
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_118/ADL_118_turn_04_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 46
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Registered Nurse",
+          "file_path": "generated_audio/ADL_118/ADL_118_turn_05_Registered_Nurse.wav",
+          "voice_model": "aura-2-hera-en",
+          "utterance_length": 75
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "generated_audio/ADL_118/ADL_118_turn_06_Resident.wav",
+          "voice_model": "aura-2-athena-en",
+          "utterance_length": 42
+        }
+      ],
+      "failed_turns": [],
+      "processing_time": 16.064767,
+      "combined_conversation_file": "ADL_118_full_conversation.wav"
+    },
+    {
+      "scenario_id": "ADL_119",
+      "total_turns": 0,
+      "generated_files": [],
+      "failed_turns": [],
+      "processing_time": 4e-06
+    }
+  ],
+  "timestamp": "2025-09-17T13:25:08.237365"
+}

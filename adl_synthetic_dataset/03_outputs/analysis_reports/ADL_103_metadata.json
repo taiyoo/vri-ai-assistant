@@ -1,0 +1,111 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_103",
+    "care_goal": "To encourage the resident to engage in social activities and ensure she feels comfortable and safe.",
+    "adl_category": "Social Engagement",
+    "environment": "Private Room",
+    "time_of_day": "Afternoon",
+    "caregiver_role": "Registered Nurse"
+  },
+  "audio_files": [
+    {
+      "turn_id": 1,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_103/ADL_103_turn_01_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 54
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_103/ADL_103_turn_02_Resident.wav",
+      "voice_model": "aura-2-orpheus-en",
+      "utterance_length": 50
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_103/ADL_103_turn_03_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 120
+    },
+    {
+      "turn_id": 4,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_103/ADL_103_turn_04_Resident.wav",
+      "voice_model": "aura-2-orpheus-en",
+      "utterance_length": 41
+    },
+    {
+      "turn_id": 5,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_103/ADL_103_turn_05_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 102
+    },
+    {
+      "turn_id": 6,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_103/ADL_103_turn_06_Resident.wav",
+      "voice_model": "aura-2-orpheus-en",
+      "utterance_length": 40
+    }
+  ],
+  "processing_results": {
+    "scenario_id": "ADL_103",
+    "total_turns": 6,
+    "generated_files": [
+      {
+        "turn_id": 1,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_103/ADL_103_turn_01_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 54
+      },
+      {
+        "turn_id": 2,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_103/ADL_103_turn_02_Resident.wav",
+        "voice_model": "aura-2-orpheus-en",
+        "utterance_length": 50
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_103/ADL_103_turn_03_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 120
+      },
+      {
+        "turn_id": 4,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_103/ADL_103_turn_04_Resident.wav",
+        "voice_model": "aura-2-orpheus-en",
+        "utterance_length": 41
+      },
+      {
+        "turn_id": 5,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_103/ADL_103_turn_05_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 102
+      },
+      {
+        "turn_id": 6,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_103/ADL_103_turn_06_Resident.wav",
+        "voice_model": "aura-2-orpheus-en",
+        "utterance_length": 40
+      }
+    ],
+    "failed_turns": [],
+    "processing_time": 16.213816
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:22:28.845103"
+}

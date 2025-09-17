@@ -1,0 +1,17 @@
+Voice Generation Demo File
+=========================
+Scenario ID: ADL_001
+Turn ID: 2
+Speaker: Personal Care Assistant
+Voice ID: aura-asteria-en
+Timestamp: 2025-09-17T12:32:09.770314
+
+Original Text:
+Good morning Mrs. Smith, I am here to help you get up and move around a bit. Are you feeling up to it this morning?
+
+Voice Parameters:
+- Model: aura-asteria-en
+- Format: Audio would be generated as MP3
+- Processing: Would use Deepgram TTS API for synthesis
+
+Note: This is a demo file. In production, this would be an audio file.

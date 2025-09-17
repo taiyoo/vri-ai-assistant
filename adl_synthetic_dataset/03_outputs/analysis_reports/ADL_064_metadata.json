@@ -1,0 +1,25 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_064",
+    "care_goal": "Assist the resident in safely moving from her room to the dining area while encouraging independence.",
+    "adl_category": "Hygiene",
+    "environment": "Hallway",
+    "time_of_day": "Evening",
+    "caregiver_role": "Personal Care Assistant"
+  },
+  "audio_files": [],
+  "processing_results": {
+    "scenario_id": "ADL_064",
+    "total_turns": 0,
+    "generated_files": [],
+    "failed_turns": [],
+    "processing_time": 3e-06
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:16:51.460122"
+}

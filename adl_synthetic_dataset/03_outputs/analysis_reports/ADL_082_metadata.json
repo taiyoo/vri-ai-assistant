@@ -1,0 +1,25 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_082",
+    "care_goal": "To support resident in safely and comfortably moving from the dining area to her room after lunch.",
+    "adl_category": "Hygiene",
+    "environment": "Dining Area",
+    "time_of_day": "Afternoon",
+    "caregiver_role": "Personal Care Assistant"
+  },
+  "audio_files": [],
+  "processing_results": {
+    "scenario_id": "ADL_082",
+    "total_turns": 0,
+    "generated_files": [],
+    "failed_turns": [],
+    "processing_time": 2e-06
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:18:22.802353"
+}

@@ -1,0 +1,488 @@
+{
+  "demo_summary": {
+    "scenarios_processed": 10,
+    "total_demo_files": 39,
+    "demo_output_dir": "demo_audio_output"
+  },
+  "dialogue_quality_overview": {
+    "total_dialogue_turns": 39,
+    "empty_utterances": 0,
+    "empty_utterance_percentage": 0.0,
+    "scenarios_with_valid_sequences": 10,
+    "scenarios_with_good_alternation": 8,
+    "overall_quality_score": 90.0
+  },
+  "detailed_results": [
+    {
+      "scenario_id": "ADL_000",
+      "dialogue_analysis": {
+        "total_turns": 6,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 75.0,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_000/ADL_000_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 118,
+          "utterance_preview": "Good evening, Mrs. Thompson. How are you feeling t..."
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_000/ADL_000_turn_02_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 48,
+          "utterance_preview": "Oh, is it? I didn't realize. I feel a bit tired."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_000/ADL_000_turn_03_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 105,
+          "utterance_preview": "That's alright, Mrs. Thompson. We'll take it slow...."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_000/ADL_000_turn_04_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 22,
+          "utterance_preview": "Okay, dear. Thank you."
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_000/ADL_000_turn_05_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 129,
+          "utterance_preview": "Let's step into the bath now, Mrs. Thompson. Hold ..."
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_000/ADL_000_turn_06_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 28,
+          "utterance_preview": "You're very kind. Thank you."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_001",
+      "dialogue_analysis": {
+        "total_turns": 6,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 72.5,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_001/ADL_001_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 33,
+          "utterance_preview": "Hello. How are you feeling today?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_001/ADL_001_turn_02_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 115,
+          "utterance_preview": "Good morning Mrs. Smith, I am here to help you get..."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_001/ADL_001_turn_03_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 37,
+          "utterance_preview": "Yes, I think I can manage that today."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_001/ADL_001_turn_04_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 141,
+          "utterance_preview": "Great, Mrs. Smith. I will help you sit up first, t..."
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_001/ADL_001_turn_05_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 31,
+          "utterance_preview": "Yes, I understand. Let's do it."
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_001/ADL_001_turn_06_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 78,
+          "utterance_preview": "Okay, Mrs. Smith. Let's sit up first. I'm right he..."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_002",
+      "dialogue_analysis": {
+        "total_turns": 6,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 69.83333333333333,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_002/ADL_002_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 87,
+          "utterance_preview": "Good morning, Mrs. Smith. It's time for breakfast...."
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_002/ADL_002_turn_02_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 38,
+          "utterance_preview": "I'm not sure if I can walk that far..."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_002/ADL_002_turn_03_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 80,
+          "utterance_preview": "Don't worry, Mrs. Smith. I'm here to help you. Let..."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_002/ADL_002_turn_04_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 34,
+          "utterance_preview": "Alright then, let's give it a try."
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_002/ADL_002_turn_05_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 123,
+          "utterance_preview": "That's the spirit, Mrs. Smith. You're doing great...."
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_002/ADL_002_turn_06_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 57,
+          "utterance_preview": "Oh yes, I do remember... it had the most beautiful..."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_003",
+      "dialogue_analysis": {
+        "total_turns": 0,
+        "speakers": [],
+        "empty_utterances": 0,
+        "average_utterance_length": 0,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_004",
+      "dialogue_analysis": {
+        "total_turns": 6,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 75.0,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_004/ADL_004_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 98,
+          "utterance_preview": "Good afternoon, Mrs. Smith. It's a lovely day, isn..."
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_004/ADL_004_turn_02_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 40,
+          "utterance_preview": "Bath? I... I don't remember needing one."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_004/ADL_004_turn_03_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 118,
+          "utterance_preview": "That's perfectly okay, Mrs. Smith. We all forget t..."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_004/ADL_004_turn_04_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 27,
+          "utterance_preview": "Alright, dear. I trust you."
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_004/ADL_004_turn_05_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 133,
+          "utterance_preview": "Let's make sure the water is just right, Mrs. Smit..."
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_004/ADL_004_turn_06_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 34,
+          "utterance_preview": "Thank you, dear. You're very kind."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_005",
+      "dialogue_analysis": {
+        "total_turns": 4,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 57.0,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_005/ADL_005_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 79,
+          "utterance_preview": "Hello Mr. Johnson, how are you doing? Have you had..."
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_005/ADL_005_turn_02_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 35,
+          "utterance_preview": "No, I haven't had much water today."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_005/ADL_005_turn_03_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 83,
+          "utterance_preview": "It's very important to stay hydrated, Mr. Johnson...."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_005/ADL_005_turn_04_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 31,
+          "utterance_preview": "Thank you, I'll drink this now."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_006",
+      "dialogue_analysis": {
+        "total_turns": 6,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 58.833333333333336,
+        "turn_sequence_valid": true,
+        "speaker_alternation": false
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_006/ADL_006_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 69,
+          "utterance_preview": "Good afternoon, Mr. Johnson. It's time for your af..."
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_006/ADL_006_turn_02_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 32,
+          "utterance_preview": "Oh, alright. Let's do that then."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_006/ADL_006_turn_03_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 96,
+          "utterance_preview": "Great, Mr. Johnson. Let's sit down over here while..."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_006/ADL_006_turn_04_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 28,
+          "utterance_preview": "Yes, better safe than sorry."
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_006/ADL_006_turn_05_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 97,
+          "utterance_preview": "Here are your pills, Mr. Johnson. I have water her..."
+        },
+        {
+          "turn_id": 6,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_006/ADL_006_turn_06_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 31,
+          "utterance_preview": "Thanks. I appreciate your help."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_007",
+      "dialogue_analysis": {
+        "total_turns": 0,
+        "speakers": [],
+        "empty_utterances": 0,
+        "average_utterance_length": 0,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_008",
+      "dialogue_analysis": {
+        "total_turns": 5,
+        "speakers": [
+          "Personal Care Assistant",
+          "Resident"
+        ],
+        "empty_utterances": 0,
+        "average_utterance_length": 81.2,
+        "turn_sequence_valid": true,
+        "speaker_alternation": false
+      },
+      "generated_files": [
+        {
+          "turn_id": 1,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_008/ADL_008_turn_01_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 112,
+          "utterance_preview": "Hello Mrs. Smith, how are you doing today? It's ti..."
+        },
+        {
+          "turn_id": 2,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_008/ADL_008_turn_02_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 32,
+          "utterance_preview": "Oh, alright then. Let's do that."
+        },
+        {
+          "turn_id": 3,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_008/ADL_008_turn_03_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 109,
+          "utterance_preview": "Great. We'll brush your teeth, wash your face, and..."
+        },
+        {
+          "turn_id": 4,
+          "speaker": "Resident",
+          "file_path": "demo_audio_output/ADL_008/ADL_008_turn_04_Resident.txt",
+          "voice_id": "aura-luna-en",
+          "utterance_length": 17,
+          "utterance_preview": "Yes, that's fine."
+        },
+        {
+          "turn_id": 5,
+          "speaker": "Personal Care Assistant",
+          "file_path": "demo_audio_output/ADL_008/ADL_008_turn_05_Personal_Care_Assistant.txt",
+          "voice_id": "aura-asteria-en",
+          "utterance_length": 136,
+          "utterance_preview": "Alright, Mrs. Smith. I'll be right here to assist ..."
+        }
+      ],
+      "processing_status": "success"
+    },
+    {
+      "scenario_id": "ADL_009",
+      "dialogue_analysis": {
+        "total_turns": 0,
+        "speakers": [],
+        "empty_utterances": 0,
+        "average_utterance_length": 0,
+        "turn_sequence_valid": true,
+        "speaker_alternation": true
+      },
+      "generated_files": [],
+      "processing_status": "success"
+    }
+  ],
+  "demo_timestamp": "2025-09-17T12:32:09.773809"
+}

@@ -1,0 +1,239 @@
+# ADL Synthetic Dataset - Git Ignore File
+# =====================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+*_key.txt
+secrets.json
+
+# API Keys (be extra careful)
+*api_key*
+*API_KEY*
+*deepgram*key*
+*openai*key*
+*aws*key*
+
+# Logs & Debug Files
+*.log
+logs/
+debug.log
+error.log
+voice_generation.log
+processing.log
+
+# Temporary & Cache Files
+tmp/
+temp/
+cache/
+.cache/
+*.tmp
+*.temp
+*_temp*
+*_tmp*
+
+# Audio Processing Temporary Files
+*.wav.tmp
+audio_processing_temp/
+temp_audio/
+
+# Large Audio Files (optional - comment out if you want to track audio)
+# Uncomment these lines if audio files are too large for git:
+# *.wav
+# *.mp3
+# *.flac
+# *.m4a
+# 03_outputs/audio/individual_turns/
+# 03_outputs/audio/full_conversations/
+
+# Backup Files
+*.bak
+*.backup
+*_backup
+backup/
+backups/
+
+# Test Output
+test_output/
+test_results/
+coverage.xml
+.coverage
+.pytest_cache/
+.tox/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data Processing Artifacts
+data_processing_archive/
+*_archive/
+archive/
+
+# Migration & Reorganization Files
+migrate_structure.sh
+create_reorganized_structure.py
+DATASET_REORGANIZATION_PLAN.md
+REORGANIZATION_BENEFITS.md
+
+# Demo & Test Files
+demo_audio_output/
+test_*.wav
+simple_deepgram_test.py
+*_demo.py
+*_test.py
+combined_voice_demo.py
+
+# Package Files
+*.pkg
+*.dmg
+*.exe
+*.msi
+
+# Documentation Build Files
+docs/_build/
+site/
+
+# MacOS
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+desktop.ini
+ehthumbs.db
+
+# Linux
+*~
+
+# Project-Specific Exclusions
+# ===========================
+
+# Voice Generation Outputs (if too large)
+# 03_outputs/audio/generation_reports/
+# 03_outputs/analysis_reports/voice_*
+
+# Large Dataset Files (uncomment if datasets are too large)
+# 01_data/raw/*.json
+# 01_data/processed/*.json
+
+# Experimental Files
+experimental/
+scratch/
+playground/
+*_experiment*
+
+# Legacy Files
+legacy/
+old/
+deprecated/
+
+# Config Override Files
+config_override.json
+local_config.json
+dev_config.json
+
+# Generated Documentation
+auto_generated_docs/
+
+# Performance Profiling
+*.prof
+profile_results/
+
+# Research Notes (if sensitive)
+research_notes.md
+private_notes/
+confidential/
+
+# System Files
+.nfs*
+.directory
+
+# Compressed Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Node.js (if any JavaScript tools are added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# R (if any R scripts are added)
+.Rhistory
+.RData
+.Ruserdata
+
+# MATLAB (if any MATLAB scripts are added)
+*.asv
+*.m~
+
+# Keep Important Files
+# ===================
+# Force include important files that might be ignored by patterns above
+!README.md
+!requirements.txt
+!setup.sh
+!01_data/README.md
+!02_scripts/
+!03_outputs/README.md
+!04_documentation/
+!05_examples/
+!06_config/requirements.txt
+!06_config/environment_template.env
+
+# Example of keeping specific audio files for demos
+!demo_samples/
+!examples/sample_audio/

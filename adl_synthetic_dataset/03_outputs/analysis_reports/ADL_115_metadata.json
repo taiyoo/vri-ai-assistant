@@ -1,0 +1,139 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_115",
+    "care_goal": "Ensure resident takes his morning medication safely and correctly.",
+    "adl_category": "Medication",
+    "environment": "Dining Area",
+    "time_of_day": "Morning",
+    "caregiver_role": "Registered Nurse"
+  },
+  "audio_files": [
+    {
+      "turn_id": 1,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_01_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 33
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_02_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 65
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_03_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 35
+    },
+    {
+      "turn_id": 4,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_04_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 30
+    },
+    {
+      "turn_id": 5,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_05_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 82
+    },
+    {
+      "turn_id": 6,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_06_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 37
+    },
+    {
+      "turn_id": 7,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_07_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 30
+    },
+    {
+      "turn_id": 8,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_115/ADL_115_turn_08_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 105
+    }
+  ],
+  "processing_results": {
+    "scenario_id": "ADL_115",
+    "total_turns": 8,
+    "generated_files": [
+      {
+        "turn_id": 1,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_01_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 33
+      },
+      {
+        "turn_id": 2,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_02_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 65
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_03_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 35
+      },
+      {
+        "turn_id": 4,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_04_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 30
+      },
+      {
+        "turn_id": 5,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_05_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 82
+      },
+      {
+        "turn_id": 6,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_06_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 37
+      },
+      {
+        "turn_id": 7,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_07_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 30
+      },
+      {
+        "turn_id": 8,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_115/ADL_115_turn_08_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 105
+      }
+    ],
+    "failed_turns": [],
+    "processing_time": 17.881666
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:24:39.143631"
+}

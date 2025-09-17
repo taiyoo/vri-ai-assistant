@@ -1,0 +1,90 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_077",
+    "care_goal": "To engage the resident in a social interaction, aiming to improve her mood and social skills.",
+    "adl_category": "Social Engagement",
+    "environment": "Private Room",
+    "time_of_day": "Morning",
+    "caregiver_role": "Personal Care Assistant"
+  },
+  "audio_files": [
+    {
+      "turn_id": 1,
+      "speaker": "Personal Care Assistant",
+      "file_path": "generated_audio/ADL_077/ADL_077_turn_01_Personal_Care_Assistant.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 33
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_077/ADL_077_turn_03_Resident.wav",
+      "voice_model": "aura-2-luna-en",
+      "utterance_length": 8
+    },
+    {
+      "turn_id": 7,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_077/ADL_077_turn_07_Resident.wav",
+      "voice_model": "aura-2-luna-en",
+      "utterance_length": 8
+    }
+  ],
+  "processing_results": {
+    "scenario_id": "ADL_077",
+    "total_turns": 8,
+    "generated_files": [
+      {
+        "turn_id": 1,
+        "speaker": "Personal Care Assistant",
+        "file_path": "generated_audio/ADL_077/ADL_077_turn_01_Personal_Care_Assistant.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 33
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_077/ADL_077_turn_03_Resident.wav",
+        "voice_model": "aura-2-luna-en",
+        "utterance_length": 8
+      },
+      {
+        "turn_id": 7,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_077/ADL_077_turn_07_Resident.wav",
+        "voice_model": "aura-2-luna-en",
+        "utterance_length": 8
+      }
+    ],
+    "failed_turns": [
+      {
+        "turn_id": 2,
+        "reason": "Empty utterance"
+      },
+      {
+        "turn_id": 4,
+        "reason": "Empty utterance"
+      },
+      {
+        "turn_id": 5,
+        "reason": "Empty utterance"
+      },
+      {
+        "turn_id": 6,
+        "reason": "Empty utterance"
+      },
+      {
+        "turn_id": 8,
+        "reason": "Empty utterance"
+      }
+    ],
+    "processing_time": 4.595516
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:18:03.871234"
+}

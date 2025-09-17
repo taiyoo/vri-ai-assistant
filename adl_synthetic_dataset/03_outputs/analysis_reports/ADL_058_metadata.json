@@ -1,0 +1,25 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_058",
+    "care_goal": "To assist the resident with her hygiene needs, specifically bathing, while ensuring her safety and comfort",
+    "adl_category": "Hygiene",
+    "environment": "Private Room",
+    "time_of_day": "Morning",
+    "caregiver_role": "Personal Care Assistant"
+  },
+  "audio_files": [],
+  "processing_results": {
+    "scenario_id": "ADL_058",
+    "total_turns": 0,
+    "generated_files": [],
+    "failed_turns": [],
+    "processing_time": 2e-06
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:16:19.847400"
+}

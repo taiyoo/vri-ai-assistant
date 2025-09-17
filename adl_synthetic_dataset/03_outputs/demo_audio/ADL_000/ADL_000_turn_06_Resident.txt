@@ -1,0 +1,17 @@
+Voice Generation Demo File
+=========================
+Scenario ID: ADL_000
+Turn ID: 6
+Speaker: Resident
+Voice ID: aura-luna-en
+Timestamp: 2025-09-17T12:32:09.770061
+
+Original Text:
+You're very kind. Thank you.
+
+Voice Parameters:
+- Model: aura-luna-en
+- Format: Audio would be generated as MP3
+- Processing: Would use Deepgram TTS API for synthesis
+
+Note: This is a demo file. In production, this would be an audio file.

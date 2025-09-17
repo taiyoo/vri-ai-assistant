@@ -1,0 +1,83 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_063",
+    "care_goal": "Ensure the resident takes her afternoon medication as prescribed and in a timely manner.",
+    "adl_category": "Medication",
+    "environment": "Lounge",
+    "time_of_day": "Afternoon",
+    "caregiver_role": "Registered Nurse"
+  },
+  "audio_files": [
+    {
+      "turn_id": 1,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_063/ADL_063_turn_01_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 164
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_063/ADL_063_turn_02_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 69
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_063/ADL_063_turn_03_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 251
+    },
+    {
+      "turn_id": 4,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_063/ADL_063_turn_04_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 76
+    }
+  ],
+  "processing_results": {
+    "scenario_id": "ADL_063",
+    "total_turns": 4,
+    "generated_files": [
+      {
+        "turn_id": 1,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_063/ADL_063_turn_01_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 164
+      },
+      {
+        "turn_id": 2,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_063/ADL_063_turn_02_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 69
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_063/ADL_063_turn_03_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 251
+      },
+      {
+        "turn_id": 4,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_063/ADL_063_turn_04_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 76
+      }
+    ],
+    "failed_turns": [],
+    "processing_time": 15.674073
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:16:51.452884"
+}

@@ -131,10 +131,6 @@ The override JSON must follow the same structure as cdk.json. You can override a
 Frontend URL: https://xxxxxxxxx.cloudfront.net
 ```
 
-![](./docs/imgs/signin.png)
-
-The sign-up screen will appear as shown above, where you can register your email and log in.
-
 > [!Important]
 > Without setting the optional parameter, this deployment method allows anyone who knows the URL to sign up. For production use, it is strongly recommended to add IP address restrictions and disable self-signup to mitigate security risks (you can define allowed-signup-email-domains to restrict users so that only email addresses from your company’s domain can sign up). Use both ipv4-ranges and ipv6-ranges for IP address restrictions, and disable self-signup by using disable-self-register when executing ./bin.
 
@@ -547,21 +543,6 @@ Please also take a look at the following guidelines before contributing:
 
 - [Local Development](./docs/LOCAL_DEVELOPMENT.md)
 - [CONTRIBUTING](./CONTRIBUTING.md)
-
-## Contacts
-
-- [Takehiro Suzuki](https://github.com/statefb)
-- [Yusuke Wada](https://github.com/wadabee)
-- [Yukinobu Mine](https://github.com/Yukinobu-Mine)
-
-## 🏆 Significant Contributors
-
-- [fsatsuki](https://github.com/fsatsuki)
-- [k70suK3-k06a7ash1](https://github.com/k70suK3-k06a7ash1)
-
-## Contributors
-
-[![bedrock chat contributors](https://contrib.rocks/image?repo=aws-samples/bedrock-chat&max=1000)](https://github.com/aws-samples/bedrock-chat/graphs/contributors)
 
 ## License
 

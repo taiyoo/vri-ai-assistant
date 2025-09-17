@@ -1,0 +1,97 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_018",
+    "care_goal": "To provide necessary medication to the resident while ensuring her understanding and comfort.",
+    "adl_category": "Medication",
+    "environment": "Dining Area",
+    "time_of_day": "Morning",
+    "caregiver_role": "Registered Nurse"
+  },
+  "audio_files": [
+    {
+      "turn_id": 1,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_018/ADL_018_turn_01_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 79
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_018/ADL_018_turn_02_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 39
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_018/ADL_018_turn_03_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 141
+    },
+    {
+      "turn_id": 4,
+      "speaker": "Resident",
+      "file_path": "generated_audio/ADL_018/ADL_018_turn_04_Resident.wav",
+      "voice_model": "aura-2-athena-en",
+      "utterance_length": 54
+    },
+    {
+      "turn_id": 5,
+      "speaker": "Registered Nurse",
+      "file_path": "generated_audio/ADL_018/ADL_018_turn_05_Registered_Nurse.wav",
+      "voice_model": "aura-2-hera-en",
+      "utterance_length": 97
+    }
+  ],
+  "processing_results": {
+    "scenario_id": "ADL_018",
+    "total_turns": 5,
+    "generated_files": [
+      {
+        "turn_id": 1,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_018/ADL_018_turn_01_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 79
+      },
+      {
+        "turn_id": 2,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_018/ADL_018_turn_02_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 39
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_018/ADL_018_turn_03_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 141
+      },
+      {
+        "turn_id": 4,
+        "speaker": "Resident",
+        "file_path": "generated_audio/ADL_018/ADL_018_turn_04_Resident.wav",
+        "voice_model": "aura-2-athena-en",
+        "utterance_length": 54
+      },
+      {
+        "turn_id": 5,
+        "speaker": "Registered Nurse",
+        "file_path": "generated_audio/ADL_018/ADL_018_turn_05_Registered_Nurse.wav",
+        "voice_model": "aura-2-hera-en",
+        "utterance_length": 97
+      }
+    ],
+    "failed_turns": [],
+    "processing_time": 14.0643
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:09:26.887666"
+}

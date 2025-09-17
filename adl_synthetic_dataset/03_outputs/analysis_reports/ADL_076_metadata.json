@@ -1,0 +1,25 @@
+{
+  "scenario_info": {
+    "scenario_id": "ADL_076",
+    "care_goal": "No care goal specified",
+    "adl_category": "Hygiene",
+    "environment": "Bathroom",
+    "time_of_day": "Morning",
+    "caregiver_role": "Registered Nurse"
+  },
+  "audio_files": [],
+  "processing_results": {
+    "scenario_id": "ADL_076",
+    "total_turns": 0,
+    "generated_files": [],
+    "failed_turns": [],
+    "processing_time": 3e-06
+  },
+  "voice_config": {
+    "caregiver_voice": "aura-2-hera-en",
+    "resident_voice": "aura-2-athena-en",
+    "encoding": "linear16",
+    "sample_rate": 24000
+  },
+  "generated_timestamp": "2025-09-17T13:17:59.274611"
+}
