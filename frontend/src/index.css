@@ -1,12 +1,70 @@
+/* Import custom fonts first - must come before Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* tailwindの設定で上書きされてしまうので、importantを設定する */
+/* Apply AI4AgedCare branding - Light and Dark theme support */
+:root {
+  --ai4-primary-blue: #2563eb;
+  --ai4-primary-blue-hover: #1d4ed8;
+  --ai4-gray-50: #f9fafb;
+  --ai4-gray-100: #f3f4f6;
+  --ai4-gray-600: #4b5563;
+  --ai4-gray-900: #111827;
+  --ai4-white: #ffffff;
+}
+
+/* Dark theme variables */
+.dark {
+  --ai4-primary-blue: #3b82f6;
+  --ai4-primary-blue-hover: #2563eb;
+  --ai4-gray-50: #0f172a;
+  --ai4-gray-100: #1e293b;
+  --ai4-gray-600: #94a3b8;
+  --ai4-gray-900: #f1f5f9;
+  --ai4-white: #0f172a;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* AI4AgedCare Button Styles */
+.ai4-btn-primary {
+  @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium;
+}
+
+.ai4-btn-secondary {
+  @apply border border-blue-600 text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors font-medium;
+}
+
+/* AI4AgedCare Logo Styles */
+.ai4-logo {
+  @apply flex items-center space-x-3;
+}
+
+.ai4-logo-icon {
+  @apply w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center;
+}
+
+.ai4-logo-text {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+/* Update Amplify button styling */
 .amplify-button--primary {
-  background-color: var(
-    --amplify-components-button-primary-background-color
-  ) !important;
+  background-color: var(--ai4-primary-blue) !important;
+  border-radius: 0.5rem !important;
+  font-weight: 500 !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.amplify-button--primary:hover {
+  background-color: var(--ai4-primary-blue-hover) !important;
 }
 
 /* styles/globals.css もしくは該当コンポーネントのCSS */

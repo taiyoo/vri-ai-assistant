@@ -288,11 +288,11 @@ const Drawer: React.FC<Props> = (props) => {
 
   return (
     <>
-      <div className="relative h-full overflow-y-auto bg-aws-squid-ink-light scrollbar-thin scrollbar-track-white scrollbar-thumb-aws-squid-ink-light/30 dark:bg-aws-ui-color-dark dark:scrollbar-thumb-aws-ui-color-dark/30">
+      <div className="relative h-full overflow-y-auto bg-white dark:bg-ai4-dark-900 border-r border-ai4-gray-200 dark:border-ai4-dark-700 scrollbar-thin scrollbar-track-white dark:scrollbar-track-ai4-dark-800 scrollbar-thumb-ai4-gray-300 dark:scrollbar-thumb-ai4-dark-600">
         <nav
           className={`lg:visible lg:w-64 ${
             opened ? 'visible w-64' : 'invisible w-0'
-          } text-sm  text-white transition-width`}>
+          } text-sm text-ai4-gray-900 dark:text-ai4-gray-100 transition-width`}>
           {!isAdminPanel && (
             <>
               <DrawerItem
@@ -327,14 +327,14 @@ const Drawer: React.FC<Props> = (props) => {
 
               <ExpandableDrawerGroup
                 label={t('app.starredBots')}
-                className="border-t bg-aws-squid-ink-light pt-1 dark:bg-aws-squid-ink-dark">
+                className="border-t border-ai4-gray-200 dark:border-ai4-dark-700 bg-white dark:bg-ai4-dark-900 pt-1">
                 {starredBots === undefined && (
                   <div className="flex flex-col gap-2 p-2">
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
                   </div>
                 )}
                 {starredBots
@@ -372,14 +372,14 @@ const Drawer: React.FC<Props> = (props) => {
 
               <ExpandableDrawerGroup
                 label={t('app.recentlyUsedBots')}
-                className="border-t bg-aws-squid-ink-light pt-1 dark:bg-aws-squid-ink-dark ">
+                className="border-t border-ai4-gray-200 dark:border-ai4-dark-700 bg-white dark:bg-ai4-dark-900 pt-1">
                 {recentlyUsedUnstarredBots === undefined && (
                   <div className="flex flex-col gap-2 p-2">
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
                   </div>
                 )}
                 {recentlyUsedUnstarredBots
@@ -418,16 +418,16 @@ const Drawer: React.FC<Props> = (props) => {
               <ExpandableDrawerGroup
                 label={t('app.conversationHistory')}
                 className={twMerge(
-                  'border-t bg-aws-squid-ink-light pt-1 dark:bg-aws-squid-ink-dark',
+                  'border-t border-ai4-gray-200 dark:border-ai4-dark-700 bg-white dark:bg-ai4-dark-900 pt-1',
                   props.isAdmin ? 'mb-20' : 'mb-10'
                 )}>
                 {conversations === undefined && (
                   <div className="flex flex-col gap-2 p-2">
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
-                    <Skeleton className="h-10 w-full bg-aws-sea-blue-light/50 dark:bg-aws-sea-blue-dark/50" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
+                    <Skeleton className="h-10 w-full bg-ai4-gray-100 dark:bg-ai4-dark-700" />
                   </div>
                 )}
                 {conversations
@@ -487,7 +487,7 @@ const Drawer: React.FC<Props> = (props) => {
             className={twMerge(
               opened ? 'w-64' : 'w-0',
               props.isAdmin ? 'h-20' : 'h-10',
-              'fixed -bottom-2 z-50 mb-2 flex flex-col items-start border-t bg-aws-squid-ink-light transition-width dark:bg-aws-ui-color-dark lg:w-64'
+              'fixed -bottom-2 z-50 mb-2 flex flex-col items-start border-t border-ai4-gray-200 dark:border-ai4-dark-700 bg-white dark:bg-ai4-dark-900 transition-width lg:w-64'
             )}>
             {props.isAdmin && !isAdminPanel && (
               <DrawerItem
@@ -524,12 +524,12 @@ const Drawer: React.FC<Props> = (props) => {
         ref={smallDrawer}
         className={`lg:hidden ${opened ? 'visible' : 'hidden'}`}>
         <ButtonIcon
-          className="fixed left-64 top-0 z-50 text-white"
+          className="fixed left-64 top-0 z-50 text-ai4-gray-600 dark:text-ai4-gray-400 bg-white dark:bg-ai4-dark-800 border border-ai4-gray-200 dark:border-ai4-dark-600 rounded-full shadow-md"
           onClick={switchOpen}>
           <PiX />
         </ButtonIcon>
         <div
-          className="fixed z-40 h-dvh w-screen bg-dark-gray/90"
+          className="fixed z-40 h-dvh w-screen bg-ai4-gray-900/50"
           onClick={switchOpen}></div>
       </div>
     </>

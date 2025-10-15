@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 // Get title from manifest for consistency
-const appTitle = 'VRI AI Assistant for Elderly Care';
+const appTitle = 'AI Assistant for Aged Care';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -30,8 +30,8 @@ export default defineConfig({
       },
       manifest: {
         name: appTitle,
-        short_name: 'VRI AI Assistant',
-        description: 'VRI AI Assistant for Elderly Care using AWS-native chatbot using Bedrock',
+        short_name: 'AI4AgedCare',
+        description: 'AI Assistant for Aged Care',
         start_url: '/index.html',
         display: 'standalone',
         theme_color: '#232F3E',

@@ -19,13 +19,13 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, ref) => {
     <button
       ref={ref}
       className={twMerge(
-        'flex items-center justify-center whitespace-nowrap rounded-lg border p-1 px-3',
-        props.text && 'border-0 dark:text-aws-font-color-dark',
-        props.outlined && 'border-aws-squid-ink-light/50 dark:border-aws-font-color-gray/50 hover:bg-white dark:hover:bg-aws-ui-color-dark dark:text-aws-font-color-dark',
+        'flex items-center justify-center whitespace-nowrap rounded-lg border p-1 px-3 font-medium transition-all duration-200',
+        props.text && 'border-0 text-ai4-blue-600 dark:text-ai4-blue-400 hover:text-ai4-blue-700 dark:hover:text-ai4-blue-300 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20',
+        props.outlined && 'border-ai4-blue-200 dark:border-ai4-blue-700 text-ai4-blue-600 dark:text-ai4-blue-400 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20 hover:border-ai4-blue-300 dark:hover:border-ai4-blue-600 bg-white dark:bg-ai4-dark-800',
         !props.text &&
           !props.outlined &&
-          'bg-aws-sea-blue-light dark:bg-aws-ui-color-dark dark:border-aws-ui-color-dark text-aws-font-color-white-light dark:text-aws-font-color-white-dark',
-        props.disabled || props.loading ? 'opacity-30' : 'hover:brightness-75',
+          'bg-ai4-blue-600 dark:bg-ai4-blue-500 border-ai4-blue-600 dark:border-ai4-blue-500 text-white hover:bg-ai4-blue-700 dark:hover:bg-ai4-blue-600 hover:border-ai4-blue-700 dark:hover:border-ai4-blue-600 shadow-sm',
+        props.disabled || props.loading ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-md',
         props.className
       )}
       onClick={(e) => {

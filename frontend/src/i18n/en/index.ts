@@ -6,7 +6,7 @@ const translation = {
       },
     },
     app: {
-      name: 'VRI AI Assistant',
+      name: 'AI4AgedCare',
       inputMessage: 'Ready to log an update?',
       starredBots: 'Starred Bots',
       recentlyUsedBots: 'Recently Used Bots',

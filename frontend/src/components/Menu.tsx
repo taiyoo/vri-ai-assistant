@@ -75,7 +75,7 @@ const MenuSettings: React.FC<Props> = (props) => {
       <Button
         ref={buttonRef}
         className={twMerge(
-          'relative bg-aws-squid-ink-light dark:bg-aws-squid-ink-dark',
+          'relative bg-white dark:bg-ai4-dark-800 border border-ai4-gray-200 dark:border-ai4-dark-600 text-ai4-gray-700 dark:text-ai4-gray-300',
           props.className
         )}
         text
@@ -89,10 +89,10 @@ const MenuSettings: React.FC<Props> = (props) => {
       {isOpen && (
         <div
           ref={menuRef}
-          className="absolute bottom-10 left-2 w-60 rounded border border-aws-font-color-white-light bg-aws-sea-blue-light text-aws-font-color-white-light dark:border-aws-font-color-white-dark dark:bg-aws-ui-color-dark dark:text-aws-font-color-white-dark">
-          <div className="flex flex-col gap-1 border-b p-2">
-            <div className="font-bold">{userName}</div>
-            <div className="">
+          className="absolute bottom-10 left-2 w-60 rounded-lg border border-ai4-gray-200 dark:border-ai4-dark-600 bg-white dark:bg-ai4-dark-800 text-ai4-gray-900 dark:text-ai4-gray-100 shadow-xl">
+          <div className="flex flex-col gap-1 border-b border-ai4-gray-200 dark:border-ai4-dark-600 p-2">
+            <div className="font-bold text-ai4-gray-900 dark:text-ai4-gray-100">{userName}</div>
+            <div className="text-ai4-gray-600 dark:text-ai4-gray-400">
               <div className="italic">{t('app.userGroups')}</div>
               <ul className="list-disc pl-5">
                 {userGroups.map((group) => (
@@ -103,7 +103,7 @@ const MenuSettings: React.FC<Props> = (props) => {
           </div>
 
           <div
-            className="flex w-full cursor-pointer items-center p-2 hover:bg-aws-sea-blue-hover-light dark:hover:bg-aws-paper-dark"
+            className="flex w-full cursor-pointer items-center p-2 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20 transition-colors duration-200"
             onClick={() => {
               setIsOpen(false);
               props.onClickDrawerOptions();
@@ -113,7 +113,7 @@ const MenuSettings: React.FC<Props> = (props) => {
           </div>
 
           <div
-            className="flex w-full cursor-pointer items-center p-2 hover:bg-aws-sea-blue-hover-light dark:hover:bg-aws-paper-dark"
+            className="flex w-full cursor-pointer items-center p-2 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20 transition-colors duration-200"
             onClick={() => {
               setIsOpen(false);
               props.onSelectLanguage();
@@ -122,7 +122,7 @@ const MenuSettings: React.FC<Props> = (props) => {
             {t('button.language')}
           </div>
 
-          <div className="flex w-full items-center px-2 hover:bg-aws-sea-blue-hover-light dark:hover:bg-aws-paper-dark">
+          <div className="flex w-full items-center px-2 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20 transition-colors duration-200">
             {isDarkTheme ? (
               <IoMoonSharp className="mr-2" />
             ) : (
@@ -139,7 +139,7 @@ const MenuSettings: React.FC<Props> = (props) => {
             </div>
           </div>
           <div
-            className="flex w-full cursor-pointer items-center border-t p-2 hover:bg-aws-sea-blue-hover-light dark:hover:bg-aws-paper-dark"
+            className="flex w-full cursor-pointer items-center border-t border-ai4-gray-200 dark:border-ai4-dark-600 p-2 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20 transition-colors duration-200"
             onClick={() => {
               setIsOpen(false);
               props.onClearConversations();
@@ -148,7 +148,7 @@ const MenuSettings: React.FC<Props> = (props) => {
             {t('button.clearConversation')}
           </div>
           <div
-            className="flex w-full cursor-pointer items-center border-t p-2 hover:bg-aws-sea-blue-hover-light dark:hover:bg-aws-paper-dark"
+            className="flex w-full cursor-pointer items-center border-t border-ai4-gray-200 dark:border-ai4-dark-600 p-2 hover:bg-ai4-blue-50 dark:hover:bg-ai4-blue-900/20 transition-colors duration-200"
             onClick={props.onSignOut}>
             <PiSignOut className="mr-2" />
             {t('button.signOut')}

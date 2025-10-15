@@ -517,7 +517,7 @@ const ChatPage: React.FC = () => {
       onDrop={endDnd}
       onDragEnd={endDnd}>
       <div className="flex-1 overflow-hidden">
-        <div className="sticky top-0 z-10 mb-1.5 flex h-14 w-full items-center justify-between border-b border-gray bg-aws-paper-light p-2 dark:bg-aws-paper-dark">
+        <div className="sticky top-0 z-10 mb-1.5 flex h-14 w-full items-center justify-between border-b border-ai4-gray-200 dark:border-ai4-dark-700 bg-white dark:bg-ai4-dark-900 p-2">
           <div className="flex w-full justify-between">
             <div className="p-2">
               <div className="mr-10 flex items-center whitespace-nowrap font-bold">
@@ -545,8 +545,8 @@ const ChatPage: React.FC = () => {
 
             {isAvailabilityBot && !isLoadingBot && (
               <div className="absolute -top-1 right-0 flex h-full items-center">
-                <div className="h-full w-12 bg-gradient-to-r from-transparent to-aws-paper-light dark:to-aws-paper-dark"></div>
-                <div className="flex items-center bg-aws-paper-light dark:bg-aws-paper-dark">
+                <div className="h-full w-12 bg-gradient-to-r from-transparent to-white dark:to-ai4-dark-900"></div>
+                <div className="flex items-center bg-white dark:bg-ai4-dark-900">
                   {bot?.owned && (
                     <StatusSyncBot
                       syncStatus={bot.syncStatus}
@@ -588,7 +588,7 @@ const ChatPage: React.FC = () => {
             )}
           </div>
           {getPostedModel() && (
-            <div className="absolute right-2 top-10 text-xs text-dark-gray dark:text-light-gray">
+            <div className="absolute right-2 top-10 text-xs text-ai4-gray-500 dark:text-ai4-gray-400">
               model: {getPostedModel()}
             </div>
           )}
@@ -623,7 +623,7 @@ const ChatPage: React.FC = () => {
                         </div>
                       )}
                     </div>
-                    <div className="mt-3 text-xs text-dark-gray dark:text-light-gray">
+                    <div className="mt-3 text-xs text-ai4-gray-500 dark:text-ai4-gray-400">
                       {isLoadingBot ? (
                         <Skeleton className="mt-1 h-3 w-64" />
                       ) : (
@@ -639,7 +639,7 @@ const ChatPage: React.FC = () => {
                       key={idx}
                       className={`${
                         message.role === 'assistant'
-                          ? 'bg-aws-squid-ink-light/5 dark:bg-aws-squid-ink-dark/35'
+                          ? 'bg-ai4-blue-50/50 dark:bg-ai4-blue-900/10'
                           : ''
                       }`}>
                       <ChatMessageWithRelatedDocuments
@@ -653,7 +653,7 @@ const ChatPage: React.FC = () => {
                           }
                         }}
                       />
-                      <div className="w-full border-b border-aws-squid-ink-light/10 dark:border-aws-squid-ink-dark/10"></div>
+                      <div className="w-full border-b border-ai4-gray-100 dark:border-ai4-dark-700"></div>
                     </div>
                   ))}
                 </>
@@ -703,7 +703,7 @@ const ChatPage: React.FC = () => {
             {bot?.conversationQuickStarters?.map((qs, idx) => (
               <div
                 key={idx}
-                className="w-[calc(33.333%-0.5rem)] cursor-pointer rounded-2xl border border-aws-squid-ink-light/20 bg-white p-2 text-sm  text-dark-gray hover:shadow-lg hover:shadow-gray  dark:border-aws-squid-ink-dark/20 dark:text-light-gray"
+                className="w-[calc(33.333%-0.5rem)] cursor-pointer rounded-2xl border border-ai4-gray-200 dark:border-ai4-dark-600 bg-white dark:bg-ai4-dark-800 p-2 text-sm text-ai4-gray-700 dark:text-ai4-gray-300 hover:shadow-lg hover:shadow-ai4-gray-300 dark:hover:shadow-ai4-dark-700 hover:border-ai4-blue-300 dark:hover:border-ai4-blue-600 transition-all duration-200"
                 onClick={() => {
                   onSend(qs.example, reasoningEnabled);
                 }}>

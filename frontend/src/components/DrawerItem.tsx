@@ -17,10 +17,10 @@ const DrawerItem: React.FC<Props> = (props) => {
   return (
     <Link
       className={twMerge(
-        'group mx-2 my-1 flex h-10 items-center  rounded px-2',
+        'group mx-2 my-1 flex h-10 items-center rounded-lg px-2 transition-colors duration-200',
         (props.isActive ?? true)
-          ? 'bg-aws-sea-blue-light dark:bg-aws-sea-blue-dark'
-          : 'hover:bg-aws-sea-blue-hover-light dark:hover:bg-aws-paper-dark',
+          ? 'bg-ai4-blue-100 dark:bg-ai4-blue-900/30 text-ai4-blue-700 dark:text-ai4-blue-300'
+          : 'text-ai4-gray-700 dark:text-ai4-gray-300 hover:bg-ai4-gray-50 dark:hover:bg-ai4-dark-800',
         props.className
       )}
       to={props.to}
@@ -34,8 +34,8 @@ const DrawerItem: React.FC<Props> = (props) => {
               className={twMerge(
                 'absolute inset-y-0 right-0 w-8 bg-gradient-to-l',
                 props.isActive
-                  ? 'from-aws-sea-blue-light dark:from-aws-sea-blue-dark'
-                  : 'from-aws-squid-ink-light group-hover:from-aws-sea-blue-hover-light dark:from-aws-squid-ink-dark dark:group-hover:from-aws-paper-dark'
+                  ? 'from-ai4-blue-100 dark:from-ai4-blue-900/30'
+                  : 'from-white dark:from-ai4-dark-900 group-hover:from-ai4-gray-50 dark:group-hover:from-ai4-dark-800'
               )}
             />
           )}

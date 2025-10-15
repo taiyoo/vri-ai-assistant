@@ -27,11 +27,12 @@ const InputText = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
         ref={ref}
         type={props.type ?? 'text'}
         className={twMerge(
-          'peer h-9 rounded border p-1 dark:[color-scheme:dark]',
-          'dark:bg-aws-ui-color-dark dark:text-aws-font-color-dark dark:placeholder-aws-font-color-gray',
+          'peer h-9 rounded-md border p-2 transition-colors duration-200 bg-white dark:bg-ai4-dark-800',
+          'text-ai4-gray-900 dark:text-ai4-gray-100 placeholder:text-ai4-gray-400 dark:placeholder:text-ai4-gray-500',
+          'focus:outline-none focus:ring-2 focus:ring-ai4-blue-500 dark:focus:ring-ai4-blue-400 focus:border-transparent',
           props.errorMessage
-            ? 'border-2 border-red'
-            : 'border-aws-font-color-light/50 dark:border-aws-font-color-dark/50',
+            ? 'border-2 border-red-500'
+            : 'border-ai4-gray-300 dark:border-ai4-dark-600 hover:border-ai4-gray-400 dark:hover:border-ai4-dark-500',
           props.icon ? 'pl-8' : ''
         )}
         disabled={props.disabled}
@@ -46,21 +47,21 @@ const InputText = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
       {props.label && (
         <div
           className={twMerge(
-            'order-first text-sm peer-focus:font-semibold peer-focus:italic',
+            'order-first text-sm font-medium text-ai4-gray-700 dark:text-ai4-gray-300 peer-focus:text-ai4-blue-600 dark:peer-focus:text-ai4-blue-400',
             props.errorMessage
-              ? 'font-bold text-red'
-              : 'text-dark-gray peer-focus:text-aws-font-color-light dark:text-light-gray dark:peer-focus:text-aws-font-color-dark'
+              ? 'text-red-600'
+              : 'peer-focus:font-semibold'
           )}>
           {props.label}
         </div>
       )}
       {props.hint && !props.errorMessage && (
-        <div className="mt-0.5 text-xs text-gray dark:text-aws-font-color-dark">
+        <div className="mt-0.5 text-xs text-ai4-gray-500 dark:text-ai4-gray-400">
           {props.hint}
         </div>
       )}
       {props.errorMessage && (
-        <div className="mt-0.5 text-xs text-red">{props.errorMessage}</div>
+        <div className="mt-0.5 text-xs text-red-600">{props.errorMessage}</div>
       )}
     </div>
   );
