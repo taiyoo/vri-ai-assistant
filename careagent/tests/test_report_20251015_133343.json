@@ -1,0 +1,63 @@
+{
+  "execution_summary": {
+    "total_time": 0.4634277820587158,
+    "total_requests": 5,
+    "success_rate": 1.0,
+    "avg_response_time": 0.4241943359375,
+    "requests_per_second": 10.78916757598815
+  },
+  "intent_distribution": {
+    "governance_check": 2,
+    "medication": 1,
+    "behavior": 2
+  },
+  "error_summary": {
+    "total_errors": 0,
+    "error_types": []
+  },
+  "recommendations": [
+    "Excellent performance - system is ready for production"
+  ],
+  "detailed_results": [
+    {
+      "test_id": "agent_0_req_0",
+      "success": true,
+      "response_time": 0.4625420570373535,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": true,
+      "response_time": 0.4489452838897705,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.4016609191894531,
+      "intent": "governance_check",
+      "utterance": "Check if medication administration was properly recorded",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.4167501926422119,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_4",
+      "success": true,
+      "response_time": 0.39107322692871094,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    }
+  ]
+}

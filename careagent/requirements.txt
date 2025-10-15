@@ -1,0 +1,25 @@
+# LiveKit Agent Dependencies
+livekit-agents>=0.8.0
+livekit-plugins-deepgram>=0.6.0
+livekit-plugins-openai>=0.7.0
+livekit-plugins-silero>=0.6.0
+
+# Langchain Dependencies  
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-core>=0.1.0
+
+# AWS Dependencies
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Configuration and Utilities
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Async support
+asyncio
+aiofiles
+
+# Logging and utilities
+python-dotenv

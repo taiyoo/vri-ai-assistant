@@ -1,0 +1,507 @@
+{
+  "execution_summary": {
+    "total_time": 0.9705841541290283,
+    "total_requests": 60,
+    "success_rate": 0.9,
+    "avg_response_time": 0.3295332272847494,
+    "requests_per_second": 61.81844175463807
+  },
+  "intent_distribution": {
+    "behavior": 13,
+    "governance_check": 13,
+    "medication": 20,
+    "record_adl": 14
+  },
+  "error_summary": {
+    "total_errors": 6,
+    "error_types": [
+      "Rate limit exceeded",
+      "Timeout error",
+      "Invalid input format",
+      "Service temporarily unavailable"
+    ]
+  },
+  "recommendations": [],
+  "detailed_results": [
+    {
+      "test_id": "agent_0_req_0",
+      "success": true,
+      "response_time": 0.350787878036499,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": true,
+      "response_time": 0.17166376113891602,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.34307098388671875,
+      "intent": "governance_check",
+      "utterance": "Audit required for compliance with care standards",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": false,
+      "response_time": 0.38101816177368164,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": "Invalid input format"
+    },
+    {
+      "test_id": "agent_0_req_4",
+      "success": true,
+      "response_time": 0.32619714736938477,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_5",
+      "success": true,
+      "response_time": 0.24780988693237305,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_6",
+      "success": true,
+      "response_time": 0.14220023155212402,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_7",
+      "success": true,
+      "response_time": 0.18648076057434082,
+      "intent": "governance_check",
+      "utterance": "Audit required for compliance with care standards",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_8",
+      "success": true,
+      "response_time": 0.4703798294067383,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_9",
+      "success": true,
+      "response_time": 0.1734158992767334,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_10",
+      "success": true,
+      "response_time": 0.3213040828704834,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_11",
+      "success": true,
+      "response_time": 0.40203380584716797,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_12",
+      "success": true,
+      "response_time": 0.3627891540527344,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_13",
+      "success": true,
+      "response_time": 0.45796799659729004,
+      "intent": "governance_check",
+      "utterance": "Audit required for compliance with care standards",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_14",
+      "success": true,
+      "response_time": 0.42591166496276855,
+      "intent": "governance_check",
+      "utterance": "Check if medication administration was properly recorded",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_15",
+      "success": true,
+      "response_time": 0.3930201530456543,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_16",
+      "success": true,
+      "response_time": 0.28461527824401855,
+      "intent": "governance_check",
+      "utterance": "Audit required for compliance with care standards",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_17",
+      "success": true,
+      "response_time": 0.3929920196533203,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_18",
+      "success": true,
+      "response_time": 0.18017292022705078,
+      "intent": "behavior",
+      "utterance": "Patient was agitated during care this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_19",
+      "success": true,
+      "response_time": 0.38374805450439453,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_0",
+      "success": true,
+      "response_time": 0.3403818607330322,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": true,
+      "response_time": 0.3103458881378174,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.20892715454101562,
+      "intent": "governance_check",
+      "utterance": "Check if medication administration was properly recorded",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.4316568374633789,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_4",
+      "success": true,
+      "response_time": 0.4838120937347412,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_5",
+      "success": true,
+      "response_time": 0.12111306190490723,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_6",
+      "success": true,
+      "response_time": 0.4461698532104492,
+      "intent": "behavior",
+      "utterance": "Patient was agitated during care this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_7",
+      "success": true,
+      "response_time": 0.30696892738342285,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_8",
+      "success": true,
+      "response_time": 0.12650084495544434,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_9",
+      "success": true,
+      "response_time": 0.4461491107940674,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_10",
+      "success": true,
+      "response_time": 0.3721742630004883,
+      "intent": "behavior",
+      "utterance": "Patient was agitated during care this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_11",
+      "success": false,
+      "response_time": 0.10650491714477539,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": "Timeout error"
+    },
+    {
+      "test_id": "agent_0_req_12",
+      "success": true,
+      "response_time": 0.1552419662475586,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_13",
+      "success": true,
+      "response_time": 0.3859901428222656,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_14",
+      "success": false,
+      "response_time": 0.4253110885620117,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": "Service temporarily unavailable"
+    },
+    {
+      "test_id": "agent_0_req_15",
+      "success": true,
+      "response_time": 0.20917081832885742,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_16",
+      "success": true,
+      "response_time": 0.22814679145812988,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_17",
+      "success": true,
+      "response_time": 0.2588388919830322,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_18",
+      "success": true,
+      "response_time": 0.4147987365722656,
+      "intent": "governance_check",
+      "utterance": "Check if medication administration was properly recorded",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_19",
+      "success": true,
+      "response_time": 0.4940018653869629,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_0",
+      "success": false,
+      "response_time": 0.11586594581604004,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": "Service temporarily unavailable"
+    },
+    {
+      "test_id": "agent_1_req_1",
+      "success": true,
+      "response_time": 0.1046450138092041,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_2",
+      "success": true,
+      "response_time": 0.4644479751586914,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_3",
+      "success": true,
+      "response_time": 0.49379825592041016,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_4",
+      "success": true,
+      "response_time": 0.4259021282196045,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_5",
+      "success": true,
+      "response_time": 0.4565598964691162,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_6",
+      "success": true,
+      "response_time": 0.49466800689697266,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_7",
+      "success": true,
+      "response_time": 0.12783384323120117,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_8",
+      "success": true,
+      "response_time": 0.4201982021331787,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_9",
+      "success": true,
+      "response_time": 0.4802360534667969,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_10",
+      "success": true,
+      "response_time": 0.2896459102630615,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_11",
+      "success": true,
+      "response_time": 0.4675872325897217,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_12",
+      "success": true,
+      "response_time": 0.49918270111083984,
+      "intent": "governance_check",
+      "utterance": "Audit required for compliance with care standards",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_13",
+      "success": true,
+      "response_time": 0.23962092399597168,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_14",
+      "success": false,
+      "response_time": 0.40973782539367676,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": "Rate limit exceeded"
+    },
+    {
+      "test_id": "agent_1_req_15",
+      "success": true,
+      "response_time": 0.4206569194793701,
+      "intent": "governance_check",
+      "utterance": "Audit required for compliance with care standards",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_16",
+      "success": true,
+      "response_time": 0.4267539978027344,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_17",
+      "success": false,
+      "response_time": 0.4895651340484619,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": "Invalid input format"
+    },
+    {
+      "test_id": "agent_1_req_18",
+      "success": true,
+      "response_time": 0.15511393547058105,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_19",
+      "success": true,
+      "response_time": 0.12018895149230957,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    }
+  ]
+}

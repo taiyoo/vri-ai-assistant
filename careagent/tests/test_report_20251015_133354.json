@@ -1,0 +1,122 @@
+{
+  "execution_summary": {
+    "total_time": 0.8690052032470703,
+    "total_requests": 12,
+    "success_rate": 0.75,
+    "avg_response_time": 0.3020713726679484,
+    "requests_per_second": 13.80889315180341
+  },
+  "intent_distribution": {
+    "behavior": 4,
+    "medication": 6,
+    "record_adl": 2
+  },
+  "error_summary": {
+    "total_errors": 3,
+    "error_types": [
+      "Rate limit exceeded",
+      "Invalid input format"
+    ]
+  },
+  "recommendations": [
+    "Consider improving error handling and retry mechanisms"
+  ],
+  "detailed_results": [
+    {
+      "test_id": "agent_0_req_0",
+      "success": true,
+      "response_time": 0.370481014251709,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": false,
+      "response_time": 0.26421213150024414,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": "Invalid input format"
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.12122273445129395,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.3729250431060791,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_0",
+      "success": false,
+      "response_time": 0.38245487213134766,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": "Rate limit exceeded"
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": true,
+      "response_time": 0.10708403587341309,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.27538204193115234,
+      "intent": "behavior",
+      "utterance": "Patient was agitated during care this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.49480676651000977,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_0",
+      "success": true,
+      "response_time": 0.13448596000671387,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_1",
+      "success": false,
+      "response_time": 0.40662693977355957,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": "Invalid input format"
+    },
+    {
+      "test_id": "agent_1_req_2",
+      "success": true,
+      "response_time": 0.2004868984222412,
+      "intent": "behavior",
+      "utterance": "Resident seems confused and doesn't recognize staff",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_3",
+      "success": true,
+      "response_time": 0.4946880340576172,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    }
+  ]
+}

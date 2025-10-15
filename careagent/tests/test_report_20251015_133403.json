@@ -1,0 +1,120 @@
+{
+  "execution_summary": {
+    "total_time": 0.9262678623199463,
+    "total_requests": 12,
+    "success_rate": 0.9166666666666666,
+    "avg_response_time": 0.3196362853050232,
+    "requests_per_second": 12.955215751461564
+  },
+  "intent_distribution": {
+    "governance_check": 2,
+    "behavior": 1,
+    "medication": 5,
+    "record_adl": 4
+  },
+  "error_summary": {
+    "total_errors": 1,
+    "error_types": [
+      "Rate limit exceeded"
+    ]
+  },
+  "recommendations": [],
+  "detailed_results": [
+    {
+      "test_id": "agent_0_req_0",
+      "success": true,
+      "response_time": 0.32890892028808594,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": true,
+      "response_time": 0.4234790802001953,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.19068288803100586,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.3563261032104492,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_0",
+      "success": true,
+      "response_time": 0.2144780158996582,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": false,
+      "response_time": 0.49916720390319824,
+      "intent": "medication",
+      "utterance": "What's the dosage for warfarin for this patient?",
+      "error": "Rate limit exceeded"
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.35676097869873047,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.15397906303405762,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_0",
+      "success": true,
+      "response_time": 0.34878110885620117,
+      "intent": "governance_check",
+      "utterance": "Need to verify all ADL documentation is complete",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_1",
+      "success": true,
+      "response_time": 0.2960820198059082,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_2",
+      "success": true,
+      "response_time": 0.4048318862915039,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_1_req_3",
+      "success": true,
+      "response_time": 0.2621581554412842,
+      "intent": "medication",
+      "utterance": "Need to check medication interactions",
+      "error": null
+    }
+  ]
+}

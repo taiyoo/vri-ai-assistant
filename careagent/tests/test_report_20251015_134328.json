@@ -1,0 +1,65 @@
+{
+  "execution_summary": {
+    "total_time": 0.47115612030029297,
+    "total_requests": 5,
+    "success_rate": 0.8,
+    "avg_response_time": 0.3339374542236328,
+    "requests_per_second": 10.612193675449303
+  },
+  "intent_distribution": {
+    "behavior": 1,
+    "record_adl": 3,
+    "medication": 1
+  },
+  "error_summary": {
+    "total_errors": 1,
+    "error_types": [
+      "Timeout error"
+    ]
+  },
+  "recommendations": [
+    "Consider improving error handling and retry mechanisms"
+  ],
+  "detailed_results": [
+    {
+      "test_id": "agent_0_req_0",
+      "success": false,
+      "response_time": 0.2584867477416992,
+      "intent": "behavior",
+      "utterance": "Mr. Brown was very cooperative during personal care",
+      "error": "Timeout error"
+    },
+    {
+      "test_id": "agent_0_req_1",
+      "success": true,
+      "response_time": 0.3251659870147705,
+      "intent": "record_adl",
+      "utterance": "I need to record that Mrs. Johnson had a shower this morning",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_2",
+      "success": true,
+      "response_time": 0.3270998001098633,
+      "intent": "record_adl",
+      "utterance": "Patient completed her breakfast and took her medications",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_3",
+      "success": true,
+      "response_time": 0.46954894065856934,
+      "intent": "record_adl",
+      "utterance": "Resident needed assistance with toileting at 2 PM",
+      "error": null
+    },
+    {
+      "test_id": "agent_0_req_4",
+      "success": true,
+      "response_time": 0.2893857955932617,
+      "intent": "medication",
+      "utterance": "Patient missed her morning medications",
+      "error": null
+    }
+  ]
+}

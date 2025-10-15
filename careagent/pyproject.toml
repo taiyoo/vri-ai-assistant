@@ -1,0 +1,23 @@
+[project]
+name = "careagent"
+version = "0.1.0"
+description = "Voice-first multi-agent orchestration for aged care"
+requires-python = ">=3.10"
+dependencies = [
+"fastapi",
+"uvicorn[standard]",
+"pydantic-settings",
+"python-dotenv",
+"boto3",
+"langchain",
+"langchain-community",
+"livekit-agents",
+"websockets",
+"httpx",
+"opentelemetry-sdk",
+"opentelemetry-api",
+]
+
+
+[tool.ruff]
+line-length = 100
